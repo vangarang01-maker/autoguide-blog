@@ -134,7 +134,7 @@ const articleSchema = {
     <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
       <article class="prose-auto min-w-0 max-w-3xl">
         <Content />
-        <PostEngagement slug={post.id} title={post.data.title} />
+        <PostEngagement slug={post.id} title={post.data.title} pubDate={post.data.pubDate} />
       </article>
 
       <aside class="order-first lg:order-last lg:sticky lg:top-24">
