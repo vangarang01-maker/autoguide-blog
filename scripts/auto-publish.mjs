@@ -407,7 +407,17 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
 
 위 개요를 바탕으로 각 소주제마다 실무적인 진단 단계, 자가 점검법, 부품 견적 비교, 주의사항을 2,500자 ~ 4,500자 내외(최대 6,000자 미만)로 알차고 가독성 높게 작성해 주세요.`;
 
-  const candidateModels = Array.from(new Set([GEMINI_MODEL, 'gemini-2.5-flash', 'gemini-2.5-pro']));
+  const candidateModels = Array.from(
+    new Set([
+      GEMINI_MODEL,
+      'gemini-3.7-flash',
+      'gemini-3.6-flash',
+      'gemini-3.5-flash',
+      'gemini-3-flash-preview',
+      'gemini-2.5-flash',
+      'gemini-2.5-pro',
+    ]),
+  );
 
   for (const model of candidateModels) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
