@@ -11,4 +11,4 @@ Allow: /
 User-agent: AdsBot-Google-Mobile
 Allow: /
 
-Sitemap: https://autoguide-blog.vercel.app/sitemap-index.xml
+Sitemap: https://autoguide-pro.com/sitemap-index.xml

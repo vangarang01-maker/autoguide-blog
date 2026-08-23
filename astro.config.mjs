@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://autoguide-blog.vercel.app',
+  site: 'https://autoguide-pro.com',
   integrations: [sitemap()],
   markdown: {
     shikiConfig: {

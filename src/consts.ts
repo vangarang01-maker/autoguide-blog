@@ -5,7 +5,7 @@ export const SITE_TITLE_KO = '오토가이드';
 export const SITE_TAGLINE = '스마트 모빌리티 & 실전 차량 관리 가이드';
 export const SITE_DESCRIPTION =
   '오토가이드(AutoGuide)는 정비소 견적서와 제조사 정비지침서를 함께 읽어주는 실전 차량 정보 매체입니다. 신차·중고차 비교, DCT·하이브리드·GDI 정비, 취등록세 절약까지 현장에서 검증된 데이터로 정리합니다.';
-export const SITE_URL = 'https://autoguide-blog.vercel.app';
+export const SITE_URL = 'https://autoguide-pro.com';
 export const SITE_LOCALE = 'ko_KR';
 export const SITE_LANG = 'ko';
 
@@ -19,7 +19,7 @@ export const AUTHOR = {
   name: '김도현',
   role: '자동차 정비기능장 · 오토가이드 편집장',
   bio: '15년간 현대·기아 직영 서비스센터와 사설 정비소를 오가며 변속기·하이브리드 시스템 진단을 담당했습니다. 자동차정비기능장, 하이브리드 고전압 안전교육 이수. 정비 지침서와 실제 견적서를 함께 놓고 검증한 내용만 씁니다.',
-  email: 'contact@autoguide-blog.vercel.app',
+  email: 'contact@autoguide-pro.com',
   credentials: [
     '자동차정비기능장 (한국산업인력공단)',
     '자동차진단평가사 2급',
@@ -28,7 +28,7 @@ export const AUTHOR = {
   ],
 };
 
-export const CONTACT_EMAIL = 'contact@autoguide-blog.vercel.app';
+export const CONTACT_EMAIL = 'contact@autoguide-pro.com';
 export const FOUNDED_YEAR = 2024;
 
 /** 카테고리 */
