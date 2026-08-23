@@ -6,6 +6,7 @@ import AuthorCard from '../../components/AuthorCard.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import PostCard from '../../components/PostCard.astro';
+import PostEngagement from '../../components/PostEngagement.astro';
 import { AUTHOR, SITE_URL, categoryOf } from '../../consts';
 
 export async function getStaticPaths() {
@@ -133,6 +134,7 @@ const articleSchema = {
     <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
       <article class="prose-auto min-w-0 max-w-3xl">
         <Content />
+        <PostEngagement slug={post.id} title={post.data.title} />
       </article>
 
       <aside class="order-first lg:order-last lg:sticky lg:top-24">
