@@ -383,7 +383,7 @@ const GEMINI_SYSTEM_PROMPT = `당신은 대한민국 최고 권위의 15년 경�
 독자들은 자동차 정비, 중고차 구매, 하이브리드/전기차 관리 등에서 과잉 정비나 사기를 피하고 정확한 실측 데이터를 알고 싶어 합니다.
 
 [작성 원칙]
-1. 구글 애드센스 E-E-A-T 기준을 완벽히 만족하도록 깊이 있고 신뢰성 높은 장문(최소 3,500자 ~ 5,000자 이상)으로 작성하세요.
+1. 글자 수 규격: 본문 전체 분량은 공백 포함 2,500자 ~ 4,500자 내외(반드시 2,000자 이상 6,000자 미만)로 가독성 높고 핵심적인 정보 밀도를 갖추어 작성하세요.
 2. 부품 명칭, 결함 증상, 압력/온도/치수(mm, Nm, V, Ah), 정비 공임 견적(원 단위)을 구체적인 숫자로 명시하세요.
 3. 정비 지침서(Shop Manual)와 현장 작업 노하우, 리프트에서 직접 확인한 생생한 실전 경험담 톤을 유지하세요.
 4. 마크다운 형식으로 작성하되, 맨 앞의 프론트매터(--- 영역)는 출력하지 말고 바로 본문부터 출력하세요.
@@ -405,7 +405,7 @@ async function generateWithGemini(topic) {
 개요 및 필수 포함 내용:
 ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
 
-위 개요를 바탕으로 각 소주제마다 실무적인 진단 단계, 자가 점검법, 부품 견적 비교, 주의사항을 아주 상세하게 4,000자 이상의 고밀도 백과사전 가이드로 작성해 주세요.`;
+위 개요를 바탕으로 각 소주제마다 실무적인 진단 단계, 자가 점검법, 부품 견적 비교, 주의사항을 2,500자 ~ 4,500자 내외(최대 6,000자 미만)로 알차고 가독성 높게 작성해 주세요.`;
 
   const candidateModels = Array.from(new Set([GEMINI_MODEL, 'gemini-2.5-flash', 'gemini-2.5-pro']));
 
@@ -418,7 +418,7 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
         headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text: `${GEMINI_SYSTEM_PROMPT}\n\n${prompt}` }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 8192 },
+          generationConfig: { temperature: 0.7, maxOutputTokens: 3500 },
         }),
         signal: AbortSignal.timeout(90_000),
       });
