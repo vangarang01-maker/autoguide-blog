@@ -449,11 +449,13 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
         .join('')
         .trim();
 
-      const cleaned = text
-        .replace(/^```(?:markdown|md)?\s*\n?/i, '')
-        .replace(/\n?```\s*$/i, '')
-        .replace(/^---[\s\S]*?---\s*/, '')
-        .trim();
+      const cleaned = normalizeMarkdown(
+        text
+          .replace(/^```(?:markdown|md)?\s*\n?/i, '')
+          .replace(/\n?```\s*$/i, '')
+          .replace(/^---[\s\S]*?---\s*/, '')
+          .trim()
+      );
 
       if (cleaned.length < MIN_CHARS) {
         console.warn(`[gemini] ${model} draft too short (${cleaned.length} chars) — trying next model`);
@@ -469,6 +471,14 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
 
   console.warn('[gemini] all models failed — falling back to template');
   return null;
+}
+
+function normalizeMarkdown(text) {
+  return text
+    // Fix **"text"** or **“text”** to “**text**” (so quotes don't break CommonMark bold parsing)
+    .replace(/\*\*["“](.*?)[”"]\*\*/g, '“**$1**”')
+    .replace(/\*\*['‘](.*?)[’']\*\*/g, '‘**$1**’')
+    .replace(/\*\*\s*\*\*/g, '');
 }
 
 /* -------------------------------------------------------------- Deterministic Template Fallback */
