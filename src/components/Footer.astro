@@ -1,0 +1,74 @@
+---
+import { AUTHOR, CATEGORIES, FOUNDED_YEAR, NAV_LINKS, SITE_TAGLINE, SITE_TITLE, SITE_TITLE_KO } from '../consts';
+
+const year = new Date().getFullYear();
+const range = year > FOUNDED_YEAR ? `${FOUNDED_YEAR}–${year}` : `${FOUNDED_YEAR}`;
+---
+
+<footer class="mt-20 border-t border-steel-200 bg-steel-50 dark:border-steel-800 dark:bg-steel-950">
+  <div class="container-page grid gap-10 py-14 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <p class="text-lg font-extrabold text-steel-900 dark:text-white">{SITE_TITLE} · {SITE_TITLE_KO}</p>
+      <p class="mt-2 max-w-md text-sm leading-relaxed text-steel-600 dark:text-steel-400">
+        {SITE_TAGLINE}. 정비지침서 수치와 실제 견적서를 대조해 검증한 내용만 발행합니다.
+      </p>
+      <p class="mt-4 text-sm text-steel-500 dark:text-steel-400">
+        편집장 {AUTHOR.name} · {AUTHOR.role}
+      </p>
+    </div>
+
+    <div>
+      <p class="mb-3 text-sm font-bold text-steel-900 dark:text-white">카테고리</p>
+      <ul class="space-y-2 text-sm">
+        {
+          CATEGORIES.map((c) => (
+            <li>
+              <a
+                href={`/blog?category=${c.slug}`}
+                class="text-steel-600 hover:text-cobalt-600 dark:text-steel-400 dark:hover:text-cobalt-300"
+              >
+                {c.icon} {c.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div>
+      <p class="mb-3 text-sm font-bold text-steel-900 dark:text-white">사이트</p>
+      <ul class="space-y-2 text-sm">
+        {
+          NAV_LINKS.map((l) => (
+            <li>
+              <a
+                href={l.href}
+                class="text-steel-600 hover:text-cobalt-600 dark:text-steel-400 dark:hover:text-cobalt-300"
+              >
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+        <li>
+          <a
+            href="/rss.xml"
+            class="text-steel-600 hover:text-cobalt-600 dark:text-steel-400 dark:hover:text-cobalt-300">RSS 피드</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-steel-200 dark:border-steel-800">
+    <div
+      class="container-page flex flex-col gap-2 py-6 text-xs text-steel-500 sm:flex-row sm:items-center sm:justify-between dark:text-steel-400"
+    >
+      <p>© {range} {SITE_TITLE}. All rights reserved.</p>
+      <p>
+        본 사이트의 정비·비용 정보는 일반적인 참고 자료이며, 최종 판단은 제조사 정비지침서와 정식 서비스센터 진단을
+        따르세요.
+      </p>
+    </div>
+  </div>
+</footer>

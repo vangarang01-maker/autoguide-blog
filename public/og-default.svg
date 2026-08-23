@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14171f"/>
+      <stop offset="0.55" stop-color="#323947"/>
+      <stop offset="1" stop-color="#141957"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="240" cy="130" r="260" fill="#3363ff" opacity="0.18"/>
+  <circle cx="1000" cy="70" r="200" fill="#1d40f5" opacity="0.22"/>
+  <rect x="80" y="150" width="52" height="52" rx="12" fill="#3363ff"/>
+  <text x="94" y="189" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="bold" fill="#fff">A</text>
+  <text x="152" y="188" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">AutoGuide</text>
+  <text x="80" y="300" font-family="Helvetica, Arial, sans-serif" font-size="66" font-weight="bold" fill="#ffffff">스마트 모빌리티 &amp;</text>
+  <text x="80" y="380" font-family="Helvetica, Arial, sans-serif" font-size="66" font-weight="bold" fill="#8eb5ff">실전 차량 관리 가이드</text>
+  <text x="80" y="452" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#b0b9ca">정비지침서와 실제 견적서를 대조해 검증한 정보만 발행합니다</text>
+  <rect x="80" y="510" width="1040" height="2" fill="#4f5e79"/>
+  <text x="80" y="560" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#8494ac">정비 &amp; 관리 · 구매 &amp; 시세 · 하이브리드 &amp; EV · 실전 드라이빙</text>
+</svg>

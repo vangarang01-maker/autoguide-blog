@@ -1,0 +1,29 @@
+---
+import { ADSENSE_PUB_ID } from '../consts';
+
+interface Props {
+  slot?: string;
+  format?: string;
+  label?: string;
+  layout?: 'horizontal' | 'in-article' | 'square';
+}
+
+const { slot = '0000000000', format = 'auto', label = '광고', layout = 'horizontal' } = Astro.props;
+
+const minHeight = layout === 'square' ? 250 : layout === 'in-article' ? 180 : 100;
+---
+
+<aside class="ad-slot flex-col gap-1 py-3" style={`min-height:${minHeight}px`} aria-label={label}>
+  <span class="text-[10px] font-medium tracking-widest text-steel-400 uppercase">{label}</span>
+  <ins
+    class="adsbygoogle block w-full"
+    style={`display:block;min-height:${minHeight - 24}px`}
+    data-ad-client={ADSENSE_PUB_ID}
+    data-ad-slot={slot}
+    data-ad-format={format}
+    data-full-width-responsive="true"></ins>
+</aside>
+
+<script is:inline>
+  (window.adsbygoogle = window.adsbygoogle || []).push({});
+</script>

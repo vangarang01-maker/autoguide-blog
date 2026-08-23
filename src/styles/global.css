@@ -1,0 +1,183 @@
+@import 'tailwindcss';
+
+/* class 기반 다크모드 (Tailwind v4는 기본이 prefers-color-scheme) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-cobalt-50: #eef4ff;
+  --color-cobalt-100: #d9e5ff;
+  --color-cobalt-200: #bcd2ff;
+  --color-cobalt-300: #8eb5ff;
+  --color-cobalt-400: #598cff;
+  --color-cobalt-500: #3363ff;
+  --color-cobalt-600: #1d40f5;
+  --color-cobalt-700: #172fe1;
+  --color-cobalt-800: #1929b6;
+  --color-cobalt-900: #1b2a8f;
+  --color-cobalt-950: #141957;
+
+  --color-steel-50: #f6f7f9;
+  --color-steel-100: #eceef2;
+  --color-steel-200: #d5dae3;
+  --color-steel-300: #b0b9ca;
+  --color-steel-400: #8494ac;
+  --color-steel-500: #647693;
+  --color-steel-600: #4f5e79;
+  --color-steel-700: #414c62;
+  --color-steel-800: #384153;
+  --color-steel-900: #323947;
+  --color-steel-950: #14171f;
+
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-steel-900 antialiased;
+    font-family: var(--font-sans);
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  :root.dark body {
+    @apply bg-steel-950 text-steel-100;
+  }
+
+  ::selection {
+    @apply bg-cobalt-500/25;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-2xl border border-steel-200 bg-white shadow-sm transition
+      hover:-translate-y-0.5 hover:border-cobalt-400 hover:shadow-lg;
+  }
+
+  :root.dark .card {
+    @apply border-steel-800 bg-steel-900 hover:border-cobalt-500;
+  }
+
+  .ad-slot {
+    @apply my-8 flex min-h-[100px] w-full items-center justify-center overflow-hidden
+      rounded-xl border border-dashed border-steel-200 bg-steel-50/60;
+  }
+
+  :root.dark .ad-slot {
+    @apply border-steel-800 bg-steel-900/50;
+  }
+}
+
+/* 본문 타이포그래피 (수동 구성 — @tailwindcss/typography 미사용) */
+.prose-auto {
+  @apply text-[1.0625rem] leading-[1.85] text-steel-700;
+}
+:root.dark .prose-auto {
+  @apply text-steel-300;
+}
+.prose-auto h2 {
+  @apply mt-14 mb-5 scroll-mt-28 border-l-4 border-cobalt-500 pl-4 text-2xl font-bold
+    tracking-tight text-steel-900 sm:text-[1.75rem];
+}
+:root.dark .prose-auto h2 {
+  @apply text-white;
+}
+.prose-auto h3 {
+  @apply mt-10 mb-4 scroll-mt-28 text-xl font-bold text-steel-900 sm:text-[1.35rem];
+}
+:root.dark .prose-auto h3 {
+  @apply text-steel-100;
+}
+.prose-auto h4 {
+  @apply mt-8 mb-3 text-lg font-semibold text-steel-800;
+}
+:root.dark .prose-auto h4 {
+  @apply text-steel-200;
+}
+.prose-auto p {
+  @apply my-5;
+}
+.prose-auto ul {
+  @apply my-5 list-disc space-y-2 pl-6 marker:text-cobalt-500;
+}
+.prose-auto ol {
+  @apply my-5 list-decimal space-y-2 pl-6 marker:font-semibold marker:text-cobalt-500;
+}
+.prose-auto li > ul,
+.prose-auto li > ol {
+  @apply my-2;
+}
+.prose-auto a {
+  @apply font-medium text-cobalt-600 underline underline-offset-4 hover:text-cobalt-500;
+}
+:root.dark .prose-auto a {
+  @apply text-cobalt-300;
+}
+.prose-auto strong {
+  @apply font-bold text-steel-900;
+}
+:root.dark .prose-auto strong {
+  @apply text-white;
+}
+.prose-auto blockquote {
+  @apply my-7 rounded-r-xl border-l-4 border-cobalt-400 bg-cobalt-50 px-5 py-4 text-steel-700;
+}
+:root.dark .prose-auto blockquote {
+  @apply border-cobalt-500 bg-steel-900 text-steel-300;
+}
+.prose-auto blockquote p {
+  @apply my-1;
+}
+.prose-auto hr {
+  @apply my-12 border-steel-200;
+}
+:root.dark .prose-auto hr {
+  @apply border-steel-800;
+}
+.prose-auto table {
+  @apply my-7 w-full border-collapse overflow-hidden rounded-xl text-[0.95rem];
+}
+.prose-auto thead {
+  @apply bg-steel-100;
+}
+:root.dark .prose-auto thead {
+  @apply bg-steel-800;
+}
+.prose-auto th {
+  @apply border border-steel-200 px-3 py-2.5 text-left font-semibold text-steel-900;
+}
+:root.dark .prose-auto th {
+  @apply border-steel-700 text-white;
+}
+.prose-auto td {
+  @apply border border-steel-200 px-3 py-2.5 align-top;
+}
+:root.dark .prose-auto td {
+  @apply border-steel-800;
+}
+.prose-auto code:not(pre code) {
+  @apply rounded bg-steel-100 px-1.5 py-0.5 text-[0.875em] font-medium text-cobalt-700;
+}
+:root.dark .prose-auto code:not(pre code) {
+  @apply bg-steel-800 text-cobalt-300;
+}
+.prose-auto pre {
+  @apply my-7 overflow-x-auto rounded-xl p-4 text-sm;
+}
+.prose-auto img {
+  @apply my-7 rounded-xl;
+}
+.prose-auto .table-wrap {
+  @apply overflow-x-auto;
+}

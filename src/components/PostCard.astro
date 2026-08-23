@@ -1,0 +1,54 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { categoryOf } from '../consts';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  featured?: boolean;
+}
+
+const { post, featured = false } = Astro.props;
+const cat = categoryOf(post.data.category);
+const minutes = Math.max(1, Math.round(post.body!.replace(/\s/g, '').length / 500));
+---
+
+<article class:list={['card group flex h-full flex-col overflow-hidden', featured && 'md:flex-row']}>
+  <a
+    href={`/blog/${post.id}/`}
+    class:list={[
+      'grid shrink-0 place-items-center bg-gradient-to-br text-5xl',
+      cat.accent,
+      featured ? 'md:w-56 py-12 md:py-0' : 'py-10',
+    ]}
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <span class="drop-shadow-sm">{post.data.heroEmoji}</span>
+  </a>
+
+  <div class="flex flex-1 flex-col p-5">
+    <div class="mb-2 flex flex-wrap items-center gap-2 text-xs">
+      <span
+        class="rounded-full bg-cobalt-50 px-2.5 py-1 font-semibold text-cobalt-700 dark:bg-steel-800 dark:text-cobalt-300"
+        >{cat.icon} {cat.name}</span
+      >
+      <span class="text-steel-400">읽는 시간 {minutes}분</span>
+    </div>
+
+    <h3 class="text-lg leading-snug font-bold text-steel-900 dark:text-white">
+      <a href={`/blog/${post.id}/`} class="after:absolute group-hover:text-cobalt-600 dark:group-hover:text-cobalt-300">
+        {post.data.title}
+      </a>
+    </h3>
+
+    <p class="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-steel-600 dark:text-steel-400">
+      {post.data.description}
+    </p>
+
+    <div class="mt-4 flex items-center justify-between border-t border-steel-100 pt-3 text-xs text-steel-500 dark:border-steel-800 dark:text-steel-400">
+      <FormattedDate date={post.data.pubDate} />
+      <span class="font-medium text-cobalt-600 dark:text-cobalt-300">자세히 보기 →</span>
+    </div>
+  </div>
+</article>

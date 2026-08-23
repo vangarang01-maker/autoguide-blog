@@ -1,0 +1,39 @@
+---
+import { AUTHOR } from '../consts';
+---
+
+<section
+  class="mt-14 rounded-2xl border border-steel-200 bg-steel-50 p-6 dark:border-steel-800 dark:bg-steel-900"
+  aria-label="작성자 정보"
+>
+  <div class="flex flex-col gap-5 sm:flex-row">
+    <div
+      class="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-gradient-to-br from-cobalt-600 to-cobalt-400 text-2xl text-white shadow-sm"
+      aria-hidden="true"
+    >
+      🔧
+    </div>
+    <div class="min-w-0">
+      <p class="text-xs font-semibold tracking-wider text-cobalt-600 uppercase dark:text-cobalt-300">
+        이 글을 쓴 사람
+      </p>
+      <p class="mt-1 text-lg font-bold text-steel-900 dark:text-white">{AUTHOR.name}</p>
+      <p class="text-sm text-steel-500 dark:text-steel-400">{AUTHOR.role}</p>
+      <p class="mt-3 text-sm leading-relaxed text-steel-600 dark:text-steel-300">{AUTHOR.bio}</p>
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {
+          AUTHOR.credentials.map((c) => (
+            <li class="rounded-full border border-steel-200 bg-white px-2.5 py-1 text-xs text-steel-600 dark:border-steel-700 dark:bg-steel-950 dark:text-steel-300">
+              ✅ {c}
+            </li>
+          ))
+        }
+      </ul>
+      <a
+        href="/about"
+        class="mt-4 inline-block text-sm font-medium text-cobalt-600 hover:underline dark:text-cobalt-300"
+        >편집 원칙과 검증 절차 보기 →</a
+      >
+    </div>
+  </div>
+</section>

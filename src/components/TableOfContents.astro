@@ -1,0 +1,66 @@
+---
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{
+  items.length > 1 && (
+    <nav
+      id="toc"
+      class="mb-10 rounded-2xl border border-steel-200 bg-steel-50 p-5 lg:sticky lg:top-24 lg:mb-0 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto dark:border-steel-800 dark:bg-steel-900"
+      aria-label="목차"
+    >
+      <p class="mb-3 flex items-center gap-2 text-sm font-bold text-steel-900 dark:text-white">
+        <span aria-hidden="true">📑</span> 목차
+      </p>
+      <ol class="space-y-1.5 text-sm">
+        {items.map((h) => (
+          <li class={h.depth === 3 ? 'pl-4' : ''}>
+            <a
+              href={`#${h.slug}`}
+              data-toc-link={h.slug}
+              class:list={[
+                'block rounded px-2 py-1 leading-snug transition',
+                h.depth === 3
+                  ? 'text-steel-500 dark:text-steel-400'
+                  : 'font-medium text-steel-700 dark:text-steel-300',
+                'hover:bg-cobalt-50 hover:text-cobalt-700 dark:hover:bg-steel-800 dark:hover:text-cobalt-300',
+              ]}
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+<script is:inline>
+  (() => {
+    const links = document.querySelectorAll('[data-toc-link]');
+    if (!links.length) return;
+    const map = new Map();
+    links.forEach((l) => map.set(l.getAttribute('data-toc-link'), l));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          links.forEach((l) => l.classList.remove('bg-cobalt-100', 'text-cobalt-800', 'dark:bg-steel-800'));
+          const active = map.get(entry.target.id);
+          active?.classList.add('bg-cobalt-100', 'text-cobalt-800', 'dark:bg-steel-800');
+        });
+      },
+      { rootMargin: '-96px 0px -70% 0px', threshold: 0 },
+    );
+
+    document.querySelectorAll('article h2[id], article h3[id]').forEach((h) => observer.observe(h));
+  })();
+</script>

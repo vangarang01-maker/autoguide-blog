@@ -1,0 +1,184 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import AuthorCard from '../../components/AuthorCard.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import PostCard from '../../components/PostCard.astro';
+import { AUTHOR, SITE_URL, categoryOf } from '../../consts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+type Props = { post: CollectionEntry<'blog'> };
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+
+const cat = categoryOf(post.data.category);
+const charCount = (post.body ?? '').replace(/\s/g, '').length;
+const readingMinutes = Math.max(1, Math.round(charCount / 500));
+const url = `${SITE_URL}/blog/${post.id}/`;
+
+const all = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const related = all
+  .filter((p) => p.id !== post.id)
+  .sort((a, b) => {
+    const score = (x: CollectionEntry<'blog'>) => (x.data.category === post.data.category ? 0 : 1);
+    return score(a) - score(b);
+  })
+  .slice(0, 3);
+
+const articleSchema = {
+  '@type': 'BlogPosting',
+  '@id': `${url}#article`,
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: 'ko',
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+  author: { '@id': `${SITE_URL}/#author` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  articleSection: cat.name,
+  keywords: post.data.tags.join(', '),
+  wordCount: charCount,
+  timeRequired: `PT${readingMinutes}M`,
+  isAccessibleForFree: true,
+};
+---
+
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  publishedTime={post.data.pubDate}
+  modifiedTime={post.data.updatedDate ?? post.data.pubDate}
+  keywords={post.data.tags}
+  schema={articleSchema}
+  breadcrumbs={[
+    { name: '홈', href: '/' },
+    { name: '전체 글', href: '/blog' },
+    { name: post.data.title, href: `/blog/${post.id}/` },
+  ]}
+>
+  <div class="container-page py-10 sm:py-14">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-xs text-steel-500 dark:text-steel-400" aria-label="탐색 경로">
+      <ol class="flex flex-wrap items-center gap-1.5">
+        <li><a href="/" class="hover:text-cobalt-600">홈</a></li>
+        <li aria-hidden="true">›</li>
+        <li><a href="/blog" class="hover:text-cobalt-600">전체 글</a></li>
+        <li aria-hidden="true">›</li>
+        <li>
+          <a href={`/blog?category=${cat.slug}`} class="hover:text-cobalt-600">{cat.name}</a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Article header -->
+    <header class="max-w-3xl">
+      <div class="flex flex-wrap items-center gap-2 text-xs">
+        <span
+          class="rounded-full bg-cobalt-50 px-2.5 py-1 font-semibold text-cobalt-700 dark:bg-steel-800 dark:text-cobalt-300"
+          >{cat.icon} {cat.name}</span
+        >
+        {
+          post.data.tags.slice(0, 4).map((t) => (
+            <span class="rounded-full border border-steel-200 px-2.5 py-1 text-steel-500 dark:border-steel-700 dark:text-steel-400">
+              #{t}
+            </span>
+          ))
+        }
+      </div>
+
+      <h1 class="mt-4 text-3xl leading-tight font-black tracking-tight text-steel-900 sm:text-[2.5rem] dark:text-white">
+        {post.data.title}
+      </h1>
+
+      <p class="mt-4 text-base leading-relaxed text-steel-600 sm:text-lg dark:text-steel-400">
+        {post.data.description}
+      </p>
+
+      <div
+        class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-y border-steel-200 py-4 text-sm text-steel-500 dark:border-steel-800 dark:text-steel-400"
+      >
+        <span class="font-medium text-steel-700 dark:text-steel-200">{AUTHOR.name}</span>
+        <span aria-hidden="true">·</span>
+        <FormattedDate date={post.data.pubDate} />
+        {
+          post.data.updatedDate && (
+            <>
+              <span aria-hidden="true">·</span>
+              <FormattedDate date={post.data.updatedDate} prefix="최종 수정 " />
+            </>
+          )
+        }
+        <span aria-hidden="true">·</span>
+        <span>읽는 시간 약 {readingMinutes}분</span>
+      </div>
+    </header>
+
+    <AdSlot slot="4444444444" label="Sponsored" />
+
+    <!-- Body + TOC -->
+    <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
+      <article class="prose-auto min-w-0 max-w-3xl">
+        <Content />
+      </article>
+
+      <aside class="order-first lg:order-last lg:sticky lg:top-24">
+        <TableOfContents headings={headings} />
+        <div class="mt-6 hidden lg:block">
+          <AdSlot slot="5555555555" layout="square" label="Sponsored" />
+        </div>
+      </aside>
+    </div>
+
+    <div class="max-w-3xl">
+      <AdSlot slot="6666666666" layout="in-article" label="Sponsored" />
+
+      <!-- Disclaimer -->
+      <p
+        class="mt-8 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-900 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-200"
+      >
+        ⚠️ 본 문서의 비용·주기 정보는 집필 시점의 일반적인 기준이며 차종·연식·지역·정비소에 따라 달라집니다.
+        최종 판단은 제조사 정비지침서와 정식 서비스센터 진단을 따르세요.
+      </p>
+
+      <AuthorCard />
+    </div>
+
+    <!-- Related -->
+    {
+      related.length > 0 && (
+        <section class="mt-16" aria-labelledby="related-heading">
+          <h2 id="related-heading" class="text-xl font-extrabold text-steel-900 dark:text-white">
+            함께 읽으면 좋은 글
+          </h2>
+          <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {related.map((p) => (
+              <PostCard post={p} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <div class="mt-12 flex justify-center">
+      <a
+        href="/blog"
+        class="rounded-xl border border-steel-200 px-6 py-3 text-sm font-semibold text-steel-700 transition hover:border-cobalt-400 hover:text-cobalt-600 dark:border-steel-700 dark:text-steel-200"
+        >← 전체 가이드 목록으로</a
+      >
+    </div>
+  </div>
+</Layout>

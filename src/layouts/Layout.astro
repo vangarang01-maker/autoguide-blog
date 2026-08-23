@@ -1,0 +1,134 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import {
+  AUTHOR,
+  SITE_DESCRIPTION,
+  SITE_LANG,
+  SITE_TITLE,
+  SITE_URL,
+} from '../consts';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  keywords?: string[];
+  noindex?: boolean;
+  /** 페이지별 추가 Schema.org 그래프 노드 */
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  breadcrumbs?: { name: string; href: string }[];
+}
+
+const {
+  title,
+  description = SITE_DESCRIPTION,
+  image = '/og-default.svg',
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  keywords = [],
+  noindex = false,
+  schema,
+  breadcrumbs = [],
+} = Astro.props;
+
+const fullTitle = title === SITE_TITLE ? `${SITE_TITLE} — 오토가이드 | 스마트 모빌리티 & 실전 차량 관리 가이드` : `${title} | ${SITE_TITLE}`;
+
+/** Schema.org: Organization + WebSite + Person(저자) 를 전역 그래프로 제공 */
+const baseGraph: Record<string, unknown>[] = [
+  {
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: SITE_TITLE,
+    alternateName: '오토가이드',
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      '@id': `${SITE_URL}/#logo`,
+      url: `${SITE_URL}/favicon.svg`,
+    },
+    description: SITE_DESCRIPTION,
+    email: AUTHOR.email,
+    knowsAbout: ['자동차 정비', '중고차 구매', '하이브리드', '전기차', 'DCT 변속기', 'GDI 엔진'],
+  },
+  {
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    inLanguage: SITE_LANG,
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/blog?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  {
+    '@type': 'Person',
+    '@id': `${SITE_URL}/#author`,
+    name: AUTHOR.name,
+    jobTitle: AUTHOR.role,
+    description: AUTHOR.bio,
+    url: `${SITE_URL}/about`,
+    email: AUTHOR.email,
+    hasCredential: AUTHOR.credentials.map((c) => ({
+      '@type': 'EducationalOccupationalCredential',
+      name: c,
+    })),
+    worksFor: { '@id': `${SITE_URL}/#organization` },
+  },
+];
+
+if (breadcrumbs.length > 0) {
+  baseGraph.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${new URL(Astro.url.pathname, SITE_URL).href}#breadcrumb`,
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: new URL(b.href, SITE_URL).href,
+    })),
+  });
+}
+
+const extra = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const jsonLd = { '@context': 'https://schema.org', '@graph': [...baseGraph, ...extra] };
+---
+
+<!doctype html>
+<html lang={SITE_LANG} class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={fullTitle}
+      description={description}
+      image={image}
+      type={type}
+      publishedTime={publishedTime}
+      modifiedTime={modifiedTime}
+      keywords={keywords}
+      noindex={noindex}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded focus:bg-cobalt-600 focus:px-4 focus:py-2 focus:text-white"
+      >본문 바로가기</a
+    >
+    <Header />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
