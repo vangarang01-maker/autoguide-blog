@@ -1,0 +1,45 @@
+name: Auto Publish Daily Articles (AutoGuide)
+
+on:
+  schedule:
+    # Runs 3 times a day at 09:00, 14:00, 20:00 KST (00:00, 05:00, 11:00 UTC)
+    - cron: '0 0,5,11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Auto Publisher (Gemini AI)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: 'gemini-3.7-flash'
+        run: node scripts/auto-publish.mjs
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "AutoGuide Bot"
+          git config --global user.email "bot@autoguide-pro.com"
+          if [ -n "$(git status --porcelain src/content/blog)" ]; then
+            git add src/content/blog/
+            git commit -m "chore(blog): auto publish new automotive encyclopedia article [skip ci]"
+            git push origin main
+          else
+            console.log "No new articles generated."
+          fi
