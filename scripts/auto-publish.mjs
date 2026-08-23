@@ -425,7 +425,7 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
         headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text: `${GEMINI_SYSTEM_PROMPT}\n\n${prompt}` }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 3500 },
+          generationConfig: { temperature: 0.7, maxOutputTokens: 8192 },
         }),
         signal: AbortSignal.timeout(90_000),
       });
@@ -436,7 +436,15 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
       }
 
       const data = await res.json();
-      const text = (data?.candidates?.[0]?.content?.parts ?? [])
+      const candidate = data?.candidates?.[0];
+      const finishReason = candidate?.finishReason;
+
+      if (finishReason && finishReason !== 'STOP') {
+        console.warn(`[gemini] ${model} incomplete finishReason (${finishReason}) — trying next model`);
+        continue;
+      }
+
+      const text = (candidate?.content?.parts ?? [])
         .map((p) => p.text ?? '')
         .join('')
         .trim();
