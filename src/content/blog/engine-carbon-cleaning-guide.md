@@ -1,8 +1,8 @@
 ---
 title: 'GDI 직분사 엔진 카본 누적 증상과 흡기 밸브 클리닝 완전 가이드'
 description: 'GDI 엔진에만 카본이 쌓이는 구조적 이유, 초기 증상 7가지, 워터·케미컬·호두껍질 블라스팅 방식별 비용과 효과 비교, 예방 주행법과 주기까지 정비 현장 기준으로 정리했습니다.'
-pubDate: 2025-05-06
-updatedDate: 2025-08-08
+pubDate: 2026-08-05
+updatedDate: 2026-08-20
 category: 'maintenance'
 tags: ['GDI', '카본', '흡기밸브', '클리닝', '직분사', '정비']
 heroEmoji: '🧼'
