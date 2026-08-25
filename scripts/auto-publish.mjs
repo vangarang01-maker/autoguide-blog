@@ -520,6 +520,166 @@ const TOPICS = [
       '브레이크 디스크 클리닝 모드 활성화법 및 주기적인 기계식 급제동으로 패드 길들이기 팁',
     ],
   },
+  {
+    slug: 'engine-warning-light-yellow-vs-red',
+    title: '엔진 경고등 노란색 vs 빨간색 점등 시 즉시 정차해야 하는 긴급 상황 5가지',
+    category: 'maintenance',
+    heroEmoji: '⚠️',
+    tags: ['엔진경고등', '오일경고등', '냉각수과열', 'OBD진단', '긴급견인'],
+    description: '노란색 경고등 점등 시의 여유 주행 한도와 빨간색 경고등(유압/수온) 점등 시 1분 내 엔진 정지 원칙을 정비사 관점에서 정리했습니다.',
+    hook: '고속도로 주행 중 계기판에 수도꼭지 모양의 엔진 경고등이 떴을 때, 계속 달려도 될까요 아니면 갓길에 당장 세워야 할까요? 노란색과 빨간색의 위험도 차이를 모르면 엔진 실린더가 녹아내리는 수백만 원 참사를 겪게 됩니다.',
+    outline: [
+      '경고등 색상별 국제 표준 규격: 노란색(Check Engine, 조속 점검 요망) vs 빨간색(Stop Engine, 즉각 운행 중지)',
+      '노란색 엔진 경고등 단골 원인 3가지: 주유구 캡 덜 닫힘(증발가스 누설), 산소센서 불량, 캐니스터 퍼지 밸브(PCSV) 고착',
+      '빨간색 주전자(엔진오일 유압 경고등) 점등 시: 오일 부족이 아니라 유압 상실(오일펌프 사망), 즉시 시동 OFF 필수',
+      '빨간색 온도계(냉각수 오버히트) 점등 시: 라디에이터 터짐 또는 워터펌프 파손, 에어컨 끄고 히터 최대로 틀어 비상 방열 요령',
+      'OBD2 블루투스 스캐너를 글로브박스에 상시 구비하여 1분 만에 고장코드 소거 및 원인 진단하는 법',
+    ],
+  },
+  {
+    slug: 'car-alternator-generator-failure-symptoms',
+    title: '제너레이터(알터네이터) 발전기 사망 전조 증상과 배터리 경고등 전압 측정법',
+    category: 'maintenance',
+    heroEmoji: '⚡',
+    tags: ['알터네이터', '발전기', '배터리경고등', '충전전압', '레귤레이터'],
+    description: '주행 중 배터리 경고등 점등, 헤드램프 밝기 흔들림, 풀리 쇠 갈리는 소음 등 알터네이터 고장 징후와 재생 발전기 교체 비용을 다룹니다.',
+    hook: '배터리를 새로 갈았는데 3일 만에 또 방전되어 시동이 안 걸린다면 배터리 문제가 아니라 전기를 만들어 충전해 주는 알터네이터(발전기)가 사망한 것입니다. 주행 중 차가 멈추기 전 나타나는 4대 전조 증상을 짚어드립니다.',
+    outline: [
+      '알터네이터의 핵심 역할: 엔진 회전력으로 AC 교류 전기를 생성 ➔ 다이오드로 DC 직류 변환 ➔ 14V 전압 충전',
+      '발전기 사망 4대 전조 증상: 주행 중 배터리 경고등 점등, 오디오 앰프 잡음 및 실내등 깜빡임, 풀리 원웨이 클러치(OAP) 찌르르 소음',
+      '멀티미터 측정 기준: 시동 전(12.4~12.8V) vs 시동 후(13.8~14.5V 정상), 13.0V 미만이면 발전기 사망 확진',
+      '다이오드 팩/레귤레이터 단품 수리 vs 사설 리빌드 재생 발전기(12~20만 원) vs 순정 신품(35~50만 원) 가성비 비교',
+      '주행 중 알터네이터 고장 발생 시: 전장 기기(에어컨, 오디오, 블랙박스) 즉시 끄고 10km 이내 정비소 진입 요령',
+    ],
+  },
+  {
+    slug: 'catalytic-converter-theft-and-blockage',
+    title: '삼원 촉매장치 막힘 증상과 매캐한 유황 냄새·가속 불량 원인 분석',
+    category: 'maintenance',
+    heroEmoji: '🔥',
+    tags: ['촉매장치', '배기가스', '매연검사', '출력저하', '배기막힘'],
+    description: '배기 머플러에서 썩은 달걀 냄새가 나고 오르막길에서 악셀을 밟아도 60km/h를 못 넘기는 촉매 담채 녹아내림(Melt-down) 원인과 교체비 절약법입니다.',
+    hook: '배기구에서 식초나 유황 썩는 냄새가 진동하고 가속 페달을 끝까지 밟아도 RPM만 붕 뜨고 차가 뒤에서 당기는 것처럼 나가지 않는다면, 백금과 팔라듐으로 만들어진 고가의 촉매장치가 카본에 막혀 배기를 틀어막은 것입니다.',
+    outline: [
+      '삼원 촉매장치(TWC)의 정화 메커니즘: 백금·로듐·팔라듐 귀금속을 통해 탄화수소(HC), 일산화탄소(CO), 질소산화물(NOx) 동시 정화',
+      '촉매가 사망하는 3대 원인: 불완전 연소 미연소 가솔린 유입(후연소로 800도 초과 용융), 엔진오일 유입(애쉬 코팅), 노킹',
+      '촉매 막힘 실전 진단법: 배기구에 손을 대었을 때 배기 압력 맥동이 약함, 흡기 매니폴드 진공도 저하, 촉매 전후단 온도차 역전',
+      '종합정기검사 배출가스 검사 불합격 시 대처법: 촉매 클리닝 케미컬의 한계와 매연 정화 복원율',
+      '순정 촉매(100~200만 원) 대비 환경부 인증 사설 재생 촉매(30~50만 원) 장착 및 구조변경 적법성 검토',
+    ],
+  },
+  {
+    slug: 'egr-valve-soot-cleaning-diesel-gasoline',
+    title: 'EGR 밸브 카본 고착으로 인한 시동 꺼짐과 클리닝 vs 교체 주기 총정리',
+    category: 'maintenance',
+    heroEmoji: '💨',
+    tags: ['EGR밸브', '배기가스재순환', '카본슬러지', '엔진부조', '디젤정비'],
+    description: '배기가스 재순환 장치(EGR) 밸브가 열린 채 고착되었을 때 발생하는 저속 시동 꺼짐과 흡기 매니폴드 카본 퇴적 클리닝 시점을 설명합니다.',
+    hook: '신호 대기 후 출발하려는데 푸드득거리며 시동이 뚝 꺼지거나, 저속에서 심한 울컥거림이 발생한다면 EGR 밸브가 끈적한 카본 슬러지에 걸려 닫히지 않고 열린 채 고착된 전형적인 고장입니다.',
+    outline: [
+      'EGR(Exhaust Gas Recirculation) 작동 원리: 연소실 온도를 낮춰 질소산화물(NOx)을 억제하기 위해 배기가스 일부를 흡기로 재투입',
+      '밸브 고착 형태 2가지: 열림 고착(저속 산소 부족으로 시동 꺼짐/흑연), 닫힘 고착(연소실 과열 및 노킹 발생)',
+      '디젤 R엔진 vs 가솔린 T-GDI EGR 쿨러 및 밸브 카본 누적 패턴 차이',
+      'EGR 밸브 탈거 약품 세척(클리닝)이 가능한 경우와 모터 액추에이터 기어 파손으로 교체해야 하는 경우',
+      '흡기 밸브·매니폴드·EGR 쿨러 세트 클리닝 권장 주기(8~10만km)와 표준 공임 견적서',
+    ],
+  },
+  {
+    slug: 'car-oxygen-sensor-fuel-trim-diagnosis',
+    title: '산소센서(O2 센서) 고장으로 인한 연비 저하와 공연비 보정값(Fuel Trim) 판독',
+    category: 'maintenance',
+    heroEmoji: '📉',
+    tags: ['산소센서', '연비저하', '공연비', '스캐너데이터', '공임나라'],
+    description: '배기가스 잔류 산소량을 측정해 연료 분사량을 조절하는 산소센서(전단/후단)의 노후화 증상과 교체만으로 연비 2km/L 복원하는 팁입니다.',
+    hook: '평소보다 주유비가 15~20% 더 나오고 배기구에서 기름 냄새가 역하게 난다면, 산소센서가 배기가스 매연에 찌들어 엔진 컴퓨터(ECU)에 "산소가 많으니 연료를 더 쏴라"고 거짓 신호를 보내고 있을 확률이 90%입니다.',
+    outline: [
+      '산소센서(지르코니아 방식)의 작동 전압: 0.1V(희박) ~ 0.9V(농후) 사이를 1초에 2~3회 이상 진동해야 정상',
+      '전단 산소센서(공연비 피드백 제어) vs 후단 산소센서(촉매 정화 효율 감시)의 역할 차이',
+      '스캐너 데이터 판독: 단기 연료 보정값(STFT)과 장기 연료 보정값(LTFT)이 ±10%를 초과할 때의 연료 과다 분사 진단',
+      '산소센서 수명 주기(10~12만km)와 고착된 센서 산소센서 전용 소켓으로 헤드 손상 없이 탈거하는 법',
+      '모비스 순정품(6~10만 원) vs 보쉬(Bosch) OEM 제품 호환성과 공임나라 교체 공임(2~4만 원)',
+    ],
+  },
+  {
+    slug: 'car-radiator-leak-and-thermostat-stuck',
+    title: '라디에이터 미세 누수와 서모스탯(수온조절기) 고착 시 오버히트 대처법',
+    category: 'maintenance',
+    heroEmoji: '🌡️',
+    tags: ['라디에이터', '서모스탯', '냉각수누수', '오버히트', '수온게이지'],
+    description: '라디에이터 플라스틱 탱크 크랙 누수, 서모스탯 닫힘 고착으로 인한 수온 게이지 레드존 상승 시 엔진 헤드 가스켓 손상을 막는 응급조치입니다.',
+    hook: '주행 중 계기판의 냉각수 온도 바늘이 중간(85~90도)을 넘어 H(Hot) 레드존으로 치솟고 보닛 틈새로 하얀 수증기가 피어오른다면 즉시 대처하지 않을 경우 알루미늄 엔진 헤드가 뒤틀려 200만 원 이상의 보링 견적이 나옵니다.',
+    outline: [
+      '냉각 시스템 순환 원리: 엔진 ➔ 서모스탯(82도 개방) ➔ 라디에이터 상부 호스 ➔ 냉각핀 방열 ➔ 워터펌프 ➔ 엔진',
+      '서모스탯 닫힘 고착 증상: 상부 호스는 불타듯 뜨거운데 하부 호스는 차가운 상태로 엔진만 100도 초과 과열',
+      '라디에이터 탱크 크랙(미세 누수) 단골 부위: 알루미늄 코어와 플라스틱 사이드 탱크 접합부 압착 가스켓 경화',
+      '오버히트 발생 순간 대처 요령: 에어컨 즉시 OFF ➔ 히터 최고온도/최고풍량 가동 ➔ 안전지대 정차 후 공회전 상태로 수온 하강 대기 (절대 시동 바로 끄지 말 것)',
+      '라디에이터 캡 함부로 열면 안 되는 이유(100도 고압 증기 화상 위험)와 완전 냉각 후 보충법',
+    ],
+  },
+  {
+    slug: 'car-airbag-warning-light-clock-spring',
+    title: '에어백 경고등 점등 원인과 클럭스프링 단선 자가 진단 및 리콜 확인법',
+    category: 'maintenance',
+    heroEmoji: '🚨',
+    tags: ['에어백경고등', '클럭스프링', '핸들리모컨', '경적불량', '무상리콜'],
+    description: '핸들을 돌릴 때 핸들 리모컨 먹통, 클랙슨(경적) 불량과 함께 에어백 경고등이 켜지는 클럭스프링 단선 증상과 제조사 무상 보증 수리 요령입니다.',
+    hook: '핸들을 좌우로 돌리는데 갑자기 빨간색 에어백 경고등이 켜지고, 크락션을 눌러도 소리가 안 나며 볼륨 버튼이 먹통이 되었나요? 스티어링 휠 내부에서 배선을 릴처럼 감아주는 클럭스프링이 피로 파괴로 단선된 것입니다.',
+    outline: [
+      '클럭스프링(Clock Spring)의 구조: 회전하는 스티어링 휠과 고정된 차체 컬럼 사이에서 에어백/혼/리모컨 신호선을 전달하는 필름 케이블',
+      '클럭스프링 사망 3대 동반 증상: 에어백 경고등 점등(운전석 DAB 저항 과대), 경적(크락션) 작동 불가, 핸들 열선/크루즈 리모컨 오작동',
+      '자가 진단법: 핸들을 직진에 놓았을 땐 경적이 울리다가 반바퀴 돌리면 끊기는 현상 확인',
+      '현대·기아 YF쏘나타, 아반떼MD, 투싼ix 등 과거 다수 차종 클럭스프링 10년 평생보증 리콜 대상 조회법',
+      '부품대 2~3만 원으로 해결하는 DIY 교체 난이도(에어백 퓨즈 탈거 및 배터리 마이너스 단자 분리 필수 안전수칙)',
+    ],
+  },
+  {
+    slug: 'car-fuel-pump-and-filter-replacement',
+    title: '연료펌프 윙윙 소음과 연료필터(디젤/가솔린) 교체주기·수분 경고등 대처법',
+    category: 'maintenance',
+    heroEmoji: '⛽',
+    tags: ['연료펌프', '연료필터', '수분센서', '인젝터보호', '디젤고압펌프'],
+    description: '뒷좌석 바닥에서 들리는 연료 모터 고주파 소음, 겨울철 디젤 연료필터 동결로 인한 시동 불량 예방법과 카트리지 교체 주기를 정리했습니다.',
+    hook: '시동을 켤 때 뒷좌석 밑에서 "위잉~"하는 모터 소리가 유독 커지고 고속 주행 시 가속이 툭툭 끊기나요? 연료탱크 바닥에 깔린 저압 연료펌프가 막힌 필터 때문에 과부하를 받아 타들어가고 있다는 경고 신호입니다.',
+    outline: [
+      '연료 공급 라인 3단계: 연료탱크 저압모터 ➔ 연료필터(수분/이물질 여과) ➔ 엔진룸 고압펌프 ➔ 커먼레일 인젝터',
+      '디젤 연료필터의 치명적 중요성: 수분 유입 시 2,000바 고압펌프 쇳가루 발생으로 인젝터 4개 동시 사망(수리비 300만 원)',
+      '디젤 계기판 주유소 모양 수분 경고등 점등 시: 연료필터 하부 드레인 볼트를 풀어 물 빼는 응급 조치법',
+      '가솔린 연료필터(10만km) vs 디젤 연료필터 카트리지(3~4만km) 교체 주기 및 비용 비교',
+      '연료탱크 바닥 경고등(주황색 불) 들어올 때까지 타면 안 되는 이유: 연료펌프가 연료에 잠겨 냉각되는 구조적 특성',
+    ],
+  },
+  {
+    slug: 'car-cv-joint-boot-torn-clicking-noise',
+    title: '유턴 시 딱딱딱 소음의 주범 등속조인트(CV Joint) 고무 부트 파손과 교체 견적',
+    category: 'maintenance',
+    heroEmoji: '🔩',
+    tags: ['등속조인트', 'CV조인트', '유턴소음', '구리스누유', '하체정비'],
+    description: '핸들을 끝까지 꺾고 유턴하거나 지하주차장을 올라갈 때 바퀴 쪽에서 쇠 때리는 소음이 나는 등속조인트 베어링 손상 진단 및 재생품 교체 팁입니다.',
+    hook: '핸들을 한쪽으로 완전히 꺾고 유턴할 때 앞바퀴 쪽에서 "딱! 딱! 딱!"하는 금속 부딪히는 소리가 나나요? 휠 안쪽을 들여다보면 새카만 구리스가 떡처럼 튀어 묻어 있을 것입니다. 등속조인트 고무 부트가 찢어져 베어링이 갈려나간 것입니다.',
+    outline: [
+      '등속조인트(Constant Velocity Joint)의 역할: 변속기 동력을 바퀴로 전달하며 조향 각도와 서스펜션 상하 운동을 동시에 수용',
+      '고무 부트(고무 주름관) 파손 메커니즘: 주행 중 비틀림 피로와 돌튐으로 크랙 발생 ➔ 내부 몰리브덴 구리스 원심력 누출 ➔ 모래 유입으로 볼베어링 파손',
+      '자가 육안 점검: 휠 하우스 안쪽 및 쇼바 스프링 주변에 튀어있는 끈적한 검은색 구리스 흔적 확인',
+      '고무 부트만 교체(조기 발견 시 5만 원) vs 조인트 어셈블리 통째 교체(베어링 마모 시)',
+      '순정 신품(25~40만 원) 대비 품질 검증된 만도/사설 재생 등속조인트(8~12만 원) 가성비 선택 요령',
+    ],
+  },
+  {
+    slug: 'car-power-steering-oil-and-mdps-clunk',
+    title: '핸들 돌릴 때 뚝뚝 소음 — MDPS 플렉시블 커플링 무상수리와 파워오일 누유',
+    category: 'maintenance',
+    heroEmoji: '🎯',
+    tags: ['MDPS', '플렉시블커플링', '핸들소음', '파워스티어링', '조향장치'],
+    description: '정차 상태에서 핸들을 좌우로 살짝 흔들 때 딸깍거리는 유격 소음의 원인인 MDPS 커플링 마모와 유압식 파워오일 누유 구별법입니다.',
+    hook: '주차할 때 핸들을 돌리면 손끝으로 "뚝, 뚝"하는 불쾌한 이격 진동이 전해지고 톱니바퀴 부딪히는 소리가 나나요? 100원짜리 고무 부품 하나가 으깨져서 발생하는 현대·기아차 전동식 조향장치(MDPS)의 대표 고질병입니다.',
+    outline: [
+      'MDPS(전동식 파워 스티어링) vs 유압식 파워 스티어링의 조향 보조 메커니즘 차이',
+      '플렉시블 커플링(Flexible Coupling) 마모 원인: 모터와 컬럼 축 사이의 별 모양 고무가 경화되어 가루로 부서짐',
+      '자가 진단법: 시동 끈 상태에서 스티어링 휠을 좌우로 5도씩 흔들었을 때 틱틱/뚝뚝 유격 소음 발생 여부',
+      '현대·기아 서비스센터 MDPS 커플링 평생 무상보증 수리 대상 차종(아반떼HD/MD, YF쏘나타, K5, 싼타페DM 등)',
+      '유압식 차량(구형/대형차)의 파워스티어링 오일량 점검 및 고압 호스 누유로 인한 펌프 고주파 앵앵 소음 대처',
+    ],
+  },
 ];
 
 /* -------------------------------------------------------------- Topic Selector */
@@ -533,7 +693,18 @@ function getPublishedSlugs() {
   );
 }
 
-function selectNextTopic() {
+function getPublishedTitles() {
+  if (!existsSync(CONTENT_DIR)) return [];
+  return readdirSync(CONTENT_DIR)
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => {
+      const text = readFileSync(join(CONTENT_DIR, file), 'utf8');
+      const titleMatch = text.match(/title:\s*['"]?(.*?)['"]?\n/);
+      return titleMatch ? titleMatch[1].trim() : file;
+    });
+}
+
+async function selectNextTopic() {
   const published = getPublishedSlugs();
   const unposted = TOPICS.filter((t) => !published.has(t.slug));
 
@@ -541,16 +712,86 @@ function selectNextTopic() {
     return { ...unposted[0], isFresh: true };
   }
 
-  // Fallback: suffix version
+  // All curated topics are posted -> Dynamically invent a 100% brand new unique topic via Gemini
+  const dynamicTopic = await inventFreshTopicWithGemini();
+  if (dynamicTopic) {
+    return { ...dynamicTopic, isFresh: true };
+  }
+
+  // Pure fallback without duplicate titles
   const base = TOPICS[Math.floor(Math.random() * TOPICS.length)];
-  let v = 2;
-  while (published.has(`${base.slug}-v${v}`)) v++;
+  const timestamp = Date.now().toString().slice(-4);
   return {
     ...base,
-    slug: `${base.slug}-v${v}`,
-    title: `${base.title} (${v}차 업데이트)`,
+    slug: `${base.slug}-${timestamp}`,
+    title: `${base.title} — 실전 심층 분석`,
     isFresh: false,
   };
+}
+
+async function inventFreshTopicWithGemini() {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return null;
+
+  const existingTitles = getPublishedTitles().slice(0, 30);
+  const prompt = `당신은 자동차 전문 블로그 '오토가이드'의 수석 에디터입니다.
+현재 블로그에 이미 발행된 기존 글 제목 목록은 다음과 같습니다:
+${existingTitles.map((t, idx) => `${idx + 1}. ${t}`).join('\n')}
+
+위 기존 글 목록과 절대 겹치지 않는, 독자들의 검색 수요가 매우 높은 **100% 새로운 자동차 정비/구매/전기차/운전 전문 주제 1개**를 기획하세요.
+제목에 절대 '(2차 업데이트)'나 '(업데이트)' 같은 접미사를 붙이지 마세요.
+
+반드시 다음 JSON 형식으로만 순수 JSON 객체(마크다운 코드블록 없이)를 출력하세요:
+{
+  "slug": "영문-케밥-케이스-슬러그",
+  "title": "구체적인 문제와 해결책이 담긴 전문적인 글 제목",
+  "category": "maintenance 또는 buying 또는 eco 또는 driving 중 택1",
+  "heroEmoji": "주제에 맞는 이모지 1개",
+  "tags": ["태그1", "태그2", "태그3", "태그4"],
+  "description": "글 전체 핵심 내용을 2줄로 요약한 설명",
+  "hook": "독자의 호기심을 자극하고 실전 문제 상황을 제시하는 강렬한 도입부 훅 문장 2줄",
+  "outline": [
+    "1번 소주제 및 상세 설명",
+    "2번 소주제 및 상세 설명",
+    "3번 소주제 및 상세 설명",
+    "4번 소주제 및 상세 설명",
+    "5번 소주제 및 상세 설명"
+  ]
+}`;
+
+  const candidateModels = Array.from(
+    new Set([GEMINI_MODEL, 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash'])
+  );
+
+  for (const model of candidateModels) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.8, maxOutputTokens: 2048 },
+        }),
+        signal: AbortSignal.timeout(30_000),
+      });
+
+      if (!res.ok) continue;
+      const data = await res.json();
+      const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      const cleanJson = rawText.replace(/```(?:json)?\s*/gi, '').replace(/```\s*$/gi, '').trim();
+      const parsed = JSON.parse(cleanJson);
+
+      if (parsed?.title && parsed?.slug && parsed?.outline?.length) {
+        console.log(`[gemini] Dynamically invented fresh topic: "${parsed.title}"`);
+        return parsed;
+      }
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
 }
 
 /* -------------------------------------------------------------- Gemini Generator */
@@ -707,7 +948,7 @@ function renderTemplateBody(topic) {
 /* -------------------------------------------------------------- Main Publisher */
 
 async function main() {
-  const topic = selectNextTopic();
+  const topic = await selectNextTopic();
   console.log(`\n[auto-publish] Selected topic: ${topic.title} (${topic.slug})`);
 
   let body = await generateWithGemini(topic);
