@@ -1054,6 +1054,29 @@ function renderTemplateBody(topic) {
   return out.join('\n');
 }
 
+function yamlString(str) {
+  return `'${String(str ?? '').replace(/'/g, "''")}'`;
+}
+
+function yamlList(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) return '[]';
+  return `[${arr.map(yamlString).join(', ')}]`;
+}
+
+function getKstDateString() {
+  const formatter = new Intl.DateTimeFormat('ko-KR', {
+    timeZone: 'Asia/Seoul',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+  const parts = formatter.formatToParts(new Date());
+  const year = parts.find((p) => p.type === 'year')?.value;
+  const month = parts.find((p) => p.type === 'month')?.value;
+  const day = parts.find((p) => p.type === 'day')?.value;
+  return `${year}-${month}-${day}`;
+}
+
 /* -------------------------------------------------------------- Main Publisher */
 
 async function main() {
@@ -1068,14 +1091,18 @@ async function main() {
     source = 'template';
   }
 
-  const today = new Date().toISOString().slice(0, 10);
+  if (body.length < MIN_CHARS) {
+    throw new Error(`Generated body length (${body.length}) is below MIN_CHARS (${MIN_CHARS}) threshold.`);
+  }
+
+  const today = getKstDateString();
   const frontmatter = `---
-title: '${topic.title.replace(/'/g, "''")}'
-description: '${topic.description.replace(/'/g, "''")}'
+title: ${yamlString(topic.title)}
+description: ${yamlString(topic.description)}
 pubDate: ${today}
-category: '${topic.category}'
-tags: [${topic.tags.map((t) => `'${t}'`).join(', ')}]
-heroEmoji: '${topic.heroEmoji}'
+category: ${yamlString(topic.category)}
+tags: ${yamlList(topic.tags)}
+heroEmoji: ${yamlString(topic.heroEmoji)}
 featured: false
 ---
 
@@ -1093,5 +1120,5 @@ featured: false
 
 main().catch((err) => {
   console.error('[auto-publish] ❌ Error:', err);
-  process.exit(1);
+  process.exitCode = 1;
 });

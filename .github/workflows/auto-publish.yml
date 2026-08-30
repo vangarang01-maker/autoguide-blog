@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: auto-publish
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -40,7 +44,8 @@ jobs:
           if [ -n "$(git status --porcelain src/content/blog)" ]; then
             git add src/content/blog/
             git commit -m "chore(blog): auto publish new automotive encyclopedia article [skip ci]"
+            git pull --rebase origin main
             git push origin main
           else
-            console.log "No new articles generated."
+            echo "No new articles generated."
           fi
