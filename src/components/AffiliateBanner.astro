@@ -1,0 +1,102 @@
+---
+interface Props {
+  type?: 'insurance' | 'usedcar' | 'ebook' | 'accessories';
+  title?: string;
+  subtitle?: string;
+  badge?: string;
+  linkText?: string;
+  href?: string;
+}
+
+const {
+  type = 'insurance',
+  title,
+  subtitle,
+  badge = '실속 제휴',
+  linkText,
+  href = '#',
+} = Astro.props;
+
+const defaults = {
+  insurance: {
+    badge: '💰 절약 꿀팁',
+    title: '주요 다이렉트 자동차보험 1분 실시간 비교 견적',
+    subtitle: '동일 보장 기준 오프라인 대비 평균 15~18% 저렴! 블랙박스/주행거리 추가 특약 할인까지 한 번에 확인하세요.',
+    linkText: '다이렉트 최저가 비교하기 →',
+    href: 'https://m.e-insunet.or.kr/',
+    icon: '🛡️',
+    gradient: 'from-blue-600 to-indigo-700',
+  },
+  usedcar: {
+    badge: '🔍 실매물 인증',
+    title: '무사고·성능점검 100% 보증 중고차 실시간 시세',
+    subtitle: '침수·전손 이력 필터링 및 헛걸음 보상제를 지원하는 공인 진단 매물만 안전하게 비교하세요.',
+    linkText: '인증 중고차 시세 조회 →',
+    href: 'https://www.kcar.com',
+    icon: '🚗',
+    gradient: 'from-emerald-600 to-teal-700',
+  },
+  ebook: {
+    badge: '📘 공식 출간',
+    title: '[중고차 호구 탈출 100% 실전 가이드 & 셀프 검수표]',
+    subtitle: '정비기능장이 직접 쓴 딜러 협상 멘트, 침수차 감별 10대 포인트, 현장 출력용 체크리스트 포함!',
+    linkText: '전자책 패키지 상세보기 →',
+    href: '/ebook-guide',
+    icon: '📑',
+    gradient: 'from-amber-600 to-orange-700',
+  },
+  accessories: {
+    badge: '⚡ 필수 아이템',
+    title: '정비사가 직접 추천하는 가성비 차량용품 TOP 5',
+    subtitle: '4K 초고화질 블랙박스, 초고속 무선충전 거치대, 초미세먼지 차량용 에어컨 필터 특가 모음.',
+    linkText: '추천 차량용품 보러가기 →',
+    href: 'https://link.coupang.com',
+    icon: '🎁',
+    gradient: 'from-purple-600 to-pink-700',
+  }
+};
+
+const current = defaults[type] || defaults.insurance;
+const finalTitle = title || current.title;
+const finalSubtitle = subtitle || current.subtitle;
+const finalBadge = badge || current.badge;
+const finalLinkText = linkText || current.linkText;
+const finalHref = href !== '#' ? href : current.href;
+---
+
+<div class={`relative my-8 overflow-hidden rounded-2xl bg-gradient-to-br ${current.gradient} p-6 text-white shadow-xl transition-all duration-300 hover:shadow-2xl sm:p-8`}>
+  <div class="absolute -right-8 -bottom-8 text-8xl opacity-10 select-none pointer-events-none">
+    {current.icon}
+  </div>
+  
+  <div class="relative z-10">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="rounded-full bg-white/20 px-3 py-1 text-xs font-bold tracking-wide text-white backdrop-blur-md">
+        {finalBadge}
+      </span>
+      <span class="text-xs text-white/80">공식 파트너십 / E-E-A-T 검증</span>
+    </div>
+
+    <h3 class="text-xl sm:text-2xl font-black tracking-tight leading-snug">
+      {finalTitle}
+    </h3>
+    
+    <p class="mt-2 text-sm sm:text-base text-white/90 leading-relaxed max-w-2xl">
+      {finalSubtitle}
+    </p>
+
+    <div class="mt-5 flex flex-wrap items-center gap-4">
+      <a
+        href={finalHref}
+        target={finalHref.startsWith('http') ? '_blank' : '_self'}
+        rel={finalHref.startsWith('http') ? 'noopener noreferrer nofollow' : ''}
+        class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-steel-900 shadow-md transition-all hover:bg-steel-50 hover:scale-[1.02] active:scale-[0.98]"
+      >
+        <span>{finalLinkText}</span>
+      </a>
+      <span class="text-xs text-white/70">
+        * 본 페이지는 공익 정보 제공 및 소정의 수수료를 지원받을 수 있습니다.
+      </span>
+    </div>
+  </div>
+</div>

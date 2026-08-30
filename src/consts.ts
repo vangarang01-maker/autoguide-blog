@@ -67,6 +67,7 @@ export type CategorySlug = (typeof CATEGORIES)[number]['slug'];
 
 export const NAV_LINKS = [
   { href: '/', label: '홈' },
+  { href: '/calculator', label: '🧮 자동차 계산기' },
   { href: '/blog', label: '전체 글' },
   { href: '/about', label: '소개' },
   { href: '/contact', label: '문의' },
