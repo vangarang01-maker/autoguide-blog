@@ -28,8 +28,8 @@
   --color-steel-900: #323947;
   --color-steel-950: #14171f;
 
-  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
-    system-ui, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+    'Pretendard Variable', Pretendard, system-ui, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
 }
 
 @layer base {
