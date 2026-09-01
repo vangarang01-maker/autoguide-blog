@@ -17,7 +17,7 @@ ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 
 [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/)(HEV) 차량 운전자가 가장 많이 검색하는 질문 중 하나가 바로 "배터리 경고등이 떴는데, 300만 원 넘는 순정품을 바꿔야 하나요, 아니면 100만 원대 사설 재생을 써야 하나요?"입니다.
 
-오늘 정비 지침서(Shop Manual)의 기술적 데이터와 현장 작업 경험을 바탕으로, 하이브리드 고전압 배터리의 정확한 수명 메커니즘과 비용 효율적인 정비 솔루션을 명쾌하게 정리해 드리겠습니다.
+오늘 정비 지침서(Shop Manual)의 기술적 데이터와 현장 작업 경험을 바탕으로, [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 고전압 배터리의 정확한 수명 메커니즘과 비용 효율적인 정비 솔루션을 명쾌하게 정리해 드리겠습니다.
 
 ---
 

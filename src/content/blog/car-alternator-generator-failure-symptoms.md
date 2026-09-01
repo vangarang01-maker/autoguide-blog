@@ -43,7 +43,7 @@ ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
 [발전기 고장 진단 4단계 시그널]
 1단계: 찌르르~ 풀리 소음 발생 (OAP [클러치](/blog/dct-transmission-driving-tips/) 손상)
 2단계: 실내등 미세한 떨림 및 오디오 노이즈 (다이오드 브리지 리플 전압)
-3단계: 계기판 '배터리 붉은색 경고등' 점등 (충전 불능 상태)
+3단계: 계기판 '[배터리](/blog/ev-vs-hybrid-maintenance-cost/) 붉은색 경고등' 점등 (충전 불능 상태)
 4단계: 계기판 경고등 연쇄 점등 및 계기 바늘 춤춤 ➔ 시동 꺼짐 (최종 사망)
 ```
 
