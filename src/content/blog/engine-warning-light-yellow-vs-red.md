@@ -96,7 +96,7 @@ ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
 ### 주요 발생 원인
 * [라디에이터](/blog/car-radiator-leak-and-thermostat-stuck/) 상/하부 호스 터짐 및 냉각수 누수
 * 워터펌프 구동 벨트 끊어짐 또는 임펠러 파손
-* 서모스탯(Thermostat)이 열리지 않고 닫힌 상태로 고착
+* [서모스탯](/blog/car-radiator-leak-and-thermostat-stuck/)(Thermostat)이 열리지 않고 닫힌 상태로 고착
 
 ### 🚨 기능장의 현장 비상 방열 요령 (갓길 이동 전 30초 대처)
 주행 중 온도가 급상승할 때 안전한 곳으로 차를 세우기 직전까지 아래 조치를 취하세요.
