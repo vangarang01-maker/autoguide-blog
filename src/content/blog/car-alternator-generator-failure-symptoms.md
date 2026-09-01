@@ -134,7 +134,7 @@ ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
 
 ## 5. 주행 중 알터네이터 고장 발생 시 '10km 비상 생존 매뉴얼'
 
-달리는 도로 위에서 배터리 붉은색 경고등이 켜졌다면 당황하지 말고 아래 4단계 비상 행동 요령을 즉시 실행해야 합니다.
+달리는 도로 위에서 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 붉은색 경고등이 켜졌다면 당황하지 말고 아래 4단계 비상 행동 요령을 즉시 실행해야 합니다.
 
 ```
 [주행 중 발전기 멈춤 시 비상 대처 4단계]

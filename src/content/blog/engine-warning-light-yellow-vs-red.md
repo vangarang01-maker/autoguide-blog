@@ -110,7 +110,7 @@ ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
 [냉각계통 정비 항목별 견적 비교]
 • [서모스탯](/blog/car-radiator-leak-and-thermostat-stuck/) 단품 교체: 약 70,000원 ～120,000원
 • [라디에이터](/blog/car-radiator-leak-and-thermostat-stuck/) 전체 교체: 약 220,000원 ～380,000원
-• 헤드 가스켓 손상 시(오버히트 방치 후유증): 약 1,200,000원 ～2,000,000원
+• 헤드 가스켓 손상 시([오버히트](/blog/car-radiator-leak-and-thermostat-stuck/) 방치 후유증): 약 1,200,000원 ～2,000,000원
 ```
 
 ---

@@ -35,7 +35,7 @@ ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 
 * **정상 상태:** 모듈 간 전압 편차(Delta Voltage) **0.02V ～0.05V 내외**
 * **열화 진입:** 모듈 간 전압 편차 **0.15V 이상**
-* **고장 코드 발생:** 모듈 간 전압 편차 **0.30V 이상** 지속 시 `P0A80(고전압 배터리 팩 교체)` 또는 `P1A15` 진단 코드(DTC) 점등
+* **고장 코드 발생:** 모듈 간 전압 편차 **0.30V 이상** 지속 시 `P0A80(고전압 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 팩 교체)` 또는 `P1A15` 진단 코드(DTC) 점등
 
 공칭 전압 270V, 용량 6.5Ah 수준의 팩 내에서 단 하나의 모듈만 전압이 떨어져도 BMS(Battery Management System)는 배터리 전체 팩의 성능을 제한하고 보호 모드에 들어갑니다.
 
