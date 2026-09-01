@@ -6,7 +6,8 @@ category: 'eco'
 tags: ['하이브리드', '배터리수명', '재생배터리', '교체비용', 'HEV']
 heroEmoji: '🔋'
 featured: false
-heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost.svg'
+heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
+ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 ---
 
 # 하이브리드 고전압 배터리 수명의 진실: 순정 신품 vs 사설 재생 배터리 현장 정비 리포트

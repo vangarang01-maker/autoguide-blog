@@ -6,7 +6,8 @@ updatedDate: 2026-08-18
 category: 'buying'
 tags: ['취등록세', '중고차', '공채', '이전등록', '절세']
 heroEmoji: '🧾'
-heroImage: '/images/heroes/car-tax-and-registration-saving.svg'
+heroImage: '/images/heroes/car-tax-and-registration-saving-card.svg'
+ogImage: '/images/heroes/car-tax-and-registration-saving-card.svg'
 ---
 
 중고차 계약할 때 "차값 1,500만 원"만 보고 예산을 짜면 반드시 틀어집니다. **이전 비용으로 130만 원 안팎이 추가로 나가기 때문입니다.** 그런데 이 중 상당 부분은 아는 만큼 줄일 수 있습니다. 계산 구조부터 절약 포인트까지 순서대로 정리합니다.

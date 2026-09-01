@@ -7,7 +7,8 @@ category: 'buying'
 tags: ['중고차', '차대번호', '리콜', '성능점검기록부', '침수차', '사고차']
 heroEmoji: '🔍'
 featured: true
-heroImage: '/images/heroes/used-car-inspection-checklist.svg'
+heroImage: '/images/heroes/used-car-inspection-checklist-card.svg'
+ogImage: '/images/heroes/used-car-inspection-checklist-card.svg'
 ---
 
 중고차는 **정보 비대칭이 가장 심한 소비재**입니다. 판매자는 그 차를 알고, 구매자는 모릅니다. 이 격차를 줄이는 방법은 하나입니다. 정해진 순서대로 확인하는 것. 이 글은 계약 전 온라인 조회 5단계와 현장 12가지 점검을 실행 순서 그대로 정리했습니다. 캡처해서 들고 가셔도 됩니다.

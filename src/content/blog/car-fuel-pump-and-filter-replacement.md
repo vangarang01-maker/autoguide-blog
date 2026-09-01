@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['연료펌프', '연료필터', '수분센서', '인젝터보호', '디젤고압펌프']
 heroEmoji: '⛽'
 featured: false
-heroImage: '/images/heroes/car-fuel-pump-and-filter-replacement.svg'
+heroImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.svg'
+ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.svg'
 ---
 
 "보증기간이 지나서 저압 연료펌프와 필터 어셈블리를 통째로 교체해야 합니다. 공임 포함 65만 원입니다."

@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['촉매장치', '배기가스', '매연검사', '출력저하', '배기막힘']
 heroEmoji: '🔥'
 featured: false
-heroImage: '/images/heroes/catalytic-converter-theft-and-blockage.svg'
+heroImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.svg'
+ogImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.svg'
 ---
 
 # [오토가이드 리포트] 삼원 촉매장치 막힘 증상과 매캐한 유황 냄새·가속 불량 원인 완전 분석

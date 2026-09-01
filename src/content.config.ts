@@ -12,9 +12,11 @@ const blog = defineCollection({
     category: z.enum(['maintenance', 'buying', 'eco', 'driving']),
     tags: z.array(z.string()).default([]),
     heroEmoji: z.string().default('🚗'),
-    /** og:image 및 목록 썸네일. 스톡 사진 또는 자동 생성한 SVG 카드 */
+    /** 글 상단·목록 썸네일용. 스톡 사진이 있으면 사진, 없으면 SVG 카드 */
     heroImage: z.string().optional(),
     heroImageCredit: z.string().optional(),
+    /** 공유용 1200x630 카드. 제목이 박혀 있어 사진보다 전달력이 좋다 */
+    ogImage: z.string().optional(),
     featured: z.boolean().default(false),
     author: z.string().default('김도현'),
   }),

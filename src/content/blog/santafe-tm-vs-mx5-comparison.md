@@ -7,7 +7,8 @@ category: 'buying'
 tags: ['싼타페', 'TM', 'MX5', '하이브리드', '중고차', '신차비교']
 heroEmoji: '🚙'
 featured: true
-heroImage: '/images/heroes/santafe-tm-vs-mx5-comparison.svg'
+heroImage: '/images/heroes/santafe-tm-vs-mx5-comparison-card.svg'
+ogImage: '/images/heroes/santafe-tm-vs-mx5-comparison-card.svg'
 ---
 
 싼타페를 알아보는 분들이 가장 많이 묻는 질문은 하나로 정리됩니다. **"1,000만 원 이상 싼 4세대 TM 중고를 살까, 아니면 신형 MX5를 새로 뽑을까?"** 그리고 그 안에서 다시 **"2.5 가솔린 터보냐, 1.6 터보 하이브리드냐"** 로 갈립니다. 이 글은 카탈로그 숫자가 아니라, 두 세대를 모두 리프트에 올려본 정비 관점에서 비교합니다.

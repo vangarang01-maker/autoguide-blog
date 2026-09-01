@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['EGR밸브', '배기가스재순환', '카본슬러지', '엔진부조', '디젤정비']
 heroEmoji: '💨'
 featured: false
-heroImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline.svg'
+heroImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline-card.svg'
+ogImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline-card.svg'
 ---
 
 # [오토가이드] EGR 밸브 카본 고착으로 인한 시동 꺼짐: 클리닝 vs 교체 판정 기준 및 정비 비용 총정리
