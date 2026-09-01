@@ -800,94 +800,76 @@ ${existingTitles.map((t, idx) => `${idx + 1}. ${t}`).join('\n')}
 
 const WRITING_PATTERNS = [
   {
-    id: 'pattern_01_friend_sos',
-    name: '지인 SOS 긴급 상담형',
+    id: 'pattern_01_symptom_triage',
+    name: '증상 → 원인 분기 진단형',
     categoryMatch: ['maintenance', 'driving'],
-    desc: '지인의 다급한 고장 연락/센터 과잉 견적 ➔ "나라면 이렇게 진단해서 3만 원에 해결한다"',
-    instruction: `[도입부 패턴: 지인 SOS 긴급 상담형]
-- 시작은 지인/친구/후배가 겪은 실제 고장 상황과 센터의 비싼 견적에 당황해 도움을 요청해 온 카톡/통화 일화로 생생하게 시작하세요.
-- 15년 차 정비기능장의 시각에서 "과잉 정비를 피하고 진짜 원인을 찾아 저렴하고 확실하게 해결한 실전 비법"을 제시하며 본문으로 연결하세요.`,
+    instruction: `[구성: 증상 → 원인 분기 진단형]
+- 운전자가 실제로 겪는 증상(소음, 경고등, 진동 등)을 구체적으로 묘사하며 시작하세요.
+- 그 증상에서 갈라지는 원인 후보를 확률 순으로 나열하고, 각 후보를 배제하는 순서를 진단 트리처럼 제시하세요.
+- 절대 필자 개인의 정비 경험담이나 일화를 지어내지 마세요.`,
   },
   {
-    id: 'pattern_02_lift_inspection',
-    name: '정비 현장 리프트 실사형',
+    id: 'pattern_02_spec_reading',
+    name: '규격·지침서 수치 판독형',
     categoryMatch: ['maintenance', 'eco'],
-    desc: '리프트 위 실차 입고 ➔ 내시경/스캐너 실측 ➔ 인터넷 낭설 타파 및 부품 실태 공개',
-    instruction: `[도입부 패턴: 정비 현장 리프트 실사형]
-- 오늘 아침 특정 주행거리의 차량이 리프트에 입고된 생생한 작업 현장 묘사로 시작하세요. (보닛을 열고 부품을 뜯거나 내시경 카메라를 투입했을 때의 실제 상태)
-- 인터넷이나 동호회에 떠도는 잘못된 상식을 짚어주고, 리프트 위에서 확인한 진짜 공학적 원인과 해결책을 밝히며 본문으로 들어가세요.`,
+    instruction: `[구성: 규격·지침서 수치 판독형]
+- 제조사 정비 지침서와 공개 규격에 명시된 수치(토크 Nm, 전압 V, 압력, 교환 주기)를 기준으로 시작하세요.
+- 그 수치가 왜 그렇게 정해졌는지 공학적 근거를 설명하고, 규격을 벗어났을 때 나타나는 결과를 연결하세요.
+- 개인 경험 서술 대신 "지침서 기준", "공개된 규격상" 같은 근거 표현을 쓰세요.`,
   },
   {
-    id: 'pattern_03_cost_analyst',
-    name: '엑셀 실측 견적 & 손익분기점 계산형',
+    id: 'pattern_03_cost_breakdown',
+    name: '비용 구조 분해형',
     categoryMatch: ['buying', 'eco'],
-    desc: '통념 질문 던지기 ➔ 15년간 데이터 엑셀 시뮬레이션 ➔ 1원 단위 손익분기점 결론',
-    instruction: `[도입부 패턴: 엑셀 실측 견적 & 손익분기점 계산형]
-- "OO하면 차값 뽑는다는데 과연 진짜일까?" 같은 대중적 의문이나 통념을 도발적으로 던지며 시작하세요.
-- 15년간 정비 데이터와 실제 세금/유류비/감가상각을 엑셀로 1원 단위까지 정밀 시뮬레이션해 본 전문가의 계산 결과를 예고하며 명쾌한 가이드를 시작하세요.`,
+    instruction: `[구성: 비용 구조 분해형]
+- 총액이 아니라 부품비/공임/부대비용으로 쪼개서 어디서 금액 차이가 생기는지 보여주세요.
+- 직영 서비스센터·협력점·사설 정비소의 가격 구조 차이와 그 이유를 설명하세요.
+- 모든 금액은 "지역과 차종에 따라 달라지는 참고 범위"임을 명시하세요. 단정적 확정가로 쓰지 마세요.`,
   },
   {
-    id: 'pattern_04_used_car_escort',
-    name: '중고차 매매단지 동행 & 성능점검표 판독형',
-    categoryMatch: ['buying'],
-    desc: '매매단지 동행 ➔ 딜러의 무사고 주장 vs 볼트 풀림/실링 검수 ➔ 100만 원 깎는 비법',
-    instruction: `[도입부 패턴: 중고차 매매단지 동행형]
-- 지인이나 가족의 첫 중고차 구매를 돕기 위해 주말 매매단지에 동행했던 실제 에피소드로 시작하세요.
-- 딜러가 내민 '완전무사고' 성능점검표 뒤에 숨겨진 볼트 풀림 자국이나 실링 상태를 정비사 눈으로 발견했던 경험을 공유하며, 사기당하지 않는 점검법을 안내하세요.`,
+    id: 'pattern_04_checklist_procedure',
+    name: '순서형 실행 체크리스트',
+    categoryMatch: ['buying', 'driving'],
+    instruction: `[구성: 순서형 실행 체크리스트]
+- 독자가 그대로 따라 할 수 있는 실행 순서를 1단계부터 번호로 제시하세요.
+- 각 단계마다 "무엇을 보는가 / 정상 기준은 무엇인가 / 벗어나면 어떻게 하는가"를 붙이세요.
+- 공식 조회 사이트에서 확인 가능한 항목은 어디서 확인하는지 명시하세요.`,
   },
   {
-    id: 'pattern_05_diy_cost_saver',
-    name: '정비기능장의 DIY 공임 세이브형',
-    categoryMatch: ['maintenance', 'driving'],
-    desc: '센터 15만 원 공임 거품 지적 ➔ 집 지하주차장에서 20분 만에 끝내는 DIY 비법',
-    instruction: `[도입부 패턴: 정비기능장의 DIY 공임 세이브형]
-- 센터에 맡기면 공임 포함 수십만 원을 부르지만, 사실 공구 하나로 집 주차장에서 20분 만에 끝낼 수 있는 작업임을 밝히며 시작하세요.
-- 초보자도 부품 파손 없이 안전하게 성공할 수 있도록 필요한 품번, 필수 공구 규격, 주의사항을 차근차근 전수하는 톤으로 전개하세요.`,
-  },
-  {
-    id: 'pattern_06_before_after_case',
-    name: '입고 차량 Before & After 정밀 진단형',
-    categoryMatch: ['maintenance'],
-    desc: '특정 증상으로 입고된 차량 ➔ 찢어진 고품 상태 정밀 묘사 ➔ 신품 교체 후 완벽 해결',
-    instruction: `[도입부 패턴: 입고 차량 Before & After 정밀 진단형]
-- 특정 차종과 누적 주행거리(예: 11만 km)를 가진 차주분이 특이한 소음이나 이질감으로 샵에 찾아온 실제 케이스 스터디로 시작하세요.
-- 탈거한 고품 부품의 마모/균열 상태를 생생하게 묘사하고, 새 부품 체결 후 시운전에서 소음이 거짓말처럼 사라진 과정을 통해 올바른 교체 시점을 짚어주세요.`,
-  },
-  {
-    id: 'pattern_07_billing_audit',
-    name: '정비 견적서 팩트체크 & 호갱 탈출형',
-    categoryMatch: ['maintenance', 'buying'],
-    desc: '독자가 보낸 센터 견적서 해부 ➔ 꼭 갈아야 할 것 vs 과잉 정비 상술 항목 분리',
-    instruction: `[도입부 패턴: 정비 견적서 팩트체크형]
-- 얼마 전 독자나 손님이 정비소에서 받아온 80~100만 원대 정기점검 견적서를 메일로 받고 뜯어보았던 일화로 시작하세요.
-- 꼭 갈아야 하는 핵심 부품과 정비소의 마진용 불필요 세척/첨가제 항목을 날카롭게 분리해 주는 '호갱 방어 가이드' 톤으로 전개하세요.`,
-  },
-  {
-    id: 'pattern_08_recall_warranty',
-    name: '제조사 무상보증/리콜 추적형',
-    categoryMatch: ['maintenance', 'buying'],
-    desc: '보증 만료 유상 수리 통보 ➔ 제조사 비공개 TSB 지침으로 0원 무상 수리 받은 비법',
-    instruction: `[도입부 패턴: 제조사 무상보증/리콜 추적형]
-- "보증기간 끝났으니 유상 수리해야 합니다"라는 센터 말에 속을 뻔했던 운전자들의 억울한 사례로 시작하세요.
-- 제조사 내부 비공개 TSB(기술정보지침)와 무상보증 연장 규정을 근거로, 정당하게 0원에 수리받을 수 있는 정비 코드와 센터 대화법을 명쾌하게 알려주세요.`,
-  },
-  {
-    id: 'pattern_09_myth_busters',
-    name: '인터넷 속설 vs 공학적 팩트 검증형',
+    id: 'pattern_05_myth_check',
+    name: '통념 검증형',
     categoryMatch: ['driving', 'maintenance', 'eco'],
-    desc: '유튜브/동호회 낭설 제시 ➔ 계측 장비 실측 데이터와 공학 원리로 팩트 검증',
-    instruction: `[도입부 패턴: 인터넷 속설 vs 공학적 팩트 검증형]
-- 동호회나 유튜브 댓글 창에서 끝없이 싸우는 뜨거운 논쟁거리(예: 예열 5분 필수론, 연료첨가제 무용론 등)를 화두로 던지며 시작하세요.
-- 엔지니어링 원리와 실제 진단기 계측 데이터를 기반으로 낭설을 시원하게 반박하고, 기능장이 권장하는 진짜 정답을 정리하세요.`,
+    instruction: `[구성: 통념 검증형]
+- 널리 퍼진 속설을 먼저 제시하고, 어디까지가 사실이고 어디부터가 과장인지 나누세요.
+- 공학적 원리와 공개된 시험·규격 자료를 근거로 판정하세요.
+- "제가 측정해 보니" 같은 검증 불가능한 1인칭 근거를 쓰지 마세요.`,
   },
   {
-    id: 'pattern_10_seasonal_checklist',
-    name: '시즌별 5분 자가진단형',
+    id: 'pattern_06_comparison_matrix',
+    name: '선택지 비교 판단형',
+    categoryMatch: ['buying', 'eco'],
+    instruction: `[구성: 선택지 비교 판단형]
+- 두세 개 선택지를 조건별로 비교하고, "어떤 조건의 사람에게 어느 쪽이 맞는지"로 결론을 내리세요.
+- 손익분기점이 되는 주행거리·보유기간·연식을 숫자로 제시하세요.
+- 한쪽을 일방적으로 추천하지 말고 전제 조건을 밝히세요.`,
+  },
+  {
+    id: 'pattern_07_warranty_rights',
+    name: '보증·제도 활용형',
+    categoryMatch: ['maintenance', 'buying'],
+    instruction: `[구성: 보증·제도 활용형]
+- 제조사 보증, 리콜, 무상수리 캠페인, 성능점검 보증 등 독자가 쓸 수 있는 제도를 정리하세요.
+- 각 제도의 대상 조건, 신청 창구, 기한을 명확히 구분하세요.
+- 반드시 공식 조회처(자동차리콜센터 등)를 함께 안내하세요.`,
+  },
+  {
+    id: 'pattern_08_seasonal_prep',
+    name: '계절·상황별 대비형',
     categoryMatch: ['driving', 'maintenance'],
-    desc: '휴가철/한파/장마철 고속도로 갓길 멈춤 경고 ➔ 출발 전 보닛 열고 5분 점검',
-    instruction: `[도입부 패턴: 시즌별 5분 자가진단형]
-- 폭염/한파/장마철 등 극한 날씨나 명절/휴가 장거리 주행 전, 고속도로 갓길에서 멈춰 서지 않기 위한 경각심을 일깨우며 시작하세요.
-- 일반 운전자도 장비 없이 맨손으로 보닛만 열고 5분 만에 끝낼 수 있는 필수 점검 4단계를 짚어주는 든든한 안전 가이드로 전개하세요.`,
+    instruction: `[구성: 계절·상황별 대비형]
+- 특정 계절이나 상황(장거리, 폭염, 한파, 장마)에서 부하가 걸리는 계통을 짚으세요.
+- 출발 전 점검 항목과 이상 시 판단 기준을 함께 제시하세요.
+- 위험 상황에서의 대처 순서를 안전 우선으로 정리하세요.`,
   },
 ];
 
@@ -899,22 +881,27 @@ function selectWritingPattern(topic) {
 
 /* -------------------------------------------------------------- Gemini Generator */
 
-const GEMINI_SYSTEM_PROMPT = `당신은 대한민국 최고 권위의 15년 경력 공인 '자동차정비기능장'이자 오토가이드(AutoGuide) 편집장 김도현입니다.
-독자들은 자동차 정비, 중고차 구매, 하이브리드/전기차 관리 등에서 과잉 정비나 사기를 피하고 정확한 실측 데이터를 알고 싶어 합니다.
+const GEMINI_SYSTEM_PROMPT = `당신은 자동차 정비·구매 정보를 다루는 매체 '오토가이드(AutoGuide)'의 리서치 에디터입니다.
+제조사 정비 지침서, 공개 규격, 정부·공공기관 자료를 대조해 독자가 과잉 정비와 사기를 피하도록 돕는 것이 목적입니다.
 
-[작성 원칙 및 스토리텔링 지침]
-1. 글의 시작(첫 1~2문단)은 반드시 지정된 [도입부 패턴]에 맞춰 생생한 현장 경험담이나 실전 에피소드로 몰입감 있게 시작하세요.
-2. 글자 수 규격: 본문 전체 분량은 공백 포함 2,500자 ~ 4,500자 내외(반드시 2,000자 이상 6,000자 미만)로 가독성 높고 핵심적인 정보 밀도를 갖추어 작성하세요.
-3. 부품 명칭, 결함 증상, 압력/온도/치수(mm, Nm, V, Ah), 정비 공임 견적(원 단위)을 구체적인 숫자로 명시하세요.
-4. 정비 지침서(Shop Manual)와 현장 작업 노하우, 리프트에서 직접 확인한 생생한 실전 경험담 톤을 유지하세요.
-5. 마크다운 형식으로 작성하되, 맨 앞의 프론트매터(--- 영역)는 출력하지 말고 바로 본문부터 출력하세요.
-6. Markdown H2 (##), H3 (###) 소제목, 상세 비교 표(Table), 인용구 (> 💡 팁), 체크리스트를 풍부하게 활용하세요.
-7. 문장 끝은 친절하고 전문적인 존댓말(~합니다, ~하세요, ~됩니다)을 사용하세요.`;
+[반드시 지킬 것]
+1. 필자의 개인 정비 경력, 보유 자격증, 실명, 현장 일화를 절대 만들어내지 마세요.
+   "제가 리프트에서 확인한", "15년 경력의", "지인이 찾아왔는데" 같은 검증 불가능한 1인칭 경험 서술을 쓰지 마세요.
+   근거는 "제조사 정비 지침서 기준", "공개된 규격상", "공공기관 자료에 따르면" 형태로 제시하세요.
+2. 금액은 확정가가 아니라 범위로 쓰고, 지역·정비소 유형·차종에 따라 달라진다는 점을 본문에서 밝히세요.
+3. 확실하지 않은 수치·품번·TSB 번호는 지어내지 말고 생략하거나 "서비스센터에 차대번호로 확인" 으로 안내하세요.
+4. 모든 글은 서로 다른 구성을 가져야 합니다. 아래 두 제목은 절대 쓰지 마세요.
+   금지: "정비기능장의 한마디", "공임 및 부품 비용 비교 견적표", "정비 현장 핵심 점검 포인트"
+5. 같은 문단이나 같은 불릿을 글 안에서 반복하지 마세요. 모든 섹션은 서로 다른 내용을 담아야 합니다.
+6. 소제목 개수는 주제에 맞게 4~9개 사이에서 자유롭게 정하세요. 정해진 골격을 따르지 마세요.
+7. 분량은 공백 포함 2,500~4,500자. 부품 명칭과 수치(mm, Nm, V, Ah, km)는 구체적으로 쓰세요.
+8. 프론트매터(--- 영역)는 출력하지 말고 본문부터 출력하세요. 마크다운 H2/H3, 표, 체크리스트를 활용하세요.
+9. 문장은 존댓말(~합니다, ~하세요, ~됩니다)로 씁니다.`;
 
 async function generateWithGemini(topic) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
-    console.warn('[gemini] GEMINI_API_KEY is not set. Falling back to template.');
+    console.warn('[gemini] GEMINI_API_KEY가 설정되지 않았습니다. 발행을 중단합니다.');
     return null;
   }
 
@@ -995,7 +982,7 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
     }
   }
 
-  console.warn('[gemini] all models failed — falling back to template');
+  console.warn('[gemini] 모든 모델 실패 — 발행하지 않습니다');
   return null;
 }
 
@@ -1010,49 +997,12 @@ function normalizeMarkdown(text) {
     .replace(/~\s*(\d+)/g, '～$1');
 }
 
-/* -------------------------------------------------------------- Deterministic Template Fallback */
-
-function renderTemplateBody(topic) {
-  const out = [];
-
-  out.push(topic.hook, '');
-
-  out.push('## 핵심 요약 및 점검 항목', '');
-  topic.outline.forEach((item, i) => out.push(`${i + 1}. **${item.split(':')[0]}**: ${item.split(':')[1] || item}`));
-  out.push('');
-
-  out.push('## 1. 문제의 근본 원인과 정비 지침 분석', '');
-  out.push(
-    '현대적인 차량 시스템은 센서와 ECU의 피드백 제어로 작동하기 때문에, 단일 부품의 이상이 연쇄적인 출력 저하나 연비 하락으로 이어집니다. 공인 정비지침서의 진단 트리(Diagnostic Tree)를 따라 원인을 단계적으로 좁혀나가는 것이 과잉 정비를 막는 유일한 방법입니다.'
-  );
-  out.push('');
-
-  out.push('## 2. 실전 단계별 자가 점검 및 정비 가이드', '');
-  topic.outline.forEach((item, i) => {
-    out.push(`### 2.${i + 1} ${item.split(':')[0]}`, '');
-    out.push(
-      `${item}에 대한 세부 조치 사항입니다. 정비소 방문 전 운전자가 직접 상태를 확인하고 진단 스캐너 데이터나 게이지 수치를 기록해 두면 정비 상담 시 정확한 원인 파악과 합리적인 견적 산출이 가능합니다.`
-    );
-    out.push('');
-    out.push('> 💡 **정비기능장의 실전 팁**: 부품 교체 전 반드시 커넥터 접점 부식 여부와 접지 상태를 먼저 확인하세요. 단순 접촉 불량으로 멀쩡한 부품을 교체하는 사례가 현장에서 매우 흔합니다.');
-    out.push('');
-  });
-
-  out.push('## 3. 부품 견적 및 공임 비교 가이드', '');
-  out.push('| 정비 항목 | 순정 부품 가격 | 사설/OEM 부품 가격 | 표준 정비 공임 |');
-  out.push('| :--- | :--- | :--- | :--- |');
-  out.push('| 1단계 기본 점검 및 케미컬 시공 | 30,000 ~ 60,000원 | 15,000 ~ 30,000원 | 20,000 ~ 40,000원 |');
-  out.push('| 2단계 주요 소모품 어셈블리 교체 | 120,000 ~ 250,000원 | 80,000 ~ 150,000원 | 50,000 ~ 90,000원 |');
-  out.push('| 3단계 핵심 모듈 리빌드 및 어셈블리 | 500,000원 이상 | 300,000 ~ 450,000원 | 150,000 ~ 300,000원 |');
-  out.push('');
-
-  out.push('## 4. 정비 후 필수 사후 관리 수칙', '');
-  out.push(
-    '정비를 마친 후에는 즉시 고속 주행을 하기보다 50~100km 구간 동안 시내 주행을 통해 학습값(Adaptation Value)이 정상적으로 안착하는지 관찰해야 합니다. 이상 진동이나 경고등 재점등 여부를 꼼꼼히 모니터링하세요.'
-  );
-
-  return out.join('\n');
-}
+/* --------------------------------------------------------------------------
+ * 템플릿 폴백은 제거되었습니다 (2026-09-01).
+ * 기존 renderTemplateBody()는 개요 한 줄과 동일 문단을 5회 반복하는 껍데기 글을
+ * 생성해 사이트 전체 콘텐츠 품질을 떨어뜨렸습니다. Gemini 생성에 실패하면
+ * 빈 글을 발행하는 대신 그냥 실패시킵니다.
+ * -------------------------------------------------------------------------- */
 
 function yamlString(str) {
   return `'${String(str ?? '').replace(/'/g, "''")}'`;
@@ -1077,22 +1027,127 @@ function getKstDateString() {
   return `${year}-${month}-${day}`;
 }
 
+/* -------------------------------------------------------------- 품질 게이트 */
+
+/** 금지된 보일러플레이트 제목 — 과거 전 사이트에 복제되어 품질 문제를 일으킨 것들 */
+const BANNED_HEADINGS = [
+  '정비기능장의 한마디',
+  '공임 및 부품 비용 비교 견적표',
+  '정비 현장 핵심 점검 포인트',
+];
+
+/** 지어낸 1인칭 경력·자격 주장 */
+const BANNED_CLAIMS = [
+  '정비기능장',
+  '김도현',
+  '15년 경력',
+  '15년 차',
+  '제가 직접 확인',
+  '리프트에 올리고',
+];
+
+/**
+ * 발행 전 본문 검증. 문제가 있으면 사유 배열을 반환한다.
+ * 과거 폴백 템플릿이 같은 문단을 5회 반복한 껍데기 글을 대량 발행했기 때문에
+ * 중복 문단 검사를 가장 중요한 항목으로 둔다.
+ */
+function validateBody(body) {
+  const problems = [];
+
+  if (body.length < MIN_CHARS) {
+    problems.push(`본문 길이 ${body.length}자로 최소 기준 ${MIN_CHARS}자 미달`);
+  }
+
+  for (const h of BANNED_HEADINGS) {
+    if (body.includes(h)) problems.push(`금지된 보일러플레이트 제목 포함: "${h}"`);
+  }
+
+  for (const c of BANNED_CLAIMS) {
+    if (body.includes(c)) problems.push(`검증 불가능한 경력·자격 주장 포함: "${c}"`);
+  }
+
+  // 같은 문단(40자 이상)이 2회 이상 반복되면 껍데기 글로 판정
+  const paragraphs = body
+    .split('\n')
+    .map((l) => l.trim())
+    .filter((l) => l.length >= 40 && !l.startsWith('|') && !l.startsWith('#'));
+  const counts = new Map();
+  for (const p of paragraphs) counts.set(p, (counts.get(p) ?? 0) + 1);
+  for (const [p, n] of counts) {
+    if (n > 1) problems.push(`동일 문단 ${n}회 반복: "${p.slice(0, 40)}…"`);
+  }
+
+  // 고유 콘텐츠 비율 — 껍데기 글은 40%대로 떨어진다
+  const uniqueRatio = new Set(paragraphs).size / Math.max(paragraphs.length, 1);
+  if (paragraphs.length >= 5 && uniqueRatio < 0.9) {
+    problems.push(`고유 문단 비율 ${Math.round(uniqueRatio * 100)}% — 반복 콘텐츠 과다`);
+  }
+
+  const headingCount = (body.match(/^## /gm) ?? []).length;
+  if (headingCount < 3) problems.push(`H2 소제목 ${headingCount}개 — 구조 부실`);
+
+  return problems;
+}
+
+/** 카테고리별 공식 확인처 — 독자가 직접 검증할 수 있는 창구만 넣는다 */
+const OFFICIAL_SOURCES = {
+  maintenance: [
+    ['자동차리콜센터 — 차대번호로 미조치 리콜 조회', 'https://www.car.go.kr'],
+    ['한국교통안전공단 — 자동차검사 및 정비 기준', 'https://www.kotsa.or.kr'],
+    ['국가법령정보센터 — 자동차관리법 및 시행규칙', 'https://www.law.go.kr'],
+  ],
+  buying: [
+    ['카히스토리(보험개발원) — 사고·침수 이력 조회', 'https://www.carhistory.or.kr'],
+    ['자동차365 — 중고차 성능점검 및 매매 정보', 'https://www.car365.go.kr'],
+    ['자동차민원 대국민포털 — 등록·이전 민원', 'https://www.ecar.go.kr'],
+    ['위택스 — 자동차세·취득세 조회', 'https://www.wetax.go.kr'],
+  ],
+  eco: [
+    ['무공해차 통합누리집 — 보조금·충전 인프라 정보', 'https://ev.or.kr'],
+    ['자동차리콜센터 — 고전압 배터리 관련 리콜 조회', 'https://www.car.go.kr'],
+    ['한국교통안전공단 — 친환경차 검사 기준', 'https://www.kotsa.or.kr'],
+  ],
+  driving: [
+    ['한국교통안전공단 — 교통안전 및 운전 관련 기준', 'https://www.kotsa.or.kr'],
+    ['국토교통부 — 도로·자동차 정책 자료', 'https://www.molit.go.kr'],
+    ['자동차리콜센터 — 차량 결함 신고 및 조회', 'https://www.car.go.kr'],
+  ],
+};
+
+function buildSourceSection(category) {
+  const items = (OFFICIAL_SOURCES[category] ?? OFFICIAL_SOURCES.maintenance)
+    .map(([label, url]) => `- [${label}](${url})`)
+    .join('\n');
+  return [
+    '## 참고 · 직접 확인할 수 있는 공식 창구',
+    '',
+    '본문에 표기된 공임과 부품 비용은 지역, 정비소 유형(직영 서비스센터·협력점·사설), 차종과 연식에 따라 크게 달라지는 참고 범위입니다. 실제 견적은 2곳 이상에서 받아 비교하시고, 수리 전에 아래 창구에서 리콜·무상수리 대상 여부를 먼저 조회해 보시기 바랍니다.',
+    '',
+    items,
+    '',
+  ].join('\n');
+}
+
 /* -------------------------------------------------------------- Main Publisher */
 
 async function main() {
   const topic = await selectNextTopic();
   console.log(`\n[auto-publish] Selected topic: ${topic.title} (${topic.slug})`);
 
-  let body = await generateWithGemini(topic);
-  let source = 'gemini';
+  const body = await generateWithGemini(topic);
 
   if (!body) {
-    body = renderTemplateBody(topic);
-    source = 'template';
+    throw new Error(
+      'Gemini 생성에 실패했습니다. 템플릿 폴백은 껍데기 글을 만들어내므로 제거되었습니다. ' +
+        'GEMINI_API_KEY 설정과 모델 응답을 확인한 뒤 다시 실행하세요.',
+    );
   }
 
-  if (body.length < MIN_CHARS) {
-    throw new Error(`Generated body length (${body.length}) is below MIN_CHARS (${MIN_CHARS}) threshold.`);
+  const problems = validateBody(body);
+  if (problems.length > 0) {
+    console.error('[auto-publish] 품질 게이트 미통과 — 발행하지 않습니다:');
+    for (const p of problems) console.error(`  - ${p}`);
+    throw new Error(`품질 게이트 ${problems.length}건 위반`);
   }
 
   const today = getKstDateString();
@@ -1108,13 +1163,12 @@ featured: false
 
 `;
 
-  const fullContent = frontmatter + body + '\n';
+  const fullContent = frontmatter + body + '\n\n' + buildSourceSection(topic.category);
   const targetFile = join(CONTENT_DIR, `${topic.slug}.md`);
 
   writeFileSync(targetFile, fullContent, 'utf8');
 
   console.log(`[auto-publish] ✅ Successfully created: ${targetFile}`);
-  console.log(`  Source     : ${source}`);
   console.log(`  Total chars: ${fullContent.length}`);
 }
 

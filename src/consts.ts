@@ -14,19 +14,26 @@ export const ADSENSE_PUB_ID = 'ca-pub-7683326491314783';
 export const ADSENSE_CLIENT_NUMERIC = '7683326491314783';
 export const ADSENSE_SCRIPT_URL = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`;
 
-/** 운영자 / E-E-A-T */
+/** 운영자 / E-E-A-T
+ *  검증할 수 없는 개인 자격·경력을 내세우지 않습니다.
+ *  신뢰의 근거는 "누가 썼는가"가 아니라 "무엇을 근거로 썼고 어디서 확인할 수 있는가"에 둡니다. */
 export const AUTHOR = {
-  name: '김도현',
-  role: '자동차 정비기능장 · 오토가이드 편집장',
-  bio: '15년간 현대·기아 직영 서비스센터와 사설 정비소를 오가며 변속기·하이브리드 시스템 진단을 담당했습니다. 자동차정비기능장, 하이브리드 고전압 안전교육 이수. 정비 지침서와 실제 견적서를 함께 놓고 검증한 내용만 씁니다.',
-  email: 'contact@autoguide-pro.com',
-  credentials: [
-    '자동차정비기능장 (한국산업인력공단)',
-    '자동차진단평가사 2급',
-    '고전압 배터리 취급 안전교육 이수',
-    '누적 정비 상담 12,000건 이상',
+  name: "오토가이드 편집팀",
+  role: "자동차 정비·구매 정보 리서치",
+  bio: "오토가이드는 제조사 정비 지침서, 공개 규격 자료, 국토교통부·한국교통안전공단·보험개발원 등 공공기관 자료를 대조해 정리하는 자동차 정보 매체입니다. 개별 차량을 직접 정비하거나 진단하지 않으며, 모든 글은 독자가 같은 자료를 직접 확인할 수 있도록 공식 조회 창구를 함께 안내합니다.",
+  email: "contact@autoguide-pro.com",
+  /** 자격증이 아니라 편집 원칙입니다. 독자가 검증할 수 있는 약속만 적습니다. */
+  principles: [
+    "모든 글에 공식 확인 창구를 함께 표기합니다",
+    "공임·부품 비용은 확정가가 아닌 참고 범위로 표기합니다",
+    "직접 검증하지 않은 정비 경험담은 쓰지 않습니다",
+    "수리 전 리콜·무상수리 대상 여부 확인을 우선 안내합니다",
   ],
-};
+} as const;
+
+/** 본 매체는 정비 자격 보유자가 운영하지 않습니다. 실제 정비 판단은 정비소 진단을 따르십시오. */
+export const EDITORIAL_DISCLAIMER =
+  "오토가이드의 콘텐츠는 공개된 정비 지침과 공공기관 자료를 정리한 참고 정보입니다. 개별 차량의 상태를 진단하거나 정비를 대신하지 않으며, 실제 수리 여부와 방법은 반드시 정비소의 직접 진단을 따르시기 바랍니다.";
 
 export const CONTACT_EMAIL = 'contact@autoguide-pro.com';
 export const FOUNDED_YEAR = 2024;
