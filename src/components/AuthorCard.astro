@@ -15,16 +15,16 @@ import { AUTHOR } from '../consts';
     </div>
     <div class="min-w-0">
       <p class="text-xs font-semibold tracking-wider text-cobalt-600 uppercase dark:text-cobalt-300">
-        이 글을 쓴 사람
+        이 글의 출처와 편집 원칙
       </p>
       <p class="mt-1 text-lg font-bold text-steel-900 dark:text-white">{AUTHOR.name}</p>
       <p class="text-sm text-steel-500 dark:text-steel-400">{AUTHOR.role}</p>
       <p class="mt-3 text-sm leading-relaxed text-steel-600 dark:text-steel-300">{AUTHOR.bio}</p>
       <ul class="mt-4 flex flex-wrap gap-2">
         {
-          AUTHOR.credentials.map((c) => (
+          AUTHOR.principles.map((c) => (
             <li class="rounded-full border border-steel-200 bg-white px-2.5 py-1 text-xs text-steel-600 dark:border-steel-700 dark:bg-steel-950 dark:text-steel-300">
-              ✅ {c}
+              · {c}
             </li>
           ))
         }

@@ -72,18 +72,15 @@ const baseGraph: Record<string, unknown>[] = [
     },
   },
   {
-    '@type': 'Person',
+    // 실존 개인이 아닌 편집 조직을 저자로 선언한다.
+    // 검증 불가능한 개인 자격을 hasCredential 로 마크업하지 않는다.
+    '@type': 'Organization',
     '@id': `${SITE_URL}/#author`,
     name: AUTHOR.name,
-    jobTitle: AUTHOR.role,
     description: AUTHOR.bio,
     url: `${SITE_URL}/about`,
     email: AUTHOR.email,
-    hasCredential: AUTHOR.credentials.map((c) => ({
-      '@type': 'EducationalOccupationalCredential',
-      name: c,
-    })),
-    worksFor: { '@id': `${SITE_URL}/#organization` },
+    parentOrganization: { '@id': `${SITE_URL}/#organization` },
   },
 ];
 
