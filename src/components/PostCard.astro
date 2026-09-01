@@ -17,14 +17,29 @@ const minutes = Math.max(1, Math.round(post.body!.replace(/\s/g, '').length / 50
   <a
     href={`/blog/${post.id}/`}
     class:list={[
-      'grid shrink-0 place-items-center bg-gradient-to-br text-5xl',
-      cat.accent,
+      'grid shrink-0 place-items-center overflow-hidden bg-gradient-to-br text-5xl',
+      !post.data.heroImage && cat.accent,
       featured ? 'md:w-56 py-12 md:py-0' : 'py-10',
+      post.data.heroImage && (featured ? 'md:w-56 !py-0' : '!py-0'),
     ]}
     aria-hidden="true"
     tabindex="-1"
   >
-    <span class="drop-shadow-sm">{post.data.heroEmoji}</span>
+    {
+      post.data.heroImage ? (
+        <img
+          src={post.data.heroImage}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          width="1200"
+          height="630"
+          class="h-full w-full object-cover"
+        />
+      ) : (
+        <span class="drop-shadow-sm">{post.data.heroEmoji}</span>
+      )
+    }
   </a>
 
   <div class="flex flex-1 flex-col p-5">

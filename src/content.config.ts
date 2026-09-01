@@ -12,6 +12,9 @@ const blog = defineCollection({
     category: z.enum(['maintenance', 'buying', 'eco', 'driving']),
     tags: z.array(z.string()).default([]),
     heroEmoji: z.string().default('🚗'),
+    /** og:image 및 목록 썸네일. 스톡 사진 또는 자동 생성한 SVG 카드 */
+    heroImage: z.string().optional(),
+    heroImageCredit: z.string().optional(),
     featured: z.boolean().default(false),
     author: z.string().default('김도현'),
   }),

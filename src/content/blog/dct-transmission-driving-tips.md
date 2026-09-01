@@ -7,6 +7,7 @@ category: 'driving'
 tags: ['DCT', '변속기', '클러치', '주행습관', '정비']
 heroEmoji: '⚙️'
 featured: true
+heroImage: '/images/heroes/dct-transmission-driving-tips.svg'
 ---
 
 "저속에서 울컥거려요", "정체 구간에서 차가 밀리는 느낌이 나요", "언덕에서 뒤로 밀려요." DCT 차량 상담의 80%는 이 세 문장으로 시작합니다. 결론부터 말하면 **대부분은 고장이 아니라 DCT의 구조적 특성**이고, 나머지 20%는 잘못된 주행 습관이 만든 실제 마모입니다. 어느 쪽인지 구분하는 방법부터 정리합니다.

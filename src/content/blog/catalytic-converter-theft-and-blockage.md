@@ -6,6 +6,7 @@ category: 'maintenance'
 tags: ['촉매장치', '배기가스', '매연검사', '출력저하', '배기막힘']
 heroEmoji: '🔥'
 featured: false
+heroImage: '/images/heroes/catalytic-converter-theft-and-blockage.svg'
 ---
 
 # [오토가이드 리포트] 삼원 촉매장치 막힘 증상과 매캐한 유황 냄새·가속 불량 원인 완전 분석
@@ -111,6 +112,8 @@ featured: false
 | **총 정비 비용** | **1,300,000원 ～2,200,000원** | **400,000원 ～700,000원** | **300,000원 ～400,000원** |
 | **배출가스 통과** | 100% 통과 (보증 5년/10만km) | **합격 가능 (성능 인증)** | **불합격 (단속 대상)** |
 | **법적 적합성** | 자동차관리법 합법 | **환경부 인증제품 합법** | **대기환경보전법 위반 (형사처벌)** |
+
+![총 정비 비용 비교](/images/charts/catalytic-converter-theft-and-blockage-1.svg)
 
 > ⚠️ **주의: 미인증 직관 및 임의 개조 작업의 위험성**
 > 촉매 내부를 파내거나(일명 촉매 털기), 인증받지 않은 비규격 파이프를 용접하는 행위는 대기환경보전법 제91조에 의거하여 **1년 이하의 징역 또는 1,000만 원 이하의 벌금**에 처해집니다. 또한 정기 검사 불합격 및 엔진 경고등(P0420: Catalytic Converter System Efficiency Below Threshold)이 지속적으로 점등됩니다.

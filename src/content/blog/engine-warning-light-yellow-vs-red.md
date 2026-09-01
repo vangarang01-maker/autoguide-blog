@@ -6,6 +6,7 @@ category: 'maintenance'
 tags: ['엔진경고등', '오일경고등', '냉각수과열', 'OBD진단', '긴급견인']
 heroEmoji: '⚠️'
 featured: false
+heroImage: '/images/heroes/engine-warning-light-yellow-vs-red.svg'
 ---
 
 # 계기판 경고등 완벽 해부: 노란색 vs 빨간색 점등 시 즉시 정차해야 하는 긴급 상황 5가지

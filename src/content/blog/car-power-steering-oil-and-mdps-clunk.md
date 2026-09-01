@@ -6,6 +6,7 @@ category: 'maintenance'
 tags: ['MDPS', '플렉시블커플링', '핸들소음', '파워스티어링', '조향장치']
 heroEmoji: '🎯'
 featured: false
+heroImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk.svg'
 ---
 
 주차할 때 핸들을 돌리면 손끝으로 "뚝, 뚝"하는 불쾌한 이격 진동이 전해지고 톱니바퀴 부딪히는 소리가 나나요? 100원짜리 고무 부품 하나가 으깨져서 발생하는 현대·기아차 전동식 조향장치(MDPS)의 대표 고질병입니다.

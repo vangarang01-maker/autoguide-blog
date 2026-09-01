@@ -61,6 +61,7 @@ const articleSchema = {
   title={post.data.title}
   description={post.data.description}
   type="article"
+  image={post.data.heroImage}
   publishedTime={post.data.pubDate}
   modifiedTime={post.data.updatedDate ?? post.data.pubDate}
   keywords={post.data.tags}
@@ -127,6 +128,25 @@ const articleSchema = {
         <span>읽는 시간 약 {readingMinutes}분</span>
       </div>
     </header>
+
+    {
+      post.data.heroImage && (
+        <figure class="mt-7 max-w-3xl">
+          <img
+            src={post.data.heroImage}
+            alt={post.data.title}
+            width="1200"
+            height="630"
+            fetchpriority="high"
+            decoding="async"
+            class="w-full rounded-2xl border border-steel-200 dark:border-steel-800"
+          />
+          {post.data.heroImageCredit && (
+            <figcaption class="mt-2 text-xs text-steel-400">사진 {post.data.heroImageCredit}</figcaption>
+          )}
+        </figure>
+      )
+    }
 
     <AdSlot slot="4444444444" label="Sponsored" />
 

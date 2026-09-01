@@ -11,7 +11,10 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
-    "auto:publish": "node scripts/auto-publish.mjs"
+    "auto:publish": "node scripts/auto-publish.mjs && npm run gen:images",
+    "gen:charts": "node scripts/generate-diagrams.mjs",
+    "gen:heroes": "node scripts/generate-heroes.mjs",
+    "gen:images": "npm run gen:charts && npm run gen:heroes"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
