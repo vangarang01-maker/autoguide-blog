@@ -718,15 +718,13 @@ async function selectNextTopic() {
     return { ...dynamicTopic, isFresh: true };
   }
 
-  // Pure fallback without duplicate titles
-  const base = TOPICS[Math.floor(Math.random() * TOPICS.length)];
-  const timestamp = Date.now().toString().slice(-4);
-  return {
-    ...base,
-    slug: `${base.slug}-${timestamp}`,
-    title: `${base.title} — 실전 심층 분석`,
-    isFresh: false,
-  };
+  // 예전에는 여기서 기존 슬러그에 타임스탬프를 붙이고 제목에 "— 실전 심층 분석"을
+  // 덧붙여 발행했다. 그 결과로 같은 주제·같은 설명의 중복 글이 실제로 하나 올라갔다.
+  // 중복을 만드느니 발행하지 않는 편이 낫다.
+  throw new Error(
+    '큐레이션 토픽을 모두 소진했고 새 주제 생성에도 실패했습니다. ' +
+      'scripts/auto-publish.mjs 의 TOPICS 에 주제를 추가한 뒤 다시 실행하세요.',
+  );
 }
 
 async function inventFreshTopicWithGemini() {
@@ -782,10 +780,24 @@ ${existingTitles.map((t, idx) => `${idx + 1}. ${t}`).join('\n')}
       const cleanJson = rawText.replace(/```(?:json)?\s*/gi, '').replace(/```\s*$/gi, '').trim();
       const parsed = JSON.parse(cleanJson);
 
-      if (parsed?.title && parsed?.slug && parsed?.outline?.length) {
-        console.log(`[gemini] Dynamically invented fresh topic: "${parsed.title}"`);
-        return parsed;
+      if (!parsed?.title || !parsed?.slug || !parsed?.outline?.length) continue;
+
+      // 지어낸 슬러그가 기존 글과 겹치면 그 글을 덮어써 버린다.
+      // 제목이 거의 같은 경우도 사실상 중복 콘텐츠라 거른다.
+      const published = getPublishedSlugs();
+      if (published.has(parsed.slug)) {
+        console.warn(`[gemini] 지어낸 슬러그가 기존 글과 충돌: ${parsed.slug} — 재시도`);
+        continue;
       }
+      const norm = (t) => t.replace(/[\s\-—·,.()]/g, '');
+      const clash = getPublishedTitles().find((t) => norm(t) === norm(parsed.title));
+      if (clash) {
+        console.warn(`[gemini] 지어낸 제목이 기존 글과 동일: "${parsed.title}" — 재시도`);
+        continue;
+      }
+
+      console.log(`[gemini] Dynamically invented fresh topic: "${parsed.title}"`);
+      return parsed;
     } catch {
       continue;
     }

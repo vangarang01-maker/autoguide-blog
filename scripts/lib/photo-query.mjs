@@ -88,6 +88,12 @@ const TERM_QUERIES = [
   ['취등록세', 'car keys documents contract', 3],
   ['자동차세', 'car keys documents contract', 3],
   ['감가', 'used car dealership lot', 1],
+  ['쏘나타', 'sedan car parked street', 2],
+  ['K5', 'sedan car parked street', 2],
+  ['그랜저', 'sedan car parked street', 2],
+  ['아반떼', 'sedan car parked street', 2],
+  ['싼타페', 'suv car parked outdoor', 2],
+  ['SUV', 'suv car parked outdoor', 2],
 
   // 주행
   ['수막현상', 'car driving rain wet road', 3],
