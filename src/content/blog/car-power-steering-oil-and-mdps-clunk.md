@@ -7,8 +7,8 @@ tags: ['MDPS', '플렉시블커플링', '핸들소음', '파워스티어링', '�
 heroEmoji: '🎯'
 featured: false
 heroImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk.jpg'
-heroImageCredit: 'Sergey  Meshkov / Pexels'
-heroImageId: '8478262'
+heroImageCredit: 'Valeriia Miller / Pexels'
+heroImageId: '13633258'
 ogImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk-card.svg'
 ---
 

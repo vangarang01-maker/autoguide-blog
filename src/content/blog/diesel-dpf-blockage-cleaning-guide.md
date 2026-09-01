@@ -7,8 +7,8 @@ tags: ['디젤', 'DPF', '매연저감장치', 'DPF클리닝', '차압센서']
 heroEmoji: '💨'
 featured: false
 heroImage: '/images/heroes/diesel-dpf-blockage-cleaning-guide.jpg'
-heroImageCredit: 'Sergey  Meshkov / Pexels'
-heroImageId: '8478272'
+heroImageCredit: 'Khunkorn Laowisit / Pexels'
+heroImageId: '5233283'
 ogImage: '/images/heroes/diesel-dpf-blockage-cleaning-guide-card.svg'
 ---
 

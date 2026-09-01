@@ -9,7 +9,7 @@ heroEmoji: '📉'
 featured: false
 heroImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis.jpg'
 heroImageCredit: 'Artem Podrez / Pexels'
-heroImageId: '8985517'
+heroImageId: '8985604'
 ogImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis-card.svg'
 ---
 

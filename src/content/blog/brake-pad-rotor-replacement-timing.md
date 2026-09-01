@@ -7,8 +7,8 @@ tags: ['브레이크패드', '디스크로터', '핸들떨림', '브레이크오
 heroEmoji: '🛑'
 featured: false
 heroImage: '/images/heroes/brake-pad-rotor-replacement-timing.jpg'
-heroImageCredit: 'Artem Podrez / Pexels'
-heroImageId: '8985664'
+heroImageCredit: 'Erik Mclean / Pexels'
+heroImageId: '34277923'
 ogImage: '/images/heroes/brake-pad-rotor-replacement-timing-card.svg'
 ---
 

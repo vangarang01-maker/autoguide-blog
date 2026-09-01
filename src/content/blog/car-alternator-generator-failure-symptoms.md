@@ -8,8 +8,8 @@ tags: ['알터네이터', '발전기', '배터리경고등', '충전전압', '�
 heroEmoji: '⚡'
 featured: false
 heroImage: '/images/heroes/car-alternator-generator-failure-symptoms.jpg'
-heroImageCredit: 'Tim  Samuel / Pexels'
-heroImageId: '5835426'
+heroImageCredit: 'Hebert  Santos / Pexels'
+heroImageId: '3757226'
 ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
 ---
 
@@ -154,7 +154,7 @@ ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
 발전기가 중단되면 차량은 오직 순수 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 용량(보통 60Ah～80Ah)만으로 엔진의 점화 코일에 전기를 공급해야 합니다. 
 모든 전장 기기를 껐을 때, 정상 건강 상태의 배터리가 버틸 수 있는 **남은 주행 가능 시간은 약 15분～20분, 거리는 최대 10km～15km 내외**입니다. 
 
-이 시간이 지나면 배터리 전압이 9V 이하로 붕괴하며 주행 중 엔진 시동이 완전히 꺼지고, 파워 스티어링과 브레이크 진공 배력 장치가 먹통이 되어 대형 사고로 이어집니다. 고속도로라면 미련 없이 안전한 갓길에 차를 세우고 보험사 견인 서비스(렉카)를 부르는 것이 가장 안전한 선택입니다.
+이 시간이 지나면 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 전압이 9V 이하로 붕괴하며 주행 중 엔진 시동이 완전히 꺼지고, 파워 스티어링과 브레이크 진공 배력 장치가 먹통이 되어 대형 사고로 이어집니다. 고속도로라면 미련 없이 안전한 갓길에 차를 세우고 보험사 견인 서비스(렉카)를 부르는 것이 가장 안전한 선택입니다.
 
 ---
 

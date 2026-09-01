@@ -8,8 +8,8 @@ tags: ['GDI', '엔진오일', '오일감소', '피스톤링', '엔진보링']
 heroEmoji: '🛢️'
 featured: false
 heroImage: '/images/heroes/gdi-engine-oil-consumption-fix.jpg'
-heroImageCredit: 'Abasiakan / Pexels'
-heroImageId: '12555016'
+heroImageCredit: 'Gustavo Fring / Pexels'
+heroImageId: '6870297'
 ogImage: '/images/heroes/gdi-engine-oil-consumption-fix-card.svg'
 ---
 
@@ -29,7 +29,7 @@ GDI(Gasoline Direct Injection) 엔진은 기존 MPI(Multi Point Injection) 엔�
 
 *   **높은 연소 온도:** [GDI](/blog/engine-carbon-cleaning-guide/) 엔진은 압축 행정 말기에 연료를 분사하여 연소 효율을 높이는데, 이로 인해 연소실 벽면과 피스톤 크라운의 온도가 상승합니다.
 *   **연료 직접 분사:** 연료가 흡기 밸브를 거치지 않고 직접 연소실로 들어가기 때문에, 흡기 밸브에 연료 세정 효과가 없어 카본 슬러지가 쌓이기 쉽습니다. 이 카본은 연소실 내부로 유입되거나, 블로바이 가스와 함께 오일로 유입되어 오일의 오염을 가속화합니다.
-*   **불완전 연소 증가:** 고압 직분사 과정에서 미립화되지 못한 연료 입자나 연소 부산물이 피스톤 링 틈새를 통해 오일 팬으로 유입되면서 오일을 희석시키고 점도를 떨어뜨립니다.
+*   **불완전 연소 증가:** 고압 [직분사](/blog/engine-carbon-cleaning-guide/) 과정에서 미립화되지 못한 연료 입자나 연소 부산물이 피스톤 링 틈새를 통해 오일 팬으로 유입되면서 오일을 희석시키고 점도를 떨어뜨립니다.
 
 이러한 고온·고압 환경은 엔진오일의 산화와 질화를 촉진하여 슬러지 및 바니시(varnish) 생성을 가속화합니다. 제 리프트에서 엔진을 분해해보면, [GDI](/blog/engine-carbon-cleaning-guide/) 엔진의 피스톤 크라운과 밸브 주변에는 MPI 엔진보다 훨씬 두껍고 단단한 카본 층이 형성되어 있는 것을 자주 확인할 수 있습니다. 이 카본 층은 단순히 엔진 성능 저하를 넘어, 오일 소모의 핵심 원인이 됩니다.
 

@@ -8,8 +8,8 @@ tags: ['전기차', '하이브리드', '유지비', '배터리', '충전']
 heroEmoji: '🔋'
 featured: true
 heroImage: '/images/heroes/ev-vs-hybrid-maintenance-cost.jpg'
-heroImageCredit: 'Reinhard Bruckner / Pexels'
-heroImageId: '4678065'
+heroImageCredit: 'Hyundai Motor Group / Pexels'
+heroImageId: '12353734'
 ogImage: '/images/heroes/ev-vs-hybrid-maintenance-cost-card.svg'
 ---
 

@@ -8,8 +8,8 @@ tags: ['라디에이터', '서모스탯', '냉각수누수', '오버히트', '�
 heroEmoji: '🌡️'
 featured: false
 heroImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck.jpg'
-heroImageCredit: 'Artem Podrez / Pexels'
-heroImageId: '8985511'
+heroImageCredit: 'Erik Mclean / Pexels'
+heroImageId: '34351909'
 ogImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck-card.svg'
 ---
 

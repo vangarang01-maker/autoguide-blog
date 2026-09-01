@@ -8,8 +8,8 @@ tags: ['중고차', '차대번호', '리콜', '성능점검기록부', '침수�
 heroEmoji: '🔍'
 featured: true
 heroImage: '/images/heroes/used-car-inspection-checklist.jpg'
-heroImageCredit: 'Vitaly Gariev / Pexels'
-heroImageId: '36729871'
+heroImageCredit: 'Artem Podrez / Pexels'
+heroImageId: '8985615'
 ogImage: '/images/heroes/used-car-inspection-checklist-card.svg'
 ---
 

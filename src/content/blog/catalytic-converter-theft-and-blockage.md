@@ -8,8 +8,8 @@ tags: ['촉매장치', '배기가스', '매연검사', '출력저하', '배기�
 heroEmoji: '🔥'
 featured: false
 heroImage: '/images/heroes/catalytic-converter-theft-and-blockage.jpg'
-heroImageCredit: 'Jose Ricardo Barraza Morachis / Pexels'
-heroImageId: '4116225'
+heroImageCredit: 'Khunkorn Laowisit / Pexels'
+heroImageId: '5233284'
 ogImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.svg'
 ---
 

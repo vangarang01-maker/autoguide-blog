@@ -8,8 +8,8 @@ tags: ['하이브리드', '배터리수명', '재생배터리', '교체비용', 
 heroEmoji: '🔋'
 featured: false
 heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost.jpg'
-heroImageCredit: 'Mike Bird / Pexels'
-heroImageId: '110844'
+heroImageCredit: 'Ramesh Kambattan / Pexels'
+heroImageId: '38040016'
 ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 ---
 
@@ -45,7 +45,7 @@ ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 
 ## 2. 배터리 이상 시 나타나는 3가지 대표 초기 증상
 
-스캐너를 물리히지 않더라도 운전자가 일상 주행에서 느낄 수 있는 배터리 이상 징후는 명확합니다.
+스캐너를 물리히지 않더라도 운전자가 일상 주행에서 느낄 수 있는 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 이상 징후는 명확합니다.
 
 ### ① 주행 중 이유 없는 Engine ON (엔진 개입 급증)
 신호 대기 후 출발 시, 과거에는 시속 20～30km/h까지 EV 모드로 매끄럽게 가속되던 구간에서 출발 직후 곧바로 엔진이 굉음을 내며 개입합니다. 배터리의 실효 용량이 줄어들어 모터에 전류를 공급하지 못하기 때문입니다.

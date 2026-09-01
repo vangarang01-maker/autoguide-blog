@@ -7,8 +7,8 @@ tags: ['에어컨냄새', '에바클리닝', '에어컨필터', '블로우모터
 heroEmoji: '❄️'
 featured: false
 heroImage: '/images/heroes/car-ac-bad-smell-eva-cleaning.jpg'
-heroImageCredit: 'Jose Ricardo Barraza Morachis / Pexels'
-heroImageId: '4116221'
+heroImageCredit: 'Asm Arif / Pexels'
+heroImageId: '7540410'
 ogImage: '/images/heroes/car-ac-bad-smell-eva-cleaning-card.svg'
 ---
 

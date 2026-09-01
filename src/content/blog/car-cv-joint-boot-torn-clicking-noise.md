@@ -8,8 +8,8 @@ tags: ['등속조인트', 'CV조인트', '유턴소음', '구리스누유', '하
 heroEmoji: '🔩'
 featured: false
 heroImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise.jpg'
-heroImageCredit: 'Sergey  Meshkov / Pexels'
-heroImageId: '8478259'
+heroImageCredit: 'Grégory Costa / Pexels'
+heroImageId: '5733659'
 ogImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise-card.svg'
 ---
 
