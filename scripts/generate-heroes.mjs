@@ -73,7 +73,7 @@ async function fetchPool(category) {
       // landscape 변형은 1200x627 이라 오픈그래프 규격에 맞고 용량도 작다
       const src = p.src?.landscape ?? p.src?.large;
       if (src && !seen.has(p.id)) {
-        seen.set(p.id, { src, credit: `${p.photographer} / Pexels`, page: p.url });
+        seen.set(p.id, { id: String(p.id), src, credit: `${p.photographer} / Pexels`, page: p.url });
       }
     }
   }
@@ -125,7 +125,14 @@ if (wantsPhoto) {
 let photos = 0;
 let cards = 0;
 let skipped = 0;
-const cursor = new Map();
+
+/** 이미 배정된 Pexels 사진 ID. 실행을 나눠 돌려도 같은 사진이 두 번 쓰이지 않는다. */
+const takenIds = new Set();
+if (!FORCE) {
+  for (const p of posts) {
+    if (p.fm.data.heroImageId) takenIds.add(p.fm.data.heroImageId);
+  }
+}
 
 for (const p of posts) {
   const { slug, fm } = p;
@@ -145,21 +152,24 @@ for (const p of posts) {
 
   let heroImage = ogImage;
   let credit = null;
+  let photoId = null;
 
   const pool = pools.get(category) ?? [];
-  const i = cursor.get(category) ?? 0;
-  if (pool.length > 0) {
-    const pick = pool[i % pool.length];
-    cursor.set(category, i + 1);
+  const pick = pool.find((ph) => !takenIds.has(ph.id));
+  if (pick) {
+    takenIds.add(pick.id);
     const name = `${slug}.jpg`;
     try {
       if (!DRY) await download(pick.src, join(HERO_DIR, name));
       heroImage = `${HERO_URL}/${name}`;
       credit = pick.credit;
+      photoId = pick.id;
       photos++;
     } catch (err) {
       console.warn(`[hero] ${slug}: 내려받기 실패 (${err.message}) — 카드 사용`);
     }
+  } else if (pool.length > 0) {
+    console.warn(`[hero] ${slug}: ${category} 풀 ${pool.length}장을 모두 소진 — 카드 사용`);
   }
 
   if (DRY) {
@@ -170,11 +180,12 @@ for (const p of posts) {
   // frontmatter 갱신 (기존 이미지 필드는 걷어내고 다시 쓴다)
   const kept = fm.raw
     .split('\n')
-    .filter((l) => !/^(heroImage|heroImageCredit|ogImage):/.test(l))
+    .filter((l) => !/^(heroImage|heroImageCredit|heroImageId|ogImage):/.test(l))
     .join('\n');
   const added = [
     `heroImage: ${yaml(heroImage)}`,
     credit ? `heroImageCredit: ${yaml(credit)}` : null,
+    photoId ? `heroImageId: ${yaml(photoId)}` : null,
     `ogImage: ${yaml(ogImage)}`,
   ]
     .filter(Boolean)
