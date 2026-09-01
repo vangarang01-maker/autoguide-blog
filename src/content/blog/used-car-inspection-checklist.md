@@ -1,6 +1,8 @@
 ---
 title: '중고차 구매 12가지 필수 점검표 — 차대번호 리콜 조회부터 현장 실차 확인까지'
 description: '계약 전 집에서 끝내는 차대번호 리콜·이력 조회 5단계와, 현장에서 20분 만에 사고차·침수차를 걸러내는 12가지 점검 항목을 순서대로 정리했습니다. 성능점검기록부 읽는 법과 환불 규정까지 포함합니다.'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 category: 'buying'
 tags: ['중고차', '차대번호', '리콜', '성능점검기록부', '침수차', '사고차']
 heroEmoji: '🔍'
@@ -9,8 +11,6 @@ heroImage: '/images/heroes/used-car-inspection-checklist.jpg'
 heroImageCredit: 'Vitaly Gariev / Pexels'
 heroImageId: '36729871'
 ogImage: '/images/heroes/used-car-inspection-checklist-card.svg'
-pubDate: 2026-08-23
-updatedDate: 2026-09-01
 ---
 
 중고차는 **정보 비대칭이 가장 심한 소비재**입니다. 판매자는 그 차를 알고, 구매자는 모릅니다. 이 격차를 줄이는 방법은 하나입니다. 정해진 순서대로 확인하는 것. 이 글은 계약 전 온라인 조회 5단계와 현장 12가지 점검을 실행 순서 그대로 정리했습니다. 캡처해서 들고 가셔도 됩니다.

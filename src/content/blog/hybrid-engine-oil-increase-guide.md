@@ -1,6 +1,8 @@
 ---
 title: '하이브리드 엔진오일 증가(오일 상승) 원인과 겨울철 관리법 총정리'
 description: '하이브리드 차량에서 유독 자주 보고되는 엔진오일 증가 현상의 원리를 연료 희석 관점에서 설명하고, 게이지 판독법·위험 수위 기준·겨울철 예방 주행법·교환 주기까지 실측 기준으로 정리했습니다.'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 category: 'maintenance'
 tags: ['하이브리드', '엔진오일', '연료희석', '겨울철관리', '정비']
 heroEmoji: '🛢️'
@@ -9,8 +11,6 @@ heroImage: '/images/heroes/hybrid-engine-oil-increase-guide.jpg'
 heroImageCredit: 'Sergey  Meshkov / Pexels'
 heroImageId: '8478232'
 ogImage: '/images/heroes/hybrid-engine-oil-increase-guide-card.svg'
-pubDate: 2026-08-23
-updatedDate: 2026-09-01
 ---
 
 [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 차주 커뮤니티에서 겨울마다 반복되는 글이 있습니다. **"엔진오일이 줄어드는 게 아니라 늘었어요."** 게이지 F선을 넘어 위쪽까지 묻어나고, 오일 냄새에서 휘발유 냄새가 납니다. 고장이 아닐 수도 있지만, 방치하면 엔진 손상으로 직결되는 현상입니다. 원인과 판단 기준을 정확히 잡아드립니다.
