@@ -899,6 +899,20 @@ const GEMINI_SYSTEM_PROMPT = `당신은 자동차 정비·구매 정보를 다�
 8. 프론트매터(--- 영역)는 출력하지 말고 본문부터 출력하세요. 마크다운 H2/H3, 표, 체크리스트를 활용하세요.
 9. 문장은 존댓말(~합니다, ~하세요, ~됩니다)로 씁니다.`;
 
+/**
+ * 과부하(503)·쿼터(429) 응답은 잠깐 뒤 풀리는 경우가 많다.
+ * 곧바로 다음 모델로 넘기면 멀쩡한 상위 모델을 놓친다.
+ */
+async function fetchWithRetry(url, init, retries = 1) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch(url, init);
+    if (res.ok || attempt >= retries) return res;
+    if (res.status !== 503 && res.status !== 429) return res;
+    console.warn(`[gemini] HTTP ${res.status} — 20초 후 재시도 (${attempt + 1}/${retries})`);
+    await new Promise((r) => setTimeout(r, 20_000));
+  }
+}
+
 async function generateWithGemini(topic) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -934,14 +948,15 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
     try {
-      const res = await fetch(url, {
+      const res = await fetchWithRetry(url, {
         method: 'POST',
         headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text: `${GEMINI_SYSTEM_PROMPT}\n\n${prompt}` }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 8192 },
+          // 한국어는 토큰 효율이 낮다. 9,000자 목표에 8192 토큰이면 MAX_TOKENS 로 잘린다.
+          generationConfig: { temperature: 0.7, maxOutputTokens: 32768 },
         }),
-        signal: AbortSignal.timeout(90_000),
+        signal: AbortSignal.timeout(180_000),
       });
 
       if (!res.ok) {
