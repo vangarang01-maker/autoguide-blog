@@ -1,8 +1,6 @@
 ---
 title: 'GDI 직분사 엔진 카본 누적 증상과 흡기 밸브 클리닝 완전 가이드'
 description: 'GDI 엔진에만 카본이 쌓이는 구조적 이유, 초기 증상 7가지, 워터·케미컬·호두껍질 블라스팅 방식별 비용과 효과 비교, 예방 주행법과 주기까지 정비 현장 기준으로 정리했습니다.'
-pubDate: 2026-06-20
-updatedDate: 2026-08-20
 category: 'maintenance'
 tags: ['GDI', '카본', '흡기밸브', '클리닝', '직분사', '정비']
 heroEmoji: '🧼'
@@ -10,6 +8,8 @@ heroImage: '/images/heroes/engine-carbon-cleaning-guide.jpg'
 heroImageCredit: 'Sergey  Meshkov / Pexels'
 heroImageId: '8478213'
 ogImage: '/images/heroes/engine-carbon-cleaning-guide-card.svg'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 ---
 
 "연비가 예전 같지 않고, 아침 시동 때 부르릉 떨려요. 그런데 정비소에서는 이상 없다고 합니다." **주행거리 6만~10만 km 사이 [GDI](/blog/gdi-engine-oil-consumption-fix/) 차량**에서 가장 많이 나오는 상담입니다. 대부분 흡기 밸브 카본 누적입니다. 왜 GDI만 이 문제를 겪는지부터 짚어야 대처법이 보입니다.

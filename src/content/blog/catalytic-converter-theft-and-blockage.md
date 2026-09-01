@@ -2,6 +2,7 @@
 title: '삼원 촉매장치 막힘 증상과 매캐한 유황 냄새·가속 불량 원인 분석'
 description: '배기 머플러에서 썩은 달걀 냄새가 나고 오르막길에서 악셀을 밟아도 60km/h를 못 넘기는 촉매 담채 녹아내림(Melt-down) 원인과 교체비 절약법입니다.'
 pubDate: 2026-08-27
+updatedDate: 2026-09-01
 category: 'maintenance'
 tags: ['촉매장치', '배기가스', '매연검사', '출력저하', '배기막힘']
 heroEmoji: '🔥'

@@ -1,8 +1,6 @@
 ---
 title: '중고차 취등록세 계산법과 부대비용 절약 가이드 — 100만 원 아끼는 순서'
 description: '중고차 취득세율 7%의 실제 계산 구조, 과세표준(시가표준액) 적용 원리, 공채 매입과 즉시 할인, 이전대행 수수료 절감, 감면 대상까지 실제 금액 예시로 정리했습니다.'
-pubDate: 2026-05-26
-updatedDate: 2026-08-18
 category: 'buying'
 tags: ['취등록세', '중고차', '공채', '이전등록', '절세']
 heroEmoji: '🧾'
@@ -10,6 +8,8 @@ heroImage: '/images/heroes/car-tax-and-registration-saving.jpg'
 heroImageCredit: 'Erik Mclean / Pexels'
 heroImageId: '12700837'
 ogImage: '/images/heroes/car-tax-and-registration-saving-card.svg'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 ---
 
 중고차 계약할 때 "차값 1,500만 원"만 보고 예산을 짜면 반드시 틀어집니다. **이전 비용으로 130만 원 안팎이 추가로 나가기 때문입니다.** 그런데 이 중 상당 부분은 아는 만큼 줄일 수 있습니다. 계산 구조부터 절약 포인트까지 순서대로 정리합니다.

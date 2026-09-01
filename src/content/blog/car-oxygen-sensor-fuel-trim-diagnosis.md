@@ -2,6 +2,7 @@
 title: '산소센서(O2 센서) 고장으로 인한 연비 저하와 공연비 보정값(Fuel Trim) 판독'
 description: '배기가스 잔류 산소량을 측정해 연료 분사량을 조절하는 산소센서(전단/후단)의 노후화 증상과 교체만으로 연비 2km/L 복원하는 팁입니다.'
 pubDate: 2026-08-29
+updatedDate: 2026-09-01
 category: 'maintenance'
 tags: ['산소센서', '연비저하', '공연비', '스캐너데이터', '공임나라']
 heroEmoji: '📉'

@@ -1,7 +1,6 @@
 ---
 title: '하이브리드 고전압 배터리 수명과 사설 재생 배터리 교체 비용 비교'
 description: '10년 20만km를 넘긴 하이브리드 차량의 고전압 배터리 열화 증상과 제조사 순정 교체 vs 사설 모듈 밸런싱 수리 비용을 비교했습니다.'
-pubDate: 2026-07-20
 category: 'eco'
 tags: ['하이브리드', '배터리수명', '재생배터리', '교체비용', 'HEV']
 heroEmoji: '🔋'
@@ -10,6 +9,8 @@ heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost.jpg'
 heroImageCredit: 'Mike Bird / Pexels'
 heroImageId: '110844'
 ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 ---
 
 # 하이브리드 고전압 배터리 수명의 진실: 순정 신품 vs 사설 재생 배터리 현장 정비 리포트

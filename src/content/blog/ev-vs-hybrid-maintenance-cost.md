@@ -1,8 +1,6 @@
 ---
 title: '하이브리드 vs 전기차 5년 실질 유지비 — 배터리 관리까지 숫자로 비교'
 description: '연 15,000km 기준 하이브리드와 전기차의 5년 총소유비용을 유류비, 정비비, 세금, 보험, 감가까지 항목별로 계산했습니다. 고전압 배터리 수명 관리법과 손익분기 주행거리도 함께 정리합니다.'
-pubDate: 2026-07-05
-updatedDate: 2026-08-14
 category: 'eco'
 tags: ['전기차', '하이브리드', '유지비', '배터리', '충전']
 heroEmoji: '🔋'
@@ -11,6 +9,8 @@ heroImage: '/images/heroes/ev-vs-hybrid-maintenance-cost.jpg'
 heroImageCredit: 'Reinhard Bruckner / Pexels'
 heroImageId: '4678065'
 ogImage: '/images/heroes/ev-vs-hybrid-maintenance-cost-card.svg'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 ---
 
 "전기차가 유지비 싸다면서요?" 맞기도 하고 틀리기도 합니다. **충전 환경과 연간 주행거리에 따라 결론이 정반대로 뒤집힙니다.** 이 글은 감성적인 비교 대신 연 15,000km, 5년 보유를 전제로 항목별 금액을 계산합니다. 계산 근거를 모두 밝혀두었으니 본인 조건에 숫자만 바꿔 넣으세요.

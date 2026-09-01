@@ -2,6 +2,7 @@
 title: 'EGR 밸브 카본 고착으로 인한 시동 꺼짐과 클리닝 vs 교체 주기 총정리'
 description: '배기가스 재순환 장치(EGR) 밸브가 열린 채 고착되었을 때 발생하는 저속 시동 꺼짐과 흡기 매니폴드 카본 퇴적 클리닝 시점을 설명합니다.'
 pubDate: 2026-08-28
+updatedDate: 2026-09-01
 category: 'maintenance'
 tags: ['EGR밸브', '배기가스재순환', '카본슬러지', '엔진부조', '디젤정비']
 heroEmoji: '💨'

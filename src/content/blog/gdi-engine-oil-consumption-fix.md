@@ -1,7 +1,6 @@
 ---
 title: 'GDI 엔진오일 감소 원인과 피스톤 링 고착 해결 가이드'
 description: '현대·기아 세타2 및 감마 GDI 엔진의 만성 오일 소모 원인을 분석하고, 플러싱 케미컬 시공부터 쇼트엔진 교체 보증 기준까지 정리했습니다.'
-pubDate: 2026-07-11
 category: 'maintenance'
 tags: ['GDI', '엔진오일', '오일감소', '피스톤링', '엔진보링']
 heroEmoji: '🛢️'
@@ -10,6 +9,8 @@ heroImage: '/images/heroes/gdi-engine-oil-consumption-fix.jpg'
 heroImageCredit: 'Abasiakan / Pexels'
 heroImageId: '12555016'
 ogImage: '/images/heroes/gdi-engine-oil-consumption-fix-card.svg'
+pubDate: 2026-08-23
+updatedDate: 2026-09-01
 ---
 
 [엔진오일](/blog/hybrid-engine-oil-increase-guide/) 교체 후 3,000km밖에 안 탔는데 게이지 F선에서 L선 밑으로 뚝 떨어졌다면 단순 누유가 아닙니다. GDI 엔진 특유의 오일 링 고착과 실린더 스크래치 메커니즘을 알아야 불필요한 보링 비용 300만 원을 아낄 수 있습니다.
