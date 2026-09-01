@@ -7,8 +7,8 @@ tags: ['쏘나타', 'DN8', 'K5', 'DL3', '중고차비교']
 heroEmoji: '🚗'
 featured: false
 heroImage: '/images/heroes/sonata-vs-k5-used-car-comparison.jpg'
-heroImageCredit: 'Erik Mclean / Pexels'
-heroImageId: '12700837'
+heroImageCredit: 'Took A Snap / Pexels'
+heroImageId: '19315391'
 ogImage: '/images/heroes/sonata-vs-k5-used-car-comparison-card.svg'
 ---
 

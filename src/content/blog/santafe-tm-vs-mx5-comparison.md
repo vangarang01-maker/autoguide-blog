@@ -8,8 +8,8 @@ tags: ['싼타페', 'TM', 'MX5', '하이브리드', '중고차', '신차비교']
 heroEmoji: '🚙'
 featured: true
 heroImage: '/images/heroes/santafe-tm-vs-mx5-comparison.jpg'
-heroImageCredit: 'Kindel Media / Pexels'
-heroImageId: '9799998'
+heroImageCredit: 'Erik Mclean / Pexels'
+heroImageId: '4257579'
 ogImage: '/images/heroes/santafe-tm-vs-mx5-comparison-card.svg'
 ---
 
