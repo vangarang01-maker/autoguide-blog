@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 332" width="720" height="332" role="img" aria-label="차급별 침수 피해 복원 예상 비용 (부품대 + 공임 포함 범위)">
+  <style>
+    .bg    { fill: #f8fafc; }
+    .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .lbl   { fill: #475569; font: 500 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .val   { fill: #0f172a; font: 600 12px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .track { fill: #e2e8f0; }
+    .bar   { fill: #2563eb; }
+    .range { fill: #2563eb; opacity: .32; }
+    .note  { fill: #94a3b8; font: 400 11px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg    { fill: #0f172a; }
+      .ttl   { fill: #f1f5f9; }
+      .lbl   { fill: #94a3b8; }
+      .val   { fill: #f1f5f9; }
+      .track { fill: #1e293b; }
+      .bar   { fill: #60a5fa; }
+      .range { fill: #60a5fa; opacity: .32; }
+      .note  { fill: #64748b; }
+    }
+  </style>
+  <rect class="bg" width="720" height="332" rx="10"/>
+  <text class="ttl" x="24" y="30">차급별 침수 피해 복원 예상 비용 (부품대 + 공임 포함 범위)</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차</text>
+  <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
+  <rect class="range" x="210.8" y="57" width="18.2" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="20.8" height="18" rx="4"/>
+  <text class="val" x="590" y="68">80만원~150만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">준중형</text>
+  <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
+  <rect class="range" x="221.2" y="99" width="26.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="31.2" height="18" rx="4"/>
+  <text class="val" x="590" y="110">120만원~220만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">중형</text>
+  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
+  <rect class="range" x="236.8" y="141" width="36.4" height="18" rx="4"/>
+  <rect class="bar" x="190" y="141" width="46.8" height="18" rx="4"/>
+  <text class="val" x="590" y="152">180만원~320만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">대형/SUV</text>
+  <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
+  <rect class="range" x="255.0" y="183" width="52.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="183" width="65.0" height="18" rx="4"/>
+  <text class="val" x="590" y="194">250만원~450만원</text>
+  <text class="lbl" x="178" y="236" text-anchor="end">수입 준중형/중형</text>
+  <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
+  <rect class="range" x="307.0" y="225" width="91.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="225" width="117.0" height="18" rx="4"/>
+  <text class="val" x="590" y="236">450만원~800만원</text>
+  <text class="lbl" x="178" y="278" text-anchor="end">수입 대형/Luxury</text>
+  <rect class="track" x="190" y="267" width="390" height="18" rx="4"/>
+  <rect class="range" x="398.0" y="267" width="182.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="267" width="208.0" height="18" rx="4"/>
+  <text class="val" x="590" y="278">800만원~1,500만원</text>
+  <text class="note" x="24" y="322">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+</svg>
