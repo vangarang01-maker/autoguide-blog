@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 218" width="720" height="218" role="img" aria-label="노란색 엔진 경고등(Check Engine) 단골 원인 TOP 3">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="ahp" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+  <style>
+    .bg  { fill: #f8fafc; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .nd  { fill: #0f172a; font: 600 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .ttl { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .arw { stroke: #2563eb; stroke-width: 2; }
+    .ahp { fill: #2563eb; }
+    @media (prefers-color-scheme: dark) {
+      .bg  { fill: #0f172a; }
+      .box { fill: #1e293b; stroke: #334155; }
+      .nd  { fill: #f1f5f9; }
+      .ttl { fill: #f1f5f9; }
+      .arw { stroke: #60a5fa; }
+      .ahp { fill: #60a5fa; }
+    }
+  </style>
+  <rect class="bg" width="720" height="218" rx="10"/>
+  <text class="ttl" x="24" y="30">노란색 엔진 경고등(Check Engine) 단골 원인 TOP 3</text>
+  <line class="arw" x1="235" y1="80" x2="251" y2="80" marker-end="url(#ah)"/>
+  <line class="arw" x1="467" y1="80" x2="483" y2="80" marker-end="url(#ah)"/>
+  <line class="arw" x1="591" y1="114" x2="591" y2="135" marker-end="url(#ah)"/>
+  <line class="arw" x1="483" y1="170" x2="467" y2="170" marker-end="url(#ah)"/>
+  <rect class="box" x="24" y="50" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="127" y="85">계기판 점등</tspan>
+  </text>
+  <rect class="box" x="256" y="50" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="359" y="75.5">주유구 캡 확인(딸깍 소리</tspan>
+    <tspan x="359" y="94.5">닫기)</tspan>
+  </text>
+  <rect class="box" x="488" y="50" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="591" y="85">OBD2 진단기 연결</tspan>
+  </text>
+  <rect class="box" x="488" y="140" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="591" y="175">고장코드(DTC) 확인</tspan>
+  </text>
+  <rect class="box" x="256" y="140" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="359" y="175">부품 교체</tspan>
+  </text>
+</svg>

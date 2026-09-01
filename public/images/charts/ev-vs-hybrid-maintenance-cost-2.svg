@@ -41,5 +41,5 @@
   <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="225" width="292.5" height="18" rx="4"/>
   <text class="val" x="590" y="236">15만원</text>
-  <text class="note" x="24" y="280">지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+  <text class="note" x="24" y="280">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
 </svg>

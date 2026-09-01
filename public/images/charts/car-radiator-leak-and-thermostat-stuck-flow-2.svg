@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 218" width="720" height="218" role="img" aria-label="라디에이터 캡 절대 함부로 열지 마세요!">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="ahp" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+  <style>
+    .bg  { fill: #f8fafc; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .nd  { fill: #0f172a; font: 600 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .ttl { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .arw { stroke: #2563eb; stroke-width: 2; }
+    .ahp { fill: #2563eb; }
+    @media (prefers-color-scheme: dark) {
+      .bg  { fill: #0f172a; }
+      .box { fill: #1e293b; stroke: #334155; }
+      .nd  { fill: #f1f5f9; }
+      .ttl { fill: #f1f5f9; }
+      .arw { stroke: #60a5fa; }
+      .ahp { fill: #60a5fa; }
+    }
+  </style>
+  <rect class="bg" width="720" height="218" rx="10"/>
+  <text class="ttl" x="24" y="30">라디에이터 캡 절대 함부로 열지 마세요!</text>
+  <line class="arw" x1="235" y1="80" x2="251" y2="80" marker-end="url(#ah)"/>
+  <line class="arw" x1="467" y1="80" x2="483" y2="80" marker-end="url(#ah)"/>
+  <line class="arw" x1="591" y1="114" x2="591" y2="135" marker-end="url(#ah)"/>
+  <line class="arw" x1="483" y1="170" x2="467" y2="170" marker-end="url(#ah)"/>
+  <rect class="box" x="24" y="50" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="127" y="75.5">고온/고압 상태 (1.1 bar,</tspan>
+    <tspan x="127" y="94.5">110℃)</tspan>
+  </text>
+  <rect class="box" x="256" y="50" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="359" y="85">라디에이터 캡 급격히 개방</tspan>
+  </text>
+  <rect class="box" x="488" y="50" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="591" y="85">압력 급감</tspan>
+  </text>
+  <rect class="box" x="488" y="140" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="591" y="165.5">냉각수 순간 폭발적</tspan>
+    <tspan x="591" y="184.5">비등(Boiling)</tspan>
+  </text>
+  <rect class="box" x="256" y="140" width="206" height="60" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="359" y="165.5">100℃ 이상의 고온 증기 분출</tspan>
+    <tspan x="359" y="184.5">(3도 화상 위험)</tspan>
+  </text>
+</svg>

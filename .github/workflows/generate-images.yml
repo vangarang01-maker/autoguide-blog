@@ -40,6 +40,9 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: node scripts/generate-heroes.mjs ${{ inputs.force_photos && '--force' || '' }}
 
+      - name: Generate contextual internal links
+        run: node scripts/generate-links.mjs
+
       - name: Verify build
         run: npm run build
 

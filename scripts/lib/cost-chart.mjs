@@ -107,7 +107,7 @@ const fmt = (n) =>
     : `${n.toLocaleString('ko-KR')}원`;
 
 /** 범위 막대 차트 SVG. 뷰어 테마를 따라가도록 prefers-color-scheme 을 내장한다. */
-export function renderCostChart({ data, caption }) {
+export function renderCostChart({ data, caption, basis }) {
   const W = 720;
   const padL = 190;
   const padR = 140;
@@ -167,7 +167,7 @@ export function renderCostChart({ data, caption }) {
   <rect class="bg" width="${W}" height="${H}" rx="10"/>
   <text class="ttl" x="24" y="30">${esc(caption)}</text>
 ${bars}
-  <text class="note" x="24" y="${H - 10}">지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+  <text class="note" x="24" y="${H - 10}">${esc(basis ? basis + ' · ' : '')}지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
 </svg>
 `;
 }
