@@ -9,6 +9,7 @@ heroEmoji: '⚙️'
 featured: true
 heroImage: '/images/heroes/dct-transmission-driving-tips.jpg'
 heroImageCredit: 'Caio Cezar / Pexels'
+heroImageId: '34521712'
 ogImage: '/images/heroes/dct-transmission-driving-tips-card.svg'
 ---
 

@@ -8,6 +8,7 @@ heroEmoji: '🛑'
 featured: false
 heroImage: '/images/heroes/brake-pad-rotor-replacement-timing.jpg'
 heroImageCredit: 'Artem Podrez / Pexels'
+heroImageId: '8985664'
 ogImage: '/images/heroes/brake-pad-rotor-replacement-timing-card.svg'
 ---
 

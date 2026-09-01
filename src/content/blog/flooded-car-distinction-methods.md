@@ -7,7 +7,8 @@ tags: ['중고차', '침수차', '카히스토리', '중고차사기', '실차�
 heroEmoji: '🌊'
 featured: false
 heroImage: '/images/heroes/flooded-car-distinction-methods.jpg'
-heroImageCredit: 'Erik Mclean / Pexels'
+heroImageCredit: 'Vitaly Gariev / Pexels'
+heroImageId: '36729862'
 ogImage: '/images/heroes/flooded-car-distinction-methods-card.svg'
 ---
 

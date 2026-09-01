@@ -8,6 +8,7 @@ tags: ['취등록세', '중고차', '공채', '이전등록', '절세']
 heroEmoji: '🧾'
 heroImage: '/images/heroes/car-tax-and-registration-saving.jpg'
 heroImageCredit: 'Erik Mclean / Pexels'
+heroImageId: '12700837'
 ogImage: '/images/heroes/car-tax-and-registration-saving-card.svg'
 ---
 

@@ -7,7 +7,8 @@ tags: ['에어백경고등', '클럭스프링', '핸들리모컨', '경적불량
 heroEmoji: '🚨'
 featured: false
 heroImage: '/images/heroes/car-airbag-warning-light-clock-spring.jpg'
-heroImageCredit: 'Artem Podrez / Pexels'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
+heroImageId: '8478201'
 ogImage: '/images/heroes/car-airbag-warning-light-clock-spring-card.svg'
 ---
 

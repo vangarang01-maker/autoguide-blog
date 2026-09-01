@@ -9,6 +9,7 @@ heroEmoji: '🔋'
 featured: true
 heroImage: '/images/heroes/ev-vs-hybrid-maintenance-cost.jpg'
 heroImageCredit: 'Reinhard Bruckner / Pexels'
+heroImageId: '4678065'
 ogImage: '/images/heroes/ev-vs-hybrid-maintenance-cost-card.svg'
 ---
 

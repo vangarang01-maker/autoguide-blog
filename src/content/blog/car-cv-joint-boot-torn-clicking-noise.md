@@ -8,6 +8,7 @@ heroEmoji: '🔩'
 featured: false
 heroImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise.jpg'
 heroImageCredit: 'Sergey  Meshkov / Pexels'
+heroImageId: '8478259'
 ogImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise-card.svg'
 ---
 

@@ -7,7 +7,8 @@ tags: ['자동차보험', '다이렉트보험', '보험료절약', '마일리지
 heroEmoji: '💰'
 featured: false
 heroImage: '/images/heroes/direct-auto-insurance-saving-tricks.jpg'
-heroImageCredit: 'Erik Mclean / Pexels'
+heroImageCredit: 'Pixabay / Pexels'
+heroImageId: '164634'
 ogImage: '/images/heroes/direct-auto-insurance-saving-tricks-card.svg'
 ---
 

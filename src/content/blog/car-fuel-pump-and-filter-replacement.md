@@ -7,7 +7,8 @@ tags: ['연료펌프', '연료필터', '수분센서', '인젝터보호', '디�
 heroEmoji: '⛽'
 featured: false
 heroImage: '/images/heroes/car-fuel-pump-and-filter-replacement.jpg'
-heroImageCredit: 'Tim  Samuel / Pexels'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
+heroImageId: '8478223'
 ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.svg'
 ---
 

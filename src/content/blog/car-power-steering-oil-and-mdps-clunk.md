@@ -8,6 +8,7 @@ heroEmoji: '🎯'
 featured: false
 heroImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk.jpg'
 heroImageCredit: 'Sergey  Meshkov / Pexels'
+heroImageId: '8478262'
 ogImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk-card.svg'
 ---
 

@@ -8,6 +8,7 @@ heroEmoji: '🌡️'
 featured: false
 heroImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck.jpg'
 heroImageCredit: 'Artem Podrez / Pexels'
+heroImageId: '8985511'
 ogImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck-card.svg'
 ---
 

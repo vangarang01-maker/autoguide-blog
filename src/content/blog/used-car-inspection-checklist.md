@@ -9,6 +9,7 @@ heroEmoji: '🔍'
 featured: true
 heroImage: '/images/heroes/used-car-inspection-checklist.jpg'
 heroImageCredit: 'Vitaly Gariev / Pexels'
+heroImageId: '36729871'
 ogImage: '/images/heroes/used-car-inspection-checklist-card.svg'
 ---
 

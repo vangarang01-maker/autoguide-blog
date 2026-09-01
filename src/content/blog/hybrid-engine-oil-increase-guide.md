@@ -9,6 +9,7 @@ heroEmoji: '🛢️'
 featured: true
 heroImage: '/images/heroes/hybrid-engine-oil-increase-guide.jpg'
 heroImageCredit: 'Sergey  Meshkov / Pexels'
+heroImageId: '8478232'
 ogImage: '/images/heroes/hybrid-engine-oil-increase-guide-card.svg'
 ---
 

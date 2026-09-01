@@ -7,7 +7,8 @@ tags: ['엔진경고등', '오일경고등', '냉각수과열', 'OBD진단', '�
 heroEmoji: '⚠️'
 featured: false
 heroImage: '/images/heroes/engine-warning-light-yellow-vs-red.jpg'
-heroImageCredit: 'Sergey  Meshkov / Pexels'
+heroImageCredit: 'Andrea Piacquadio / Pexels'
+heroImageId: '3807517'
 ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
 ---
 
