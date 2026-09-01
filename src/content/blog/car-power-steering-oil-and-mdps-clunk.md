@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['MDPS', '플렉시블커플링', '핸들소음', '파워스티어링', '조향장치']
 heroEmoji: '🎯'
 featured: false
-heroImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk-card.svg'
+heroImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk.jpg'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
 ogImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk-card.svg'
 ---
 

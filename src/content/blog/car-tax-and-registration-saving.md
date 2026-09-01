@@ -6,7 +6,8 @@ updatedDate: 2026-08-18
 category: 'buying'
 tags: ['취등록세', '중고차', '공채', '이전등록', '절세']
 heroEmoji: '🧾'
-heroImage: '/images/heroes/car-tax-and-registration-saving-card.svg'
+heroImage: '/images/heroes/car-tax-and-registration-saving.jpg'
+heroImageCredit: 'Erik Mclean / Pexels'
 ogImage: '/images/heroes/car-tax-and-registration-saving-card.svg'
 ---
 

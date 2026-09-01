@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['에어백경고등', '클럭스프링', '핸들리모컨', '경적불량', '무상리콜']
 heroEmoji: '🚨'
 featured: false
-heroImage: '/images/heroes/car-airbag-warning-light-clock-spring-card.svg'
+heroImage: '/images/heroes/car-airbag-warning-light-clock-spring.jpg'
+heroImageCredit: 'Artem Podrez / Pexels'
 ogImage: '/images/heroes/car-airbag-warning-light-clock-spring-card.svg'
 ---
 

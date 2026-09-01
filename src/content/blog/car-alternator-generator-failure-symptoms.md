@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['알터네이터', '발전기', '배터리경고등', '충전전압', '레귤레이터']
 heroEmoji: '⚡'
 featured: false
-heroImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
+heroImage: '/images/heroes/car-alternator-generator-failure-symptoms.jpg'
+heroImageCredit: 'Jose Ricardo Barraza Morachis / Pexels'
 ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
 ---
 

@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['EGR밸브', '배기가스재순환', '카본슬러지', '엔진부조', '디젤정비']
 heroEmoji: '💨'
 featured: false
-heroImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline-card.svg'
+heroImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline.jpg'
+heroImageCredit: 'Artem Podrez / Pexels'
 ogImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline-card.svg'
 ---
 

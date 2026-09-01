@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['산소센서', '연비저하', '공연비', '스캐너데이터', '공임나라']
 heroEmoji: '📉'
 featured: false
-heroImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis-card.svg'
+heroImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis.jpg'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
 ogImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis-card.svg'
 ---
 

@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['등속조인트', 'CV조인트', '유턴소음', '구리스누유', '하체정비']
 heroEmoji: '🔩'
 featured: false
-heroImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise-card.svg'
+heroImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise.jpg'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
 ogImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise-card.svg'
 ---
 

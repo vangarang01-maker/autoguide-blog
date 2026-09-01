@@ -6,7 +6,8 @@ category: 'eco'
 tags: ['하이브리드', '배터리수명', '재생배터리', '교체비용', 'HEV']
 heroEmoji: '🔋'
 featured: false
-heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
+heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost.jpg'
+heroImageCredit: 'Mike Bird / Pexels'
 ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 ---
 

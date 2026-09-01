@@ -7,7 +7,8 @@ category: 'maintenance'
 tags: ['하이브리드', '엔진오일', '연료희석', '겨울철관리', '정비']
 heroEmoji: '🛢️'
 featured: true
-heroImage: '/images/heroes/hybrid-engine-oil-increase-guide-card.svg'
+heroImage: '/images/heroes/hybrid-engine-oil-increase-guide.jpg'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
 ogImage: '/images/heroes/hybrid-engine-oil-increase-guide-card.svg'
 ---
 

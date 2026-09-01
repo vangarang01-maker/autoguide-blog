@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['엔진경고등', '오일경고등', '냉각수과열', 'OBD진단', '긴급견인']
 heroEmoji: '⚠️'
 featured: false
-heroImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
+heroImage: '/images/heroes/engine-warning-light-yellow-vs-red.jpg'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
 ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
 ---
 

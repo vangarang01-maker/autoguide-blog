@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['라디에이터', '서모스탯', '냉각수누수', '오버히트', '수온게이지']
 heroEmoji: '🌡️'
 featured: false
-heroImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck-card.svg'
+heroImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck.jpg'
+heroImageCredit: 'Artem Podrez / Pexels'
 ogImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck-card.svg'
 ---
 

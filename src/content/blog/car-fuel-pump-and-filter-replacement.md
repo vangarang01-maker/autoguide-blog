@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['연료펌프', '연료필터', '수분센서', '인젝터보호', '디젤고압펌프']
 heroEmoji: '⛽'
 featured: false
-heroImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.svg'
+heroImage: '/images/heroes/car-fuel-pump-and-filter-replacement.jpg'
+heroImageCredit: 'Tim  Samuel / Pexels'
 ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.svg'
 ---
 

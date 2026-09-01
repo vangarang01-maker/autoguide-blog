@@ -7,7 +7,8 @@ category: 'driving'
 tags: ['DCT', '변속기', '클러치', '주행습관', '정비']
 heroEmoji: '⚙️'
 featured: true
-heroImage: '/images/heroes/dct-transmission-driving-tips-card.svg'
+heroImage: '/images/heroes/dct-transmission-driving-tips.jpg'
+heroImageCredit: 'Caio Cezar / Pexels'
 ogImage: '/images/heroes/dct-transmission-driving-tips-card.svg'
 ---
 

@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['GDI', '엔진오일', '오일감소', '피스톤링', '엔진보링']
 heroEmoji: '🛢️'
 featured: false
-heroImage: '/images/heroes/gdi-engine-oil-consumption-fix-card.svg'
+heroImage: '/images/heroes/gdi-engine-oil-consumption-fix.jpg'
+heroImageCredit: 'Andrea Piacquadio / Pexels'
 ogImage: '/images/heroes/gdi-engine-oil-consumption-fix-card.svg'
 ---
 

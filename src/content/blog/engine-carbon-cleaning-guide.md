@@ -6,7 +6,8 @@ updatedDate: 2026-08-20
 category: 'maintenance'
 tags: ['GDI', '카본', '흡기밸브', '클리닝', '직분사', '정비']
 heroEmoji: '🧼'
-heroImage: '/images/heroes/engine-carbon-cleaning-guide-card.svg'
+heroImage: '/images/heroes/engine-carbon-cleaning-guide.jpg'
+heroImageCredit: 'Jose Ricardo Barraza Morachis / Pexels'
 ogImage: '/images/heroes/engine-carbon-cleaning-guide-card.svg'
 ---
 

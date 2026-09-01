@@ -6,7 +6,8 @@ category: 'maintenance'
 tags: ['촉매장치', '배기가스', '매연검사', '출력저하', '배기막힘']
 heroEmoji: '🔥'
 featured: false
-heroImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.svg'
+heroImage: '/images/heroes/catalytic-converter-theft-and-blockage.jpg'
+heroImageCredit: 'Sergey  Meshkov / Pexels'
 ogImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.svg'
 ---
 
