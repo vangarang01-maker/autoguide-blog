@@ -81,7 +81,7 @@ ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
 ### 1단계: 시동 전 배터리 기동 전압 확인
 - 멀티미터 노브를 DC 20V 레인지에 맞춥니다.
 - 빨간색 선을 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) (+), 검은색 선을 (-) 단자에 대고 측정합니다.
-- **기준값:** 12.4V ～12.8V (12.0V 미만 시 배터리 우선 충전/점검 필요)
+- **기준값:** 12.4V ～12.8V (12.0V 미만 시 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 우선 충전/점검 필요)
 
 ### 2단계: 시동 후 무부하 충전 전압 측정
 - 시동을 걸고 에어컨, 오디오 등 모든 전장 장치를 끕니다.

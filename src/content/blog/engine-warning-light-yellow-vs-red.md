@@ -91,7 +91,7 @@ ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
 
 ## 4. [빨간색 경고 2] 온도계 모양 '냉각수 과열 경고등' – 긴급 비상 방열 요령
 
-엔진 냉각수 온도가 정상 범위(85°C ～95°C)를 벗어나 **115°C ～120°C를 초과하면 빨간색 온도계 경고등**이 점등되며 오버히트(Overheat) 상태에 진입합니다.
+엔진 냉각수 온도가 정상 범위(85°C ～95°C)를 벗어나 **115°C ～120°C를 초과하면 빨간색 온도계 경고등**이 점등되며 [오버히트](/blog/car-radiator-leak-and-thermostat-stuck/)(Overheat) 상태에 진입합니다.
 
 ### 주요 발생 원인
 * [라디에이터](/blog/car-radiator-leak-and-thermostat-stuck/) 상/하부 호스 터짐 및 냉각수 누수
