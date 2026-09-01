@@ -23,7 +23,7 @@ ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
 
 ## 1. 하이브리드 배터리의 실질 수명 주기와 열화 메커니즘
 
-하이브리드 차량에 탑재되는 배터리는 크게 니켈수소(Ni-MH)와 리튬이온 폴리머(Li-ion Polymer)로 나뉩니다. 제조사는 배터리 내구성을 극대화하기 위해 충전 상태(SoC, State of Charge)를 **40%～60% 구간**에서 엄격하게 제어합니다. 즉, 100% 완충이나 0% 방전을 로직상 강제로 막아 화학적 열화를 최소화하는 것입니다.
+[하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 차량에 탑재되는 배터리는 크게 니켈수소(Ni-MH)와 리튬이온 폴리머(Li-ion Polymer)로 나뉩니다. 제조사는 배터리 내구성을 극대화하기 위해 충전 상태(SoC, State of Charge)를 **40%～60% 구간**에서 엄격하게 제어합니다. 즉, 100% 완충이나 0% 방전을 로직상 강제로 막아 화학적 열화를 최소화하는 것입니다.
 
 ```
 [배터리 관리 시스템(BMS) SoC 제어 로직]
