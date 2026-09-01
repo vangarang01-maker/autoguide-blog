@@ -22,6 +22,7 @@ import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync, unlink
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { renderHeroCard } from './lib/hero-card.mjs';
+import { photoQueryFor } from './lib/photo-query.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT_DIR = join(ROOT, 'src', 'content', 'blog');
@@ -32,20 +33,6 @@ const DRY = process.argv.includes('--dry');
 const CARDS_ONLY = process.argv.includes('--cards');
 const FORCE = process.argv.includes('--force');
 const PEXELS_KEY = process.env.PEXELS_API_KEY;
-
-/** 카테고리별 검색어. 여러 개를 합쳐 풀을 넓혀야 글마다 다른 사진이 배정된다. */
-const QUERIES = {
-  maintenance: [
-    'car engine repair',
-    'auto mechanic garage',
-    'car maintenance tools',
-    'car engine bay',
-    'automotive workshop',
-  ],
-  buying: ['used car dealership', 'car showroom', 'buying a car keys'],
-  eco: ['electric car charging', 'ev charging station', 'hybrid car'],
-  driving: ['car driving highway', 'highway road car', 'driving steering wheel'],
-};
 
 function splitFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n?/);
@@ -58,26 +45,24 @@ function splitFrontmatter(text) {
   return { data, raw: m[1], body: text.slice(m[0].length) };
 }
 
-/** 카테고리 사진 풀. 여러 질의 결과를 합치고 photo.id 로 중복을 제거한다. */
-async function fetchPool(category) {
-  const seen = new Map();
-  for (const q of QUERIES[category] ?? QUERIES.maintenance) {
-    const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&orientation=landscape&per_page=20`;
-    const res = await fetch(url, {
-      headers: { Authorization: PEXELS_KEY },
-      signal: AbortSignal.timeout(20_000),
-    });
-    if (!res.ok) throw new Error(`Pexels HTTP ${res.status} (${q})`);
-    const json = await res.json();
-    for (const p of json?.photos ?? []) {
-      // landscape 변형은 1200x627 이라 오픈그래프 규격에 맞고 용량도 작다
-      const src = p.src?.landscape ?? p.src?.large;
-      if (src && !seen.has(p.id)) {
-        seen.set(p.id, { id: String(p.id), src, credit: `${p.photographer} / Pexels`, page: p.url });
-      }
-    }
-  }
-  return [...seen.values()];
+/** 질의 하나에 대한 사진 후보. 같은 질의는 한 번만 받아 재사용한다. */
+const poolCache = new Map();
+
+async function fetchPool(query) {
+  if (poolCache.has(query)) return poolCache.get(query);
+  const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=landscape&per_page=30`;
+  const res = await fetch(url, {
+    headers: { Authorization: PEXELS_KEY },
+    signal: AbortSignal.timeout(20_000),
+  });
+  if (!res.ok) throw new Error(`Pexels HTTP ${res.status} (${query})`);
+  const json = await res.json();
+  const pool = (json?.photos ?? [])
+    // landscape 변형은 1200x627 이라 오픈그래프 규격에 맞고 용량도 작다
+    .map((p) => ({ id: String(p.id), src: p.src?.landscape ?? p.src?.large, credit: `${p.photographer} / Pexels`, page: p.url }))
+    .filter((p) => p.src);
+  poolCache.set(query, pool);
+  return pool;
 }
 
 async function download(url, dest) {
@@ -92,34 +77,28 @@ if (!DRY && !existsSync(HERO_DIR)) mkdirSync(HERO_DIR, { recursive: true });
 
 const files = readdirSync(CONTENT_DIR).filter((f) => f.endsWith('.md'));
 
-// 카테고리별로 글을 모아 사진을 겹치지 않게 나눠 준다
+function parseTags(raw = '') {
+  const m = raw.match(/\[(.*)\]/);
+  return m ? m[1].split(',').map((t) => t.replace(/['"]/g, '').trim()).filter(Boolean) : [];
+}
+
 const posts = [];
 for (const file of files) {
   const text = readFileSync(join(CONTENT_DIR, file), 'utf8');
   const fm = splitFrontmatter(text);
   if (!fm) continue;
-  posts.push({ file, text, fm, slug: file.replace(/\.md$/, ''), category: fm.data.category ?? 'maintenance' });
+  const category = fm.data.category ?? 'maintenance';
+  const { query, matched } = photoQueryFor({
+    tags: parseTags(fm.data.tags),
+    title: fm.data.title ?? '',
+    category,
+  });
+  posts.push({ file, text, fm, slug: file.replace(/\.md$/, ''), category, query, matched });
 }
 
 const wantsPhoto = PEXELS_KEY && !CARDS_ONLY;
 if (!wantsPhoto) {
   console.log('[hero] 사진을 건너뜁니다 (PEXELS_API_KEY 없음 또는 --cards). SVG 카드만 만듭니다.\n');
-}
-
-/** 카테고리 → 사진 배열 */
-const pools = new Map();
-if (wantsPhoto) {
-  for (const category of new Set(posts.map((p) => p.category))) {
-    try {
-      const pool = await fetchPool(category);
-      pools.set(category, pool);
-      console.log(`[hero] ${category}: 사진 ${pool.length}장 확보`);
-    } catch (err) {
-      console.warn(`[hero] ${category}: 풀 확보 실패 (${err.message}) — 카드로 대체`);
-      pools.set(category, []);
-    }
-  }
-  console.log('');
 }
 
 let photos = 0;
@@ -154,7 +133,14 @@ for (const p of posts) {
   let credit = null;
   let photoId = null;
 
-  const pool = pools.get(category) ?? [];
+  let pool = [];
+  if (wantsPhoto) {
+    try {
+      pool = await fetchPool(p.query);
+    } catch (err) {
+      console.warn(`[hero] ${slug}: 사진 검색 실패 (${err.message}) — 카드 사용`);
+    }
+  }
   const pick = pool.find((ph) => !takenIds.has(ph.id));
   if (pick) {
     takenIds.add(pick.id);
@@ -165,11 +151,12 @@ for (const p of posts) {
       credit = pick.credit;
       photoId = pick.id;
       photos++;
+      console.log(`[hero] ${slug}  ← "${p.query}"${p.matched ? ` (${p.matched})` : ' (카테고리 기본)'}`);
     } catch (err) {
       console.warn(`[hero] ${slug}: 내려받기 실패 (${err.message}) — 카드 사용`);
     }
   } else if (pool.length > 0) {
-    console.warn(`[hero] ${slug}: ${category} 풀 ${pool.length}장을 모두 소진 — 카드 사용`);
+    console.warn(`[hero] ${slug}: "${p.query}" 결과 ${pool.length}장이 모두 이미 쓰임 — 카드 사용`);
   }
 
   if (DRY) {
