@@ -653,13 +653,26 @@ const GEMINI_SYSTEM_PROMPT = `당신은 자동차 정비·구매 정보를 다�
  * 과부하(503)·쿼터(429) 응답은 잠깐 뒤 풀리는 경우가 많다.
  * 곧바로 다음 모델로 넘기면 멀쩡한 상위 모델을 놓친다.
  */
-async function fetchWithRetry(url, init, retries = 1) {
+/** 지수 백오프. 429(쿼터)는 20초로 풀리지 않아 배치에서 절반이 실패했다. */
+const BACKOFF_MS = [20_000, 60_000, 120_000];
+
+async function fetchWithRetry(url, init, retries = BACKOFF_MS.length) {
   for (let attempt = 0; ; attempt++) {
     const res = await fetch(url, init);
     if (res.ok || attempt >= retries) return res;
     if (res.status !== 503 && res.status !== 429) return res;
-    console.warn(`[gemini] HTTP ${res.status} — 20초 후 재시도 (${attempt + 1}/${retries})`);
-    await new Promise((r) => setTimeout(r, 20_000));
+
+    // 서버가 대기 시간을 알려주면 그쪽을 따른다
+    const retryAfter = Number(res.headers.get('retry-after'));
+    const waitMs =
+      Number.isFinite(retryAfter) && retryAfter > 0
+        ? Math.min(retryAfter * 1000, 180_000)
+        : BACKOFF_MS[Math.min(attempt, BACKOFF_MS.length - 1)];
+
+    console.warn(
+      `[gemini] HTTP ${res.status} — ${Math.round(waitMs / 1000)}초 후 재시도 (${attempt + 1}/${retries})`,
+    );
+    await new Promise((r) => setTimeout(r, waitMs));
   }
 }
 

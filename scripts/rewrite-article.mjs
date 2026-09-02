@@ -126,7 +126,12 @@ if (DRY) {
 let ok = 0;
 const failed = [];
 
+let first = true;
 for (const t of targets) {
+  // 32768 토큰 요청을 연달아 던지면 쿼터(429)에 걸린다. 배치에서는 사이를 띄운다.
+  if (!first) await new Promise((r) => setTimeout(r, 15_000));
+  first = false;
+
   const topic = topicFromArticle(t.slug, t.fm);
   console.log(`\n[rewrite] ${t.slug} (${t.len}자)`);
 
