@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 248" width="720" height="248" role="img" aria-label="중고차 이전 시 실제로 나가는 돈 — 비용 비교">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 374" width="720" height="374" role="img" aria-label="차종별·유형별 중고차 이전 등록 및 부대비용 추정 견적">
   <style>
     .bg    { fill: #f8fafc; }
     .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
@@ -19,23 +19,35 @@
       .note  { fill: #64748b; }
     }
   </style>
-  <rect class="bg" width="720" height="248" rx="10"/>
-  <text class="ttl" x="24" y="30">중고차 이전 시 실제로 나가는 돈 — 비용 비교</text>
-  <text class="lbl" x="178" y="68" text-anchor="end">취득세</text>
+  <rect class="bg" width="720" height="374" rx="10"/>
+  <text class="ttl" x="24" y="30">차종별·유형별 중고차 이전 등록 및 부대비용 추정 견적</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차</text>
   <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="57" width="390.0" height="18" rx="4"/>
-  <text class="val" x="590" y="68">105만원</text>
-  <text class="lbl" x="178" y="110" text-anchor="end">공채 매입/할인</text>
+  <rect class="bar" x="190" y="57" width="48.8" height="18" rx="4"/>
+  <text class="val" x="590" y="68">1,000만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">준중형</text>
   <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="99" width="92.9" height="18" rx="4"/>
-  <text class="val" x="590" y="110">25만원</text>
-  <text class="lbl" x="178" y="152" text-anchor="end">증지대·인지대</text>
+  <rect class="bar" x="190" y="99" width="73.1" height="18" rx="4"/>
+  <text class="val" x="590" y="110">1,500만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">중형</text>
   <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="141" width="7.4" height="18" rx="4"/>
-  <text class="val" x="590" y="152">2만원</text>
-  <text class="lbl" x="178" y="194" text-anchor="end">이전대행 수수료</text>
+  <rect class="bar" x="190" y="141" width="121.9" height="18" rx="4"/>
+  <text class="val" x="590" y="152">2,500만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">대형/SUV</text>
   <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="183" width="37.1" height="18" rx="4"/>
-  <text class="val" x="590" y="194">10만원</text>
-  <text class="note" x="24" y="238">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+  <rect class="bar" x="190" y="183" width="195.0" height="18" rx="4"/>
+  <text class="val" x="590" y="194">4,000만원</text>
+  <text class="lbl" x="178" y="236" text-anchor="end">준중형</text>
+  <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="225" width="121.9" height="18" rx="4"/>
+  <text class="val" x="590" y="236">2,500만원</text>
+  <text class="lbl" x="178" y="278" text-anchor="end">중형</text>
+  <rect class="track" x="190" y="267" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="267" width="219.4" height="18" rx="4"/>
+  <text class="val" x="590" y="278">4,500만원</text>
+  <text class="lbl" x="178" y="320" text-anchor="end">대형/SUV</text>
+  <rect class="track" x="190" y="309" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="309" width="390.0" height="18" rx="4"/>
+  <text class="val" x="590" y="320">8,000만원</text>
+  <text class="note" x="24" y="364">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
 </svg>
