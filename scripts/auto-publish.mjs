@@ -410,6 +410,12 @@ const TOPICS = [
   },
 ];
 
+/**
+ * 한 실행 안에서 이미 죽 쒔던 모델. 배치로 여러 편을 쓸 때 같은 모델이
+ * 편마다 300초씩 타임아웃되면 시간이 전부 거기로 샌다.
+ */
+const deadModels = new Set();
+
 /* -------------------------------------------------------------- Topic Selector */
 
 function getPublishedSlugs() {
@@ -490,6 +496,10 @@ ${existingTitles.map((t, idx) => `${idx + 1}. ${t}`).join('\n')}
   );
 
   for (const model of candidateModels) {
+    if (deadModels.has(model)) {
+      console.log(`[gemini] ${model} 은 이번 실행에서 이미 실패 — 건너뜀`);
+      continue;
+    }
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
     try {
       const res = await fetch(url, {
@@ -685,6 +695,10 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
   );
 
   for (const model of candidateModels) {
+    if (deadModels.has(model)) {
+      console.log(`[gemini] ${model} 은 이번 실행에서 이미 실패 — 건너뜀`);
+      continue;
+    }
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
     try {
@@ -737,6 +751,7 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
       return cleaned;
     } catch (err) {
       console.warn(`[gemini] ${model} error: ${err.message} — trying next model`);
+      if (/timeout|abort|terminated/i.test(err.message)) deadModels.add(model);
     }
   }
 
