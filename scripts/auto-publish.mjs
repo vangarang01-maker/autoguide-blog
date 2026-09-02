@@ -8,7 +8,7 @@
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BLOG_ROOT = join(__dirname, '..');
@@ -653,7 +653,7 @@ async function fetchWithRetry(url, init, retries = 1) {
   }
 }
 
-async function generateWithGemini(topic) {
+export async function generateWithGemini(topic) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     console.warn('[gemini] GEMINI_API_KEY가 설정되지 않았습니다. 발행을 중단합니다.');
@@ -784,7 +784,7 @@ function getKstDateString() {
 }
 
 /** 비용 기준 시점. 독자가 언제 기준 금액인지 알아야 오래된 값을 그대로 믿지 않는다. */
-const PRICE_BASIS = (() => {
+export const PRICE_BASIS = (() => {
   const d = new Date();
   return `${d.getFullYear()}년 ${d.getMonth() + 1}월`;
 })();
@@ -825,7 +825,7 @@ const BANNED_CLAIMS = [
  * 본문에 `# 제목` 이 남으면 한 페이지에 H1 이 둘이 되고, 두 제목의 문구가
  * 서로 달라 검색엔진에 보내는 신호가 갈린다.
  */
-function normalizeBody(body) {
+export function normalizeBody(body) {
   return body
     .replace(/^\s*#\s+.*$/gm, '')
     .replace(/^\n+/, '')
@@ -838,7 +838,7 @@ function normalizeBody(body) {
  * 과거 폴백 템플릿이 같은 문단을 5회 반복한 껍데기 글을 대량 발행했기 때문에
  * 중복 문단 검사를 가장 중요한 항목으로 둔다.
  */
-function validateBody(body) {
+export function validateBody(body) {
   const problems = [];
 
   if (body.length < MIN_CHARS) {
@@ -905,7 +905,7 @@ const OFFICIAL_SOURCES = {
   ],
 };
 
-function buildSourceSection(category) {
+export function buildSourceSection(category) {
   const items = (OFFICIAL_SOURCES[category] ?? OFFICIAL_SOURCES.maintenance)
     .map(([label, url]) => `- [${label}](${url})`)
     .join('\n');
@@ -964,7 +964,11 @@ featured: false
   console.log(`  Total chars: ${fullContent.length}`);
 }
 
-main().catch((err) => {
-  console.error('[auto-publish] ❌ Error:', err);
-  process.exitCode = 1;
-});
+// 이 파일을 import 하는 쪽(재작성 도구 등)에서 발행이 일어나면 안 된다.
+const isEntryPoint = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isEntryPoint) {
+  main().catch((err) => {
+    console.error('[auto-publish] ❌ Error:', err);
+    process.exitCode = 1;
+  });
+}

@@ -1,0 +1,59 @@
+name: Rewrite Short Articles
+
+# 초기 분량 기준(2,500~4,500자)으로 쓰인 글을 현재 기준으로 다시 쓴다.
+# frontmatter(발행일·사진·링크)는 보존하고 본문만 교체한다.
+on:
+  workflow_dispatch:
+    inputs:
+      under:
+        description: '이 자수 미만인 글을 대상으로 한다'
+        default: '6000'
+      limit:
+        description: '한 번에 처리할 최대 편수'
+        default: '3'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rewrite-articles
+  cancel-in-progress: false
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Rewrite
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: 'gemini-3.7-flash'
+        run: node scripts/rewrite-article.mjs --under ${{ inputs.under }} --limit ${{ inputs.limit }}
+
+      # 본문이 바뀌었으니 표에서 뽑는 차트와 흐름도를 다시 만든다
+      - name: Regenerate diagrams and links
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: npm run gen:images
+
+      - name: Verify build
+        run: npm run build
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "AutoGuide Bot"
+          git config --global user.email "bot@autoguide-pro.com"
+          if [ -n "$(git status --porcelain src/content/blog public/images)" ]; then
+            git add src/content/blog/ public/images/
+            git commit -m "chore(content): rewrite short articles to current length standard [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes."
+          fi
