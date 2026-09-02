@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 248" width="720" height="248" role="img" aria-label="차급별 소모품 및 정비 비용 범위 비교">
+  <style>
+    .bg    { fill: #f8fafc; }
+    .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .lbl   { fill: #475569; font: 500 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .val   { fill: #0f172a; font: 600 12px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .track { fill: #e2e8f0; }
+    .bar   { fill: #2563eb; }
+    .range { fill: #2563eb; opacity: .32; }
+    .note  { fill: #94a3b8; font: 400 11px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg    { fill: #0f172a; }
+      .ttl   { fill: #f1f5f9; }
+      .lbl   { fill: #94a3b8; }
+      .val   { fill: #f1f5f9; }
+      .track { fill: #1e293b; }
+      .bar   { fill: #60a5fa; }
+      .range { fill: #60a5fa; opacity: .32; }
+      .note  { fill: #64748b; }
+    }
+  </style>
+  <rect class="bg" width="720" height="248" rx="10"/>
+  <text class="ttl" x="24" y="30">차급별 소모품 및 정비 비용 범위 비교</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">준중형 하이브리드&lt;br&gt;</text>
+  <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
+  <rect class="range" x="308.4" y="57" width="62.7" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="118.4" height="18" rx="4"/>
+  <text class="val" x="590" y="68">8.5만원~13만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">중형 하이브리드&lt;br&gt;</text>
+  <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
+  <rect class="range" x="322.3" y="99" width="76.6" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="132.3" height="18" rx="4"/>
+  <text class="val" x="590" y="110">9.5만원~15만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">대형/SUV 하이브리드&lt;br&gt;</text>
+  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
+  <rect class="range" x="343.2" y="141" width="97.5" height="18" rx="4"/>
+  <rect class="bar" x="190" y="141" width="153.2" height="18" rx="4"/>
+  <text class="val" x="590" y="152">11만원~18만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">수입 하이브리드&lt;br&gt;</text>
+  <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
+  <rect class="range" x="412.9" y="183" width="167.1" height="18" rx="4"/>
+  <rect class="bar" x="190" y="183" width="222.9" height="18" rx="4"/>
+  <text class="val" x="590" y="194">16만원~28만원</text>
+  <text class="note" x="24" y="238">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+</svg>

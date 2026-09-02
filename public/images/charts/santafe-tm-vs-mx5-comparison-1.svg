@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 206" width="720" height="206" role="img" aria-label="5년 합계(대략) 비교">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 164" width="720" height="164" role="img" aria-label="5년간 세금 및 유류비 총액 비교">
   <style>
     .bg    { fill: #f8fafc; }
     .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
@@ -19,19 +19,17 @@
       .note  { fill: #64748b; }
     }
   </style>
-  <rect class="bg" width="720" height="206" rx="10"/>
-  <text class="ttl" x="24" y="30">5년 합계(대략) 비교</text>
-  <text class="lbl" x="178" y="68" text-anchor="end">TM 2.2 디젤</text>
+  <rect class="bg" width="720" height="164" rx="10"/>
+  <text class="ttl" x="24" y="30">5년간 세금 및 유류비 총액 비교</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">2.5 가솔린 터보 2WD</text>
   <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="57" width="306.8" height="18" rx="4"/>
-  <text class="val" x="590" y="68">1,290만원</text>
-  <text class="lbl" x="178" y="110" text-anchor="end">MX5 2.5 가솔린</text>
+  <rect class="range" x="574.6" y="57" width="5.4" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="384.6" height="18" rx="4"/>
+  <text class="val" x="590" y="68">1,449.6만원~1,470.1만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">1.6 터보 하이브리드 2WD</text>
   <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="99" width="390.0" height="18" rx="4"/>
-  <text class="val" x="590" y="110">1,640만원</text>
-  <text class="lbl" x="178" y="152" text-anchor="end">MX5 1.6 HEV</text>
-  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
-  <rect class="bar" x="190" y="141" width="280.6" height="18" rx="4"/>
-  <text class="val" x="590" y="152">1,180만원</text>
-  <text class="note" x="24" y="196">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+  <rect class="range" x="440.3" y="99" width="2.8" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="250.3" height="18" rx="4"/>
+  <text class="val" x="590" y="110">943.4만원~953.9만원</text>
+  <text class="note" x="24" y="154">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
 </svg>
