@@ -696,7 +696,9 @@ ${topic.outline.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
           // 한국어는 토큰 효율이 낮다. 9,000자 목표에 8192 토큰이면 MAX_TOKENS 로 잘린다.
           generationConfig: { temperature: 0.7, maxOutputTokens: 32768 },
         }),
-        signal: AbortSignal.timeout(180_000),
+        // 32768 토큰짜리 한국어 생성은 180초 안에 끝나지 않는 경우가 잦았다.
+        // 세 모델이 연달아 타임아웃되면 한 편에 9분이 날아간다.
+        signal: AbortSignal.timeout(300_000),
       });
 
       if (!res.ok) {
