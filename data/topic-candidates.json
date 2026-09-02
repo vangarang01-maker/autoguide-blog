@@ -197,7 +197,8 @@
         "보증 만료 직전 정비 이력 남기기가 중요한 이유"
       ],
       "origin": "르노코리아 및 볼보의 보증기간 연장 뉴스에서 착안하여 일반 운전자가 보증 만료 전 혜택을 챙길 수 있는 가이드 작성",
-      "harvestedAt": "2026-09-02"
+      "harvestedAt": "2026-09-02",
+      "promotedAt": "2026-09-02"
     },
     {
       "slug": "car-fog-light-tuning-legal-guide",
@@ -243,7 +244,8 @@
         "짧은 주행거리 중고차 구매 후 즉시 교체해야 할 케미컬류 점검 리스트"
       ],
       "origin": "중고차 시장에서 4만km 이하 짧은 주행거리 검색량 증가 뉴스를 바탕으로 구매자의 오판을 막는 역발상 점검법 제시",
-      "harvestedAt": "2026-09-02"
+      "harvestedAt": "2026-09-02",
+      "promotedAt": "2026-09-02"
     },
     {
       "slug": "adas-driver-assist-emergency-response-guide",
@@ -289,7 +291,8 @@
         "사고 후 수리견적서 검증 및 과잉 정비 청구 피하는 3단계 검토법"
       ],
       "origin": "BYD 수리비·부품 수급 논란 해명 뉴스에서 착안하여 수입/신규 브랜드 전기차 운전자의 정비 및 보험 전략 제시",
-      "harvestedAt": "2026-09-02"
+      "harvestedAt": "2026-09-02",
+      "promotedAt": "2026-09-02"
     },
     {
       "slug": "ev-driving-range-certification-vs-real-world",

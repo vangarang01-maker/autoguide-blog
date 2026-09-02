@@ -95,6 +95,14 @@ const TERM_QUERIES = [
   ['싼타페', 'suv car parked outdoor', 2],
   ['SUV', 'suv car parked outdoor', 2],
 
+  // 보증·제도
+  ['보증', 'car service center reception', 2],
+  ['무상수리', 'car service center reception', 2],
+  ['리콜', 'car service center reception', 2],
+  ['공임', 'mechanic writing repair estimate', 2],
+  ['수리비', 'mechanic writing repair estimate', 2],
+  ['부품수급', 'car parts warehouse shelves', 3],
+
   // 주행
   ['수막현상', 'car driving rain wet road', 3],
   ['빗길', 'car driving rain wet road', 2],
