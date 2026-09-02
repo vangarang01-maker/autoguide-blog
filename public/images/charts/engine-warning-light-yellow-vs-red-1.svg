@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 332" width="720" height="332" role="img" aria-label="차급별 경고등 관련 주요 부품 교체 및 정비 비용 가이드">
+  <style>
+    .bg    { fill: #f8fafc; }
+    .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .lbl   { fill: #475569; font: 500 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .val   { fill: #0f172a; font: 600 12px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .track { fill: #e2e8f0; }
+    .bar   { fill: #2563eb; }
+    .range { fill: #2563eb; opacity: .32; }
+    .note  { fill: #94a3b8; font: 400 11px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg    { fill: #0f172a; }
+      .ttl   { fill: #f1f5f9; }
+      .lbl   { fill: #94a3b8; }
+      .val   { fill: #f1f5f9; }
+      .track { fill: #1e293b; }
+      .bar   { fill: #60a5fa; }
+      .range { fill: #60a5fa; opacity: .32; }
+      .note  { fill: #64748b; }
+    }
+  </style>
+  <rect class="bg" width="720" height="332" rx="10"/>
+  <text class="ttl" x="24" y="30">차급별 경고등 관련 주요 부품 교체 및 정비 비용 가이드</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차</text>
+  <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
+  <rect class="range" x="220.3" y="57" width="21.7" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="30.3" height="18" rx="4"/>
+  <text class="val" x="590" y="68">7만원~12만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">준중형</text>
+  <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
+  <rect class="range" x="229.0" y="99" width="26.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="39.0" height="18" rx="4"/>
+  <text class="val" x="590" y="110">9만원~15만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">중형</text>
+  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
+  <rect class="range" x="237.7" y="141" width="30.3" height="18" rx="4"/>
+  <rect class="bar" x="190" y="141" width="47.7" height="18" rx="4"/>
+  <text class="val" x="590" y="152">11만원~18만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">대형/SUV</text>
+  <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
+  <rect class="range" x="250.7" y="183" width="43.3" height="18" rx="4"/>
+  <rect class="bar" x="190" y="183" width="60.7" height="18" rx="4"/>
+  <text class="val" x="590" y="194">14만원~24만원</text>
+  <text class="lbl" x="178" y="236" text-anchor="end">수입 준중형/중형</text>
+  <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
+  <rect class="range" x="298.3" y="225" width="108.3" height="18" rx="4"/>
+  <rect class="bar" x="190" y="225" width="108.3" height="18" rx="4"/>
+  <text class="val" x="590" y="236">25만원~50만원</text>
+  <text class="lbl" x="178" y="278" text-anchor="end">수입 대형/고성능</text>
+  <rect class="track" x="190" y="267" width="390" height="18" rx="4"/>
+  <rect class="range" x="385.0" y="267" width="195.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="267" width="195.0" height="18" rx="4"/>
+  <text class="val" x="590" y="278">45만원~90만원</text>
+  <text class="note" x="24" y="322">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+</svg>

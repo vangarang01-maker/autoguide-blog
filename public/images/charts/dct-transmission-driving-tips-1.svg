@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 248" width="720" height="248" role="img" aria-label="DCT 주요 부품 및 정비 비용 범위 표">
+  <style>
+    .bg    { fill: #f8fafc; }
+    .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .lbl   { fill: #475569; font: 500 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .val   { fill: #0f172a; font: 600 12px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .track { fill: #e2e8f0; }
+    .bar   { fill: #2563eb; }
+    .range { fill: #2563eb; opacity: .32; }
+    .note  { fill: #94a3b8; font: 400 11px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg    { fill: #0f172a; }
+      .ttl   { fill: #f1f5f9; }
+      .lbl   { fill: #94a3b8; }
+      .val   { fill: #f1f5f9; }
+      .track { fill: #1e293b; }
+      .bar   { fill: #60a5fa; }
+      .range { fill: #60a5fa; opacity: .32; }
+      .note  { fill: #64748b; }
+    }
+  </style>
+  <rect class="bg" width="720" height="248" rx="10"/>
+  <text class="ttl" x="24" y="30">DCT 주요 부품 및 정비 비용 범위 표</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경형 / 소형</text>
+  <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
+  <rect class="range" x="274.5" y="57" width="32.5" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="84.5" height="18" rx="4"/>
+  <text class="val" x="590" y="68">65만원~90만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">준중형</text>
+  <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
+  <rect class="range" x="287.5" y="99" width="45.5" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="97.5" height="18" rx="4"/>
+  <text class="val" x="590" y="110">75만원~110만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">중형 / 대형</text>
+  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
+  <rect class="range" x="346.0" y="141" width="78.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="141" width="156.0" height="18" rx="4"/>
+  <text class="val" x="590" y="152">120만원~180만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">수입차</text>
+  <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
+  <rect class="range" x="424.0" y="183" width="156.0" height="18" rx="4"/>
+  <rect class="bar" x="190" y="183" width="234.0" height="18" rx="4"/>
+  <text class="val" x="590" y="194">180만원~300만원</text>
+  <text class="note" x="24" y="238">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+</svg>
