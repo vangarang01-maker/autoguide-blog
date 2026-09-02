@@ -9,7 +9,7 @@ featured: false
 heroImage: '/images/heroes/sonata-vs-k5-used-car-comparison.jpg'
 heroImageCredit: 'Took A Snap / Pexels'
 heroImageId: '19315391'
-ogImage: '/images/heroes/sonata-vs-k5-used-car-comparison-card.svg'
+ogImage: '/images/heroes/sonata-vs-k5-used-car-comparison-card.png'
 ---
 
 엔진과 [변속기](/blog/dct-transmission-driving-tips/), 뼈대가 100% 같은 쌍둥이 차인데 중고차 시장에서는 쏘나타 DN8이 K5 DL3보다 150～250만 원가량 저렴하게 거래됩니다. 단순히 외관 디자인에 대한 호불호 때문에 발생하는 감가 현상인지, 아니면 실제 차체 잔고장이나 고질병 발생률에서 차이가 나는 것인지 제조사 정비 지침서와 국토교통부 리콜 데이터, 중고차 실거래 통계를 바탕으로 심층 분석합니다.

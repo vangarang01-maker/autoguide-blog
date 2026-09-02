@@ -9,7 +9,7 @@ heroEmoji: '🧼'
 heroImage: '/images/heroes/engine-carbon-cleaning-guide.jpg'
 heroImageCredit: 'Sergey  Meshkov / Pexels'
 heroImageId: '8478269'
-ogImage: '/images/heroes/engine-carbon-cleaning-guide-card.svg'
+ogImage: '/images/heroes/engine-carbon-cleaning-guide-card.png'
 ---
 
 "연비가 예전 같지 않고, 아침 시동 때 부르릉 떨려요. 그런데 정비소에서는 이상 없다고 합니다." **주행거리 6만~10만 km 사이 [GDI](/blog/gdi-engine-oil-consumption-fix/) 차량**에서 가장 많이 나오는 상담입니다. 대부분 흡기 밸브 카본 누적입니다. 왜 GDI만 이 문제를 겪는지부터 짚어야 대처법이 보입니다.

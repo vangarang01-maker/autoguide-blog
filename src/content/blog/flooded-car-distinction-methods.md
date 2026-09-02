@@ -9,7 +9,7 @@ featured: false
 heroImage: '/images/heroes/flooded-car-distinction-methods.jpg'
 heroImageCredit: 'Helena Jankovičová Kováčová / Pexels'
 heroImageId: '28447761'
-ogImage: '/images/heroes/flooded-car-distinction-methods-card.svg'
+ogImage: '/images/heroes/flooded-car-distinction-methods-card.png'
 ---
 
 보험개발원 카히스토리에 "무사고"로 떠 있어도 침수차일 수 있습니다. 자차 보험 미가입 상태에서 침수되어 차주가 사설로 실내만 닦아내고 시장에 내놓은 매물은 서류로 잡히지 않습니다. 실차 틈새 7곳을 직접 눈으로 확인해야 합니다.

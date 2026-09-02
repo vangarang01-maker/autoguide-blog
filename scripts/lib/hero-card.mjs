@@ -57,7 +57,7 @@ function wrapTitle(title, budgetEm = 17.6, maxLines = 4) {
   return lines;
 }
 
-export function renderHeroCard({ title, category, emoji, siteName = 'AutoGuide 오토가이드' }) {
+export function renderHeroCard({ title, category, siteName = 'AutoGuide 오토가이드' }) {
   const W = 1200;
   const H = 630;
   const pal = PALETTE[category] ?? PALETTE.maintenance;
@@ -66,6 +66,13 @@ export function renderHeroCard({ title, category, emoji, siteName = 'AutoGuide �
   // 카테고리 라벨(y=196)과 하단 사이트명 사이 영역에 제목 블록을 중앙 정렬한다.
   // 고정 시작점을 쓰면 3줄짜리 제목이 위쪽 라벨을 덮는다.
   const startY = 380 - ((lines.length - 1) * lineH) / 2;
+
+  // 카테고리 배지. 이모지 글리프를 쓰지 않는 이유:
+  // og 카드는 sharp(librsvg)로 PNG 래스터화되는데, 컬러 이모지가 흑백 글리프로
+  // 떨어져 그라디언트 위에 정체불명의 덩어리가 찍힌다. 폰트에 의존하지 않는
+  // 도형+텍스트 배지가 어느 환경에서도 같은 결과를 낸다.
+  const PILL_PAD = 26;
+  const pillW = Math.round(widthEm(pal.name) * 26 + PILL_PAD * 2);
 
   const titleSvg = lines
     .map((l, i) => `  <text class="ttl" x="80" y="${startY + i * lineH}">${esc(l)}</text>`)
@@ -80,15 +87,14 @@ export function renderHeroCard({ title, category, emoji, siteName = 'AutoGuide �
   </defs>
   <style>
     .ttl  { fill: #ffffff; font: 800 56px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
-    .cat  { fill: #ffffff; font: 600 24px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; opacity: .9; }
+    .cat  { fill: ${pal.from}; font: 700 26px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
     .site { fill: #ffffff; font: 600 26px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; opacity: .82; }
-    .emo  { font-size: 78px; }
   </style>
   <rect width="${W}" height="${H}" fill="url(#g)"/>
   <circle cx="1060" cy="120" r="220" fill="#ffffff" opacity=".07"/>
   <circle cx="1150" cy="560" r="160" fill="#ffffff" opacity=".05"/>
-  <text class="emo" x="80" y="150">${esc(emoji || '🚗')}</text>
-  <text class="cat" x="80" y="196">${esc(pal.name)}</text>
+  <rect x="80" y="104" width="${pillW}" height="56" rx="28" fill="#ffffff" opacity=".94"/>
+  <text class="cat" x="${80 + PILL_PAD}" y="141">${esc(pal.name)}</text>
 ${titleSvg}
   <rect x="80" y="${H - 108}" width="72" height="5" rx="2.5" fill="#ffffff" opacity=".55"/>
   <text class="site" x="80" y="${H - 56}">${esc(siteName)}</text>

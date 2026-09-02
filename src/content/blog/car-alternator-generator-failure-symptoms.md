@@ -10,7 +10,7 @@ featured: false
 heroImage: '/images/heroes/car-alternator-generator-failure-symptoms.jpg'
 heroImageCredit: 'Hebert  Santos / Pexels'
 heroImageId: '3757226'
-ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.svg'
+ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.png'
 ---
 
 배터리를 새로 갈았는데 3일 만에 또 방전되어 시동이 안 걸린다면 [배터리](/blog/ev-vs-hybrid-maintenance-cost/) 문제가 아니라 전기를 만들어 충전해 주는 알터네이터(발전기)가 사망한 것입니다. 주행 중 차가 멈추기 전 나타나는 4대 전조 증상을 짚어드립니다.

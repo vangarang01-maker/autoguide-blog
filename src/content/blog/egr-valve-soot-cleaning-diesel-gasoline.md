@@ -10,10 +10,9 @@ featured: false
 heroImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline.jpg'
 heroImageCredit: 'Joaquin  Delgado / Pexels'
 heroImageId: '19963425'
-ogImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline-card.svg'
+ogImage: '/images/heroes/egr-valve-soot-cleaning-diesel-gasoline-card.png'
 ---
 
-# [오토가이드] EGR 밸브 카본 고착으로 인한 시동 꺼짐: 클리닝 vs 교체 판정 기준 및 정비 비용 총정리
 
 신호 대기 후 출발하려는데 푸드득거리며 시동이 뚝 꺼지거나, 저속 주행 중 심한 울컥거림(말타기 현상)이 발생한다면 EGR 밸브가 끈적한 카본 슬러지에 걸려 닫히지 않고 열린 채 고착된 전형적인 고장 증상입니다. 
 

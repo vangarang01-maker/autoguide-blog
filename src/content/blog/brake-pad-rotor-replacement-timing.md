@@ -9,10 +9,9 @@ featured: false
 heroImage: '/images/heroes/brake-pad-rotor-replacement-timing.jpg'
 heroImageCredit: 'Erik Mclean / Pexels'
 heroImageId: '34277923'
-ogImage: '/images/heroes/brake-pad-rotor-replacement-timing-card.svg'
+ogImage: '/images/heroes/brake-pad-rotor-replacement-timing-card.png'
 ---
 
-# 브레이크 패드와 디스크 로터 교체주기: 쇠 긁는 소리와 핸들 떨림 정밀 진단 가이드
 
 브레이크를 밟을 때 삐익거리는 쇠 긁는 소리가 나거나 고속도로에서 감속할 때 핸들이 좌우로 덜덜 떨린다면 생명과 직결된 브레이크 시스템의 교체 신호입니다. 과잉 정비 없이 정확한 교체 시점을 짚어드립니다. 
 

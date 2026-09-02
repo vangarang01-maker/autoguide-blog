@@ -9,7 +9,7 @@ featured: false
 heroImage: '/images/heroes/direct-auto-insurance-saving-tricks.jpg'
 heroImageCredit: 'Mikhail Nilov / Pexels'
 heroImageId: '7734574'
-ogImage: '/images/heroes/direct-auto-insurance-saving-tricks-card.svg'
+ogImage: '/images/heroes/direct-auto-insurance-saving-tricks-card.png'
 ---
 
 다이렉트 자동차 보험을 갱신할 때 설계사가 추천하는 기본값으로 그냥 결제하면 최소 20～30만 원을 손해 봅니다. 대물 배상은 10억으로 올려도 몇천 원 차이 안 나지만, 티맵 점수와 블랙박스 특약만 챙겨도 수십만 원이 환급됩니다.

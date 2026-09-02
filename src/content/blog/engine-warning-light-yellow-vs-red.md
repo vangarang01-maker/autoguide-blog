@@ -10,10 +10,9 @@ featured: false
 heroImage: '/images/heroes/engine-warning-light-yellow-vs-red.jpg'
 heroImageCredit: 'John Joshua Mejia Jose / Pexels'
 heroImageId: '36744377'
-ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.svg'
+ogImage: '/images/heroes/engine-warning-light-yellow-vs-red-card.png'
 ---
 
-# 계기판 경고등 완벽 해부: 노란색 vs 빨간색 점등 시 즉시 정차해야 하는 긴급 상황 5가지
 
 고속도로 주행 중 계기판에 수도꼭지 모양의 엔진 경고등이 떴을 때, 계속 달려도 될까요 아니면 갓길에 당장 세워야 할까요? 노란색과 빨간색의 위험도 차이를 모르면 엔진 실린더가 녹아내리는 수백만 원 참사를 겪게 됩니다.
 

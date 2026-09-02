@@ -10,10 +10,9 @@ featured: false
 heroImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost.jpg'
 heroImageCredit: 'Ramesh Kambattan / Pexels'
 heroImageId: '38040016'
-ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.svg'
+ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.png'
 ---
 
-# 하이브리드 고전압 배터리 수명의 진실: 순정 신품 vs 사설 재생 배터리 현장 정비 리포트
 
 계기판에 '[하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 시스템을 점검하십시오(Check Hybrid System)'라는 무시무시한 경고등이 점등되고, EV 모드 개입이 눈에 띄게 줄어들었습니까? 리프트에 차를 올리지 않고도 스캔 장비의 실시간 데이터(Current Data)만 보면 배터리 모듈 간의 전압 불균형이 시작되었음을 직관적으로 알 수 있습니다. 
 

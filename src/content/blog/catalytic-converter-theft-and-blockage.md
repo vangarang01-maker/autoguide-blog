@@ -10,14 +10,13 @@ featured: false
 heroImage: '/images/heroes/catalytic-converter-theft-and-blockage.jpg'
 heroImageCredit: 'Khunkorn Laowisit / Pexels'
 heroImageId: '5233284'
-ogImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.svg'
+ogImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.png'
 ---
 
-# [오토가이드 리포트] 삼원 촉매장치 막힘 증상과 매캐한 유황 냄새·가속 불량 원인 완전 분석
 
 배기구에서 식초나 유황 썩는 냄새가 진동하고 가속 페달을 끝까지 밟아도 RPM만 붕 뜨고 차가 뒤에서 당기는 것처럼 나가지 않는다면, 백금과 팔라듐으로 만들어진 고가의 촉매장치가 카본에 막혀 배기를 틀어막은 것입니다. 
 
-정비 현장에서 다뤄지는 차량을 올려다보며 고객분들께 늘 강조하는 부분이 있습니다. 바로 "배기가스는 엔진의 건강 상태를 보여주는 거울"이라는 점입니다. 오늘은 가솔린 및 [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 차량 정비 비용의 큰 비중을 차지하는 **삼원 촉매장치(TWC, Three-Way Catalyst)**의 손상 원인부터 실전 진단법, 그리고 현명한 교체 솔루션까지 현장 정비 지침서 기준으로 상세히 정리해 드립니다.
+정비 지침서가 배기 계통 점검을 강조하는 이유는 하나입니다. 배기가스가 엔진의 건강 상태를 그대로 드러내기 때문입니다. 오늘은 가솔린 및 [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 차량 정비 비용의 큰 비중을 차지하는 **삼원 촉매장치(TWC, Three-Way Catalyst)**의 손상 원인부터 실전 진단법, 그리고 현명한 교체 솔루션까지 현장 정비 지침서 기준으로 상세히 정리해 드립니다.
 
 ---
 

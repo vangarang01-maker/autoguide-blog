@@ -10,7 +10,7 @@ featured: true
 heroImage: '/images/heroes/hybrid-engine-oil-increase-guide.jpg'
 heroImageCredit: 'Daniel Andraski / Pexels'
 heroImageId: '13065691'
-ogImage: '/images/heroes/hybrid-engine-oil-increase-guide-card.svg'
+ogImage: '/images/heroes/hybrid-engine-oil-increase-guide-card.png'
 ---
 
 [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 차주 커뮤니티에서 겨울마다 반복되는 글이 있습니다. **"엔진오일이 줄어드는 게 아니라 늘었어요."** 게이지 F선을 넘어 위쪽까지 묻어나고, 오일 냄새에서 휘발유 냄새가 납니다. 고장이 아닐 수도 있지만, 방치하면 엔진 손상으로 직결되는 현상입니다. 원인과 판단 기준을 정확히 잡아드립니다.

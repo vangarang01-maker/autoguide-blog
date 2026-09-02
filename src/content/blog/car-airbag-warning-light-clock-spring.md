@@ -10,7 +10,7 @@ featured: false
 heroImage: '/images/heroes/car-airbag-warning-light-clock-spring.jpg'
 heroImageCredit: 'Sachu Zayn / Pexels'
 heroImageId: '19477337'
-ogImage: '/images/heroes/car-airbag-warning-light-clock-spring-card.svg'
+ogImage: '/images/heroes/car-airbag-warning-light-clock-spring-card.png'
 ---
 
 "형, 아파트 주차장에서 후진으로 차를 빼다가 핸들을 틀었는데 갑자기 빨간색 에어백 경고등이 딱 들어왔어. 그런데 이상하게 빵빵(경적)도 안 울리고 핸들 조절 버튼도 안 먹히네? 카센터 갔더니 에어백 మో듈을 통째로 갈아야 한다면서 35만 원을 부르는데... 이거 진짜 다 바꿔야 해?"

@@ -806,7 +806,32 @@ const BANNED_CLAIMS = [
   '15년 차',
   '제가 직접 확인',
   '리프트에 올리고',
+  // 아래는 1인칭 정비사 화법. 본 매체는 정비 자격 보유자가 운영하지 않는다고
+  // 명시(consts.ts EDITORIAL_DISCLAIMER)하므로, 현장 종사자를 자처하는 문장은
+  // 사이트가 스스로 세운 편집 원칙과 정면으로 충돌한다.
+  '고객분들께',
+  '고객분께',
+  '정비하면서',
+  '리프트에 올려',
+  '제가 정비',
+  '정비사인 제가',
+  '현장에서 제가',
 ];
+
+/**
+ * 생성된 본문을 저장 형태로 다듬는다.
+ *
+ * H1 을 걷어내는 이유: 페이지의 H1 은 frontmatter 의 title 로 이미 렌더된다.
+ * 본문에 `# 제목` 이 남으면 한 페이지에 H1 이 둘이 되고, 두 제목의 문구가
+ * 서로 달라 검색엔진에 보내는 신호가 갈린다.
+ */
+function normalizeBody(body) {
+  return body
+    .replace(/^\s*#\s+.*$/gm, '')
+    .replace(/^\n+/, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
 
 /**
  * 발행 전 본문 검증. 문제가 있으면 사유 배열을 반환한다.
@@ -847,6 +872,10 @@ function validateBody(body) {
 
   const headingCount = (body.match(/^## /gm) ?? []).length;
   if (headingCount < 3) problems.push(`H2 소제목 ${headingCount}개 — 구조 부실`);
+
+  // normalizeBody 를 거친 뒤에도 H1 이 남아 있으면 정규화가 놓친 형태다.
+  const h1Count = (body.match(/^# /gm) ?? []).length;
+  if (h1Count > 0) problems.push(`본문 H1 ${h1Count}개 — 페이지 H1(title)과 중복`);
 
   return problems;
 }
@@ -896,7 +925,8 @@ async function main() {
   const topic = await selectNextTopic();
   console.log(`\n[auto-publish] Selected topic: ${topic.title} (${topic.slug})`);
 
-  const body = await generateWithGemini(topic);
+  const raw = await generateWithGemini(topic);
+  const body = raw ? normalizeBody(raw) : raw;
 
   if (!body) {
     throw new Error(

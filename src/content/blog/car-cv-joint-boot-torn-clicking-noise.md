@@ -10,7 +10,7 @@ featured: false
 heroImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise.jpg'
 heroImageCredit: 'Grégory Costa / Pexels'
 heroImageId: '5733659'
-ogImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise-card.svg'
+ogImage: '/images/heroes/car-cv-joint-boot-torn-clicking-noise-card.png'
 ---
 
 본격적인 휴가철 장거리 주행이나 영하 10도를 밑도는 한파 속 귀성길, 고속도로 갓길에 비상등을 켠 채 견인차를 기다리는 차량이 늘어나는 시기입니다. 장거리 고속 주행 중 구동축이 이탈하거나 파손되면 조향 불능이라는 치명적인 사고로 이어지기 때문입니다. 

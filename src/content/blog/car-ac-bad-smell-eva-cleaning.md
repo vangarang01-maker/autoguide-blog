@@ -9,7 +9,7 @@ featured: false
 heroImage: '/images/heroes/car-ac-bad-smell-eva-cleaning.jpg'
 heroImageCredit: 'Asm Arif / Pexels'
 heroImageId: '7540410'
-ogImage: '/images/heroes/car-ac-bad-smell-eva-cleaning-card.svg'
+ogImage: '/images/heroes/car-ac-bad-smell-eva-cleaning-card.png'
 ---
 
 에어컨 필터를 새것으로 갈고 마트에서 산 훈증캔을 터뜨려도 일주일만 지나면 쉰내가 다시 올라옵니다. 냄새의 원인은 필터가 아니라 어둡고 습한 에바포레이터 코어에 번식한 곰팡이 군락이기 때문입니다.

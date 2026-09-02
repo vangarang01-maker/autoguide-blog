@@ -10,7 +10,7 @@ featured: true
 heroImage: '/images/heroes/ev-vs-hybrid-maintenance-cost.jpg'
 heroImageCredit: 'Hyundai Motor Group / Pexels'
 heroImageId: '12353734'
-ogImage: '/images/heroes/ev-vs-hybrid-maintenance-cost-card.svg'
+ogImage: '/images/heroes/ev-vs-hybrid-maintenance-cost-card.png'
 ---
 
 "전기차가 유지비 싸다면서요?" 맞기도 하고 틀리기도 합니다. **충전 환경과 연간 주행거리에 따라 결론이 정반대로 뒤집힙니다.** 이 글은 감성적인 비교 대신 연 15,000km, 5년 보유를 전제로 항목별 금액을 계산합니다. 계산 근거를 모두 밝혀두었으니 본인 조건에 숫자만 바꿔 넣으세요.

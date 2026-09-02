@@ -10,7 +10,7 @@ featured: false
 heroImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis.jpg'
 heroImageCredit: 'Artem Podrez / Pexels'
 heroImageId: '8985604'
-ogImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis-card.svg'
+ogImage: '/images/heroes/car-oxygen-sensor-fuel-trim-diagnosis-card.png'
 ---
 
 평소보다 주유비가 15～20% 더 나오고 배기구에서 기름 냄새가 역하게 난다면, 산소센서가 [배기가스](/blog/catalytic-converter-theft-and-blockage/) 매연에 찌들어 엔진 컴퓨터(ECU)에 "산소가 많으니 연료를 더 쏴라"고 거짓 신호를 보내고 있을 확률이 90%입니다.

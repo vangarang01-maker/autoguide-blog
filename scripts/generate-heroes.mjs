@@ -7,6 +7,9 @@
  *   ogImage   — 카톡·X 공유 시 쓰이는 1200x630 카드. 제목이 박혀 있어 사진보다
  *               정보 전달이 되고, 다른 사이트와 겹치지 않는다.
  *
+ * 카드는 SVG 로 그린 뒤 PNG 로 구워 내보낸다. 카카오톡·페이스북·X 크롤러는
+ * SVG og:image 를 렌더링하지 않아 공유 카드가 빈칸으로 나온다.
+ *
  * 사진은 Pexels 에서 받는다 (상업 이용 허용, 출처 표기 의무 없음).
  * 카테고리마다 사진 풀을 한 번에 받아 글마다 서로 다른 장을 배정한다.
  * 질의를 글마다 날리면 같은 카테고리 글이 전부 같은 사진을 받게 된다.
@@ -21,6 +24,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import sharp from 'sharp';
 import { renderHeroCard } from './lib/hero-card.mjs';
 import { photoQueryFor } from './lib/photo-query.mjs';
 
@@ -28,6 +32,14 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT_DIR = join(ROOT, 'src', 'content', 'blog');
 const HERO_DIR = join(ROOT, 'public', 'images', 'heroes');
 const HERO_URL = '/images/heroes';
+
+/** 오픈그래프 권장 규격. density 를 올려 텍스트 가장자리를 또렷하게 굽는다. */
+const CARD_W = 1200;
+const CARD_H = 630;
+const CARD_DENSITY = 144;
+
+/** 카드로 구워진 파일인지. 사진과 카드를 파일명으로 구분한다. */
+const isCard = (url) => /-card\.(png|svg)$/i.test(url ?? '');
 
 const DRY = process.argv.includes('--dry');
 const CARDS_ONLY = process.argv.includes('--cards');
@@ -98,7 +110,7 @@ for (const file of files) {
 
 const wantsPhoto = PEXELS_KEY && !CARDS_ONLY;
 if (!wantsPhoto) {
-  console.log('[hero] 사진을 건너뜁니다 (PEXELS_API_KEY 없음 또는 --cards). SVG 카드만 만듭니다.\n');
+  console.log('[hero] 사진을 건너뜁니다 (PEXELS_API_KEY 없음 또는 --cards). 공유 카드만 만듭니다.\n');
 }
 
 let photos = 0;
@@ -115,26 +127,35 @@ if (!FORCE) {
 
 for (const p of posts) {
   const { slug, fm } = p;
-  const { title, category = 'maintenance', heroEmoji = '🚗' } = fm.data;
+  const { title, category = 'maintenance' } = fm.data;
 
-  const hasPhoto = fm.data.heroImage && !fm.data.heroImage.endsWith('.svg');
-  if (hasPhoto && !FORCE) {
-    skipped++;
-    continue;
-  }
-
-  // 오픈그래프 카드는 항상 만든다. 사진 유무와 무관하게 공유 이미지가 비지 않는다.
-  const cardName = `${slug}-card.svg`;
-  if (!DRY) writeFileSync(join(HERO_DIR, cardName), renderHeroCard({ title, category, emoji: heroEmoji }), 'utf8');
+  // 카드는 사진 유무와 무관하게 매번 다시 굽는다. 제목이 바뀌면 카드도 따라가야 하고,
+  // 사진을 이미 가진 글에도 제목이 박힌 공유 카드는 필요하다.
+  const cardName = `${slug}-card.png`;
   const ogImage = `${HERO_URL}/${cardName}`;
+  if (!DRY) {
+    await sharp(Buffer.from(renderHeroCard({ title, category })), { density: CARD_DENSITY })
+      .resize(CARD_W, CARD_H, { fit: 'fill' })
+      .png({ compressionLevel: 9 })
+      .toFile(join(HERO_DIR, cardName));
+  }
   cards++;
 
   let heroImage = ogImage;
   let credit = null;
   let photoId = null;
 
+  // 이미 사진이 붙은 글은 사진을 건드리지 않는다. 카드와 frontmatter 만 갱신한다.
+  const hasPhoto = fm.data.heroImage && !isCard(fm.data.heroImage);
+  if (hasPhoto && !FORCE) {
+    heroImage = fm.data.heroImage;
+    credit = fm.data.heroImageCredit ?? null;
+    photoId = fm.data.heroImageId ?? null;
+    skipped++;
+  }
+
   let pool = [];
-  if (wantsPhoto) {
+  if (wantsPhoto && !(hasPhoto && !FORCE)) {
     try {
       pool = await fetchPool(p.query);
     } catch (err) {

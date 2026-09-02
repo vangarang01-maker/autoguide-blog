@@ -10,7 +10,7 @@ featured: false
 heroImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck.jpg'
 heroImageCredit: 'Erik Mclean / Pexels'
 heroImageId: '34351909'
-ogImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck-card.svg'
+ogImage: '/images/heroes/car-radiator-leak-and-thermostat-stuck-card.png'
 ---
 
 주행 중 계기판의 냉각수 온도 바늘이 중간(85～90도)을 넘어 H(Hot) 레드존으로 치솟고 보닛 틈새로 하얀 수증기가 피어오른다면 즉시 대처하지 않을 경우 알루미늄 엔진 헤드가 뒤틀려 200만 원 이상의 보링 견적이 나옵니다. 

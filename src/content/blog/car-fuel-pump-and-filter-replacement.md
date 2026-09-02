@@ -10,7 +10,7 @@ featured: false
 heroImage: '/images/heroes/car-fuel-pump-and-filter-replacement.jpg'
 heroImageCredit: 'Engin Akyurt / Pexels'
 heroImageId: '12377482'
-ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.svg'
+ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.png'
 ---
 
 "보증기간이 지나서 저압 연료펌프와 필터 어셈블리를 통째로 교체해야 합니다. 공임 포함 65만 원입니다."

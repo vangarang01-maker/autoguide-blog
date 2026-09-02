@@ -9,10 +9,9 @@ featured: false
 heroImage: '/images/heroes/diesel-dpf-blockage-cleaning-guide.jpg'
 heroImageCredit: 'Khunkorn Laowisit / Pexels'
 heroImageId: '5233283'
-ogImage: '/images/heroes/diesel-dpf-blockage-cleaning-guide-card.svg'
+ogImage: '/images/heroes/diesel-dpf-blockage-cleaning-guide-card.png'
 ---
 
-# [오토가이드 리서치 보고서] 디젤 DPF 막힘 증상 진단 및 강제 재생·습식 클리닝 주기·비용 가이드
 
 시내 주행만 반복하다가 계기판에 DPF 경고등이 깜빡이고 출력 제한(Limp mode)이 걸렸다면 이미 매연 포집량이 한계치를 넘은 것입니다. 방치하면 200만 원짜리 DPF 필터가 녹아내리는 대형 사고로 이어집니다.
 
