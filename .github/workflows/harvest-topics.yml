@@ -1,0 +1,47 @@
+name: Harvest Topic Candidates
+
+# 주제 후보만 쌓는다. 글을 발행하지 않는다.
+# 큐레이션 토픽이 소진되면 auto-publish 가 실패하도록 만들어 뒀으므로,
+# 그 전에 후보가 미리 모여 있어야 한다.
+on:
+  schedule:
+    - cron: '0 21 * * 5'   # 토 06:00 KST (금 21:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: harvest-topics
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Harvest candidates
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: 'gemini-3.7-flash'
+        run: node scripts/harvest-topics.mjs
+
+      - name: Commit candidates
+        run: |
+          git config --global user.name "AutoGuide Bot"
+          git config --global user.email "bot@autoguide-pro.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore(topics): harvest topic candidates [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No new candidates."
+          fi
