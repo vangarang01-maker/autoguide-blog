@@ -12,7 +12,7 @@ heroImageId: '8478269'
 ogImage: '/images/heroes/engine-carbon-cleaning-guide-card.png'
 ---
 
-GDI 엔진에만 카본이 쌓이는 구조적 이유, 초기 증상 7가지, 워터·케미컬·호두껍질 블라스팅 방식별 비용과 효과 비교, 예방 주행법과 주기까지 정비 현장 기준으로 정리했습니다.
+[GDI](/blog/gdi-engine-oil-consumption-fix/) 엔진에만 카본이 쌓이는 구조적 이유, 초기 증상 7가지, 워터·케미컬·호두껍질 블라스팅 방식별 비용과 효과 비교, 예방 주행법과 주기까지 정비 현장 기준으로 정리했습니다.
 
 ---
 

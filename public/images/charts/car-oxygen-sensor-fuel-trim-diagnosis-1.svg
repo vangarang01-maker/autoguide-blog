@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 164" width="720" height="164" role="img" aria-label="총예상 비용 (1개당) 비교">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 248" width="720" height="248" role="img" aria-label="차급별 산소센서 교체 예상 비용 범위 (전단 센서 1개 기준)">
   <style>
     .bg    { fill: #f8fafc; }
     .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
@@ -19,17 +19,27 @@
       .note  { fill: #64748b; }
     }
   </style>
-  <rect class="bg" width="720" height="164" rx="10"/>
-  <text class="ttl" x="24" y="30">총예상 비용 (1개당) 비교</text>
-  <text class="lbl" x="178" y="68" text-anchor="end">현대모비스 순정품</text>
+  <rect class="bg" width="720" height="248" rx="10"/>
+  <text class="ttl" x="24" y="30">차급별 산소센서 교체 예상 비용 범위 (전단 센서 1개 기준)</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차 &lt;br&gt;</text>
   <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
-  <rect class="range" x="459.0" y="57" width="121.0" height="18" rx="4"/>
-  <rect class="bar" x="190" y="57" width="269.0" height="18" rx="4"/>
-  <text class="val" x="590" y="68">10만원~14.5만원</text>
-  <text class="lbl" x="178" y="110" text-anchor="end">보쉬</text>
+  <rect class="range" x="258.5" y="57" width="52.7" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="68.5" height="18" rx="4"/>
+  <text class="val" x="590" y="68">6.5만원~11.5만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">준중형 / 중형 국산차 &lt;b…</text>
   <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
-  <rect class="range" x="364.8" y="99" width="107.6" height="18" rx="4"/>
-  <rect class="bar" x="190" y="99" width="174.8" height="18" rx="4"/>
-  <text class="val" x="590" y="110">6.5만원~10.5만원</text>
-  <text class="note" x="24" y="154">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+  <rect class="range" x="284.9" y="99" width="79.1" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="94.9" height="18" rx="4"/>
+  <text class="val" x="590" y="110">9만원~16.5만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">대형 / SUV 국산차 &lt;b…</text>
+  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
+  <rect class="range" x="311.2" y="141" width="110.7" height="18" rx="4"/>
+  <rect class="bar" x="190" y="141" width="121.2" height="18" rx="4"/>
+  <text class="val" x="590" y="152">11.5만원~22만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">수입 준중형 / 중형 세단 …</text>
+  <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
+  <rect class="range" x="379.7" y="183" width="200.3" height="18" rx="4"/>
+  <rect class="bar" x="190" y="183" width="189.7" height="18" rx="4"/>
+  <text class="val" x="590" y="194">18만원~37만원</text>
+  <text class="note" x="24" y="238">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
 </svg>
