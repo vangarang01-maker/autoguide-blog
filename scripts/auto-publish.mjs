@@ -870,11 +870,26 @@ export function validateBody(body) {
     if (body.includes(c)) problems.push(`검증 불가능한 경력·자격 주장 포함: "${c}"`);
   }
 
-  // 같은 문단(40자 이상)이 2회 이상 반복되면 껍데기 글로 판정
-  const paragraphs = body
-    .split('\n')
-    .map((l) => l.trim())
-    .filter((l) => l.length >= 40 && !l.startsWith('|') && !l.startsWith('#'));
+  // 같은 문단(40자 이상)이 2회 이상 반복되면 껍데기 글로 판정.
+  //
+  // 산문만 센다. 코드블록 안 ASCII 도해는 상자를 나란히 그리면 같은 선이
+  // 두 번 나오는 게 정상인데, 그것까지 세면 멀쩡한 글이 반려된다(실제로 걸렸다).
+  const paragraphs = [];
+  let inFence = false;
+  for (const rawLine of body.split('\n')) {
+    const line = rawLine.trim();
+    if (line.startsWith('```')) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+    if (line.length < 40) continue;
+    if (line.startsWith('|') || line.startsWith('#')) continue;
+    // 글자보다 괘선·화살표가 많은 줄은 그림이지 문단이 아니다
+    const wordish = (line.match(/[가-힣A-Za-z0-9]/g) ?? []).length;
+    if (wordish / line.length < 0.5) continue;
+    paragraphs.push(line);
+  }
   const counts = new Map();
   for (const p of paragraphs) counts.set(p, (counts.get(p) ?? 0) + 1);
   for (const [p, n] of counts) {
