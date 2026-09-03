@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" width="720" height="180" role="img" aria-label="미세 누유 및 간헐적 잡소리: 판정 기준과 보증 승인 대응법 — Level 2: 미세 누유 (Seepage)">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="ahp" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+  <style>
+    .bg  { fill: #f8fafc; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .nd  { fill: #0f172a; font: 600 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .ttl { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .arw { stroke: #2563eb; stroke-width: 2; }
+    .ahp { fill: #2563eb; }
+    @media (prefers-color-scheme: dark) {
+      .bg  { fill: #0f172a; }
+      .box { fill: #1e293b; stroke: #334155; }
+      .nd  { fill: #f1f5f9; }
+      .ttl { fill: #f1f5f9; }
+      .arw { stroke: #60a5fa; }
+      .ahp { fill: #60a5fa; }
+    }
+  </style>
+  <rect class="bg" width="720" height="180" rx="10"/>
+  <text class="ttl" x="24" y="30">미세 누유 및 간헐적 잡소리: 판정 기준과 보증 승인 대응법 — Level 2: 미세 누유 (Seepage)</text>
+  <line class="arw" x1="352" y1="70.5" x2="368" y2="70.5" marker-end="url(#ah)"/>
+  <line class="arw" x1="534.5" y1="95" x2="534.5" y2="116" marker-end="url(#ah)"/>
+  <rect class="box" x="24" y="50" width="323" height="41" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="185.5" y="75.5">Level 2: 미세 누유 (Seepage)</tspan>
+  </text>
+  <rect class="box" x="373" y="50" width="323" height="41" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="534.5" y="75.5">표면이 기름으로 번들거리나 맺혀 흐르지 않음</tspan>
+  </text>
+  <rect class="box" x="373" y="121" width="323" height="41" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="534.5" y="146.5">정밀 모니터링/소비자 이의제기 대상</tspan>
+  </text>
+</svg>

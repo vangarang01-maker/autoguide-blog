@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 374" width="720" height="374" role="img" aria-label="차급별 주요 보증 부품 교체 비용 범위 (공임 포함 예상가)">
+  <style>
+    .bg    { fill: #f8fafc; }
+    .ttl   { fill: #0f172a; font: 600 15px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .lbl   { fill: #475569; font: 500 13px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .val   { fill: #0f172a; font: 600 12px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    .track { fill: #e2e8f0; }
+    .bar   { fill: #2563eb; }
+    .range { fill: #2563eb; opacity: .32; }
+    .note  { fill: #94a3b8; font: 400 11px system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg    { fill: #0f172a; }
+      .ttl   { fill: #f1f5f9; }
+      .lbl   { fill: #94a3b8; }
+      .val   { fill: #f1f5f9; }
+      .track { fill: #1e293b; }
+      .bar   { fill: #60a5fa; }
+      .range { fill: #60a5fa; opacity: .32; }
+      .note  { fill: #64748b; }
+    }
+  </style>
+  <rect class="bg" width="720" height="374" rx="10"/>
+  <text class="ttl" x="24" y="30">차급별 주요 보증 부품 교체 비용 범위 (공임 포함 예상가)</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">로워암 및 하체 링크 세트&lt;…</text>
+  <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="57" width="71.5" height="18" rx="4"/>
+  <text class="val" x="590" y="68">220만원</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">타이밍 체인 및 CVVT 세…</text>
+  <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="99" width="146.3" height="18" rx="4"/>
+  <text class="val" x="590" y="110">450만원</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">변속기 밸브바디 / DCT …</text>
+  <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="141" width="211.3" height="18" rx="4"/>
+  <text class="val" x="590" y="152">650만원</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">엔진 프론트 케이스 누유 리…</text>
+  <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="183" width="97.5" height="18" rx="4"/>
+  <text class="val" x="590" y="194">300만원</text>
+  <text class="lbl" x="178" y="236" text-anchor="end">에바포레이터 코어 교체&lt;br&gt;</text>
+  <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="225" width="113.8" height="18" rx="4"/>
+  <text class="val" x="590" y="236">350만원</text>
+  <text class="lbl" x="178" y="278" text-anchor="end">AVN 인포테인먼트 메인 헤…</text>
+  <rect class="track" x="190" y="267" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="267" width="162.5" height="18" rx="4"/>
+  <text class="val" x="590" y="278">500만원</text>
+  <text class="lbl" x="178" y="320" text-anchor="end">친환경 구동 모터/인버터</text>
+  <rect class="track" x="190" y="309" width="390" height="18" rx="4"/>
+  <rect class="bar" x="190" y="309" width="390.0" height="18" rx="4"/>
+  <text class="val" x="590" y="320">1,200만원</text>
+  <text class="note" x="24" y="364">2026년 9월 기준 · 지역·정비소 유형·차종에 따라 달라지는 참고 범위입니다.</text>
+</svg>
