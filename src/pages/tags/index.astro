@@ -1,0 +1,132 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+
+const allPosts = await getCollection('blog');
+const tagCounts = new Map<string, number>();
+
+for (const post of allPosts) {
+  for (const tag of post.data.tags ?? []) {
+    const clean = tag.trim();
+    if (!clean) continue;
+    tagCounts.set(clean, (tagCounts.get(clean) || 0) + 1);
+  }
+}
+
+// 태그 글 수 내림차순, 동일하면 가나다순
+const sortedTags = [...tagCounts.entries()].sort((a, b) => {
+  if (b[1] !== a[1]) return b[1] - a[1];
+  return a[0].localeCompare(b[0], 'ko');
+});
+---
+
+<Layout
+  title="전체 태그 모아보기"
+  description="오토가이드의 모든 정비·구매·유지보수 주제별 태그 목록입니다. 관심 있는 키워드로 실전 가이드를 찾아보세요."
+  breadcrumbs={[
+    { name: '홈', href: '/' },
+    { name: '전체 글', href: '/blog' },
+    { name: '태그 모아보기', href: '/tags' },
+  ]}
+>
+  <div class="container-page py-12 sm:py-16">
+    <header class="max-w-2xl">
+      <div class="mb-3 inline-flex items-center gap-1.5 rounded-full bg-cobalt-50 px-3 py-1 text-xs font-semibold text-cobalt-700 dark:bg-steel-800 dark:text-cobalt-300">
+        <span>🏷️ 태그 클라우드</span>
+      </div>
+      <h1 class="text-3xl font-black tracking-tight text-steel-900 sm:text-4xl dark:text-white">
+        주제별 태그 모아보기
+      </h1>
+      <p class="mt-3 text-base leading-relaxed text-steel-600 dark:text-steel-400">
+        총 <strong>{sortedTags.length}개</strong>의 세부 키워드로 분류된 가이드를 검색하거나 탐색할 수 있습니다.
+      </p>
+    </header>
+
+    <!-- Tag Search Filter Input -->
+    <div class="mt-8 max-w-md">
+      <div class="relative">
+        <input
+          type="text"
+          id="tag-search"
+          placeholder="태그 검색 (예: 배터리, 중고차, 소음...)"
+          class="w-full rounded-xl border border-steel-200 bg-white px-4 py-3 pl-10 text-sm text-steel-900 shadow-xs transition placeholder:text-steel-400 focus:border-cobalt-500 focus:outline-hidden focus:ring-2 focus:ring-cobalt-500/20 dark:border-steel-700 dark:bg-steel-900 dark:text-white"
+        />
+        <span class="pointer-events-none absolute left-3.5 top-3.5 text-steel-400">🔍</span>
+      </div>
+    </div>
+
+    <!-- Tags Grid -->
+    <div class="mt-8 flex flex-wrap gap-2.5" id="tag-cloud">
+      {
+        sortedTags.map(([tag, count]) => (
+          <a
+            href={`/tags/${encodeURIComponent(tag)}/`}
+            data-tag-name={tag.toLowerCase()}
+            class:list={[
+              'inline-flex items-center gap-1.5 rounded-xl border px-3.5 py-2 text-sm font-medium transition',
+              count >= 3
+                ? 'border-cobalt-200 bg-cobalt-50/50 text-cobalt-700 hover:border-cobalt-400 hover:bg-cobalt-100 dark:border-steel-700 dark:bg-steel-800 dark:text-cobalt-300 dark:hover:border-cobalt-500'
+                : 'border-steel-200 bg-white text-steel-600 hover:border-cobalt-300 hover:text-cobalt-600 dark:border-steel-800 dark:bg-steel-900 dark:text-steel-300 dark:hover:border-steel-700 dark:hover:text-white',
+            ]}
+          >
+            <span>#{tag}</span>
+            <span
+              class:list={[
+                'rounded-full px-1.5 py-0.2 text-xs font-semibold',
+                count >= 3
+                  ? 'bg-cobalt-200 text-cobalt-800 dark:bg-steel-700 dark:text-cobalt-200'
+                  : 'bg-steel-100 text-steel-500 dark:bg-steel-800 dark:text-steel-400',
+              ]}
+            >
+              {count}
+            </span>
+          </a>
+        ))
+      }
+    </div>
+
+    <div id="no-tags-found" class="mt-8 hidden rounded-xl border border-dashed border-steel-200 p-8 text-center text-steel-500 dark:border-steel-800 dark:text-steel-400">
+      일치하는 태그가 없습니다. 다른 단어로 검색해 보세요.
+    </div>
+
+    <div class="my-12">
+      <AdSlot slot="4444444444" layout="in-article" label="Sponsored" />
+    </div>
+
+    <div class="mt-8 flex justify-center">
+      <a
+        href="/blog"
+        class="rounded-xl border border-steel-200 px-6 py-3 text-sm font-semibold text-steel-700 transition hover:border-cobalt-400 hover:text-cobalt-600 dark:border-steel-700 dark:text-steel-200"
+      >
+        ← 전체 가이드 목록으로
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+  (() => {
+    const input = document.getElementById('tag-search');
+    const cloud = document.getElementById('tag-cloud');
+    const emptyMsg = document.getElementById('no-tags-found');
+    if (!input || !cloud) return;
+
+    input.addEventListener('input', (e) => {
+      const q = (e.target.value || '').trim().toLowerCase();
+      const items = cloud.querySelectorAll('[data-tag-name]');
+      let visibleCount = 0;
+
+      items.forEach((el) => {
+        const name = el.getAttribute('data-tag-name') || '';
+        const match = !q || name.includes(q);
+        el.classList.toggle('hidden', !match);
+        if (match) visibleCount++;
+      });
+
+      if (emptyMsg) {
+        emptyMsg.classList.toggle('hidden', visibleCount > 0);
+      }
+    });
+  })();
+</script>

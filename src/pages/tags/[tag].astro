@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PostCard from '../../components/PostCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const tagMap = new Map<string, typeof allPosts>();
+
+  for (const post of allPosts) {
+    for (const tag of post.data.tags ?? []) {
+      const clean = tag.trim();
+      if (!clean) continue;
+      if (!tagMap.has(clean)) tagMap.set(clean, []);
+      tagMap.get(clean)!.push(post);
+    }
+  }
+
+  return [...tagMap.entries()].map(([tag, posts]) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+      allPosts,
+    },
+  }));
+}
+
+interface Props {
+  tag: string;
+  posts: Awaited<ReturnType<typeof getCollection<'blog'>>>;
+  allPosts: Awaited<ReturnType<typeof getCollection<'blog'>>>;
+}
+
+const { tag, posts, allPosts } = Astro.props;
+
+// 태그 글이 적을 때 함께 추천할 같은 카테고리의 글들
+const taggedIds = new Set(posts.map((p) => p.id));
+const recommended = allPosts
+  .filter((p) => !taggedIds.has(p.id) && posts.some((tp) => tp.data.category === p.data.category))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<Layout
+  title={`#${tag} 관련 가이드 (${posts.length}편)`}
+  description={`오토가이드의 #${tag} 관련 자동차 정비·구매 실전 가이드 모음입니다. 전문 데이터와 실무 점검법을 확인하세요.`}
+  breadcrumbs={[
+    { name: '홈', href: '/' },
+    { name: '전체 글', href: '/blog' },
+    { name: `#${tag}`, href: `/tags/${encodeURIComponent(tag)}/` },
+  ]}
+>
+  <div class="container-page py-12 sm:py-16">
+    <!-- Header -->
+    <header class="max-w-2xl">
+      <div class="mb-3 inline-flex items-center gap-1.5 rounded-full bg-cobalt-50 px-3 py-1 text-xs font-semibold text-cobalt-700 dark:bg-steel-800 dark:text-cobalt-300">
+        <span>🏷️ 태그 아카이브</span>
+      </div>
+      <h1 class="text-3xl font-black tracking-tight text-steel-900 sm:text-4xl dark:text-white">
+        #{tag}
+      </h1>
+      <p class="mt-3 text-base leading-relaxed text-steel-600 dark:text-steel-400">
+        총 <strong>{posts.length}편</strong>의 관련 실전 가이드가 등록되어 있습니다.
+      </p>
+    </header>
+
+    <!-- Tagged Posts Grid -->
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+
+    <!-- Ad -->
+    <div class="my-10">
+      <AdSlot slot="3333333333" layout="in-article" label="Sponsored" />
+    </div>
+
+    <!-- Recommended if few posts -->
+    {
+      recommended.length > 0 && (
+        <section class="mt-12 border-t border-steel-200 pt-10 dark:border-steel-800">
+          <h2 class="text-xl font-bold text-steel-900 dark:text-white">
+            함께 보면 좋은 추천 가이드
+          </h2>
+          <p class="mt-1 text-sm text-steel-500 dark:text-steel-400">
+            동일 카테고리의 인기 콘텐츠를 확인해 보세요.
+          </p>
+          <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {recommended.map((post) => (
+              <PostCard post={post} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <!-- Navigation Back -->
+    <div class="mt-12 flex flex-wrap items-center justify-center gap-4">
+      <a
+        href="/tags"
+        class="rounded-xl border border-steel-200 px-5 py-2.5 text-sm font-semibold text-steel-700 transition hover:border-cobalt-400 hover:text-cobalt-600 dark:border-steel-700 dark:text-steel-200"
+      >
+        🏷️ 전체 태그 모아보기
+      </a>
+      <a
+        href="/blog"
+        class="rounded-xl bg-cobalt-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-cobalt-500"
+      >
+        전체 가이드 목록 →
+      </a>
+    </div>
+  </div>
+</Layout>

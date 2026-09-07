@@ -76,6 +76,7 @@ export const NAV_LINKS = [
   { href: '/', label: '홈' },
   { href: '/calculator', label: '🧮 자동차 계산기' },
   { href: '/blog', label: '전체 글' },
+  { href: '/tags', label: '🏷️ 태그' },
   { href: '/about', label: '소개' },
   { href: '/contact', label: '문의' },
   { href: '/privacy-policy', label: '개인정보처리방침' },
