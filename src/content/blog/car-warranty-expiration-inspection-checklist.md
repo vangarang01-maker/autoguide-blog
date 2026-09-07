@@ -132,12 +132,8 @@ ogImage: '/images/heroes/car-warranty-expiration-inspection-checklist-card.png'
 
 보증 수리 신청 시 서비스센터에서 가장 빈번하게 발생하는 분쟁 유형은 '미세 누유(Seepage)'와 '간헐적 소음(NVH)'입니다. 제조사의 정비 지침서상 판정 기준을 이해하고 논리적으로 접근해야 무상 수리 판정을 받을 수 있습니다.
 
-```
-[오일 누유 단계별 판정 기준도]
- 
- 
-Level 3: 오일 누유 (Leakage) ────▶ 방울 형태로 맺히며 바닥으로 낙하 가능한 상태 ──▶ 제조사 판정: 즉각 무상 보증 수리
-```
+> **오일 누유 단계별 판정 기준**
+> * **Level 3: 오일 누유 (Leakage)**: 방울 형태로 맺히며 바닥으로 낙하 가능한 상태 ──▶ 제조사 판정: 즉각 무상 보증 수리
 
 ![미세 누유 및 간헐적 잡소리: 판정 기준과 보증 승인 대응법 — Level 2: 미세 누유 (Seepage)](/images/charts/car-warranty-expiration-inspection-checklist-flow-2.svg)
 

@@ -111,13 +111,6 @@ ogImage: '/images/heroes/hybrid-battery-lifespan-replacement-cost-card.png'
 
 [하이브리드](/blog/ev-vs-hybrid-maintenance-cost/) 차량의 고전압 배터리는 주로 뒷좌석 하단이나 트렁크 하부에 위치하며, 실내 공기를 흡입하여 배터리를 식힙니다.
 
-```
-[배터리 냉각 시스템 구조]
- 
-                                            ▲
-                                    (반드시 먼지 제거 필요!)
-```
-
 ![배터리 냉각 덕트 및 팬 셀프 청소 가이드](/images/charts/hybrid-battery-lifespan-replacement-cost-flow-1.svg)
 
 #### 자가 정비 체크리스트 & 작업 단계:

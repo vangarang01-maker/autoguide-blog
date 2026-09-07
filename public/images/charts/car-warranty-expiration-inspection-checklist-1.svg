@@ -37,7 +37,7 @@
   <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="183" width="97.5" height="18" rx="4"/>
   <text class="val" x="590" y="194">300만원</text>
-  <text class="lbl" x="178" y="236" text-anchor="end">에바포레이터 코어 교체&lt;br&gt;</text>
+  <text class="lbl" x="178" y="236" text-anchor="end">에바포레이터 코어 교체</text>
   <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="225" width="113.8" height="18" rx="4"/>
   <text class="val" x="590" y="236">350만원</text>

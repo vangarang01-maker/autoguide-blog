@@ -646,8 +646,14 @@ const GEMINI_SYSTEM_PROMPT = `당신은 자동차 정비·구매 정보를 다�
 6. 소제목 개수는 주제에 맞게 4~9개 사이에서 자유롭게 정하세요. 정해진 골격을 따르지 마세요.
 7. 분량은 공백 포함 6,000~9,000자. 상위 노출 중인 경쟁 글이 2만 자 수준이므로 얕게 쓰면 묻힙니다.
    비용은 차급(경차/준중형/중형/대형)과 국산·수입으로 나눠 표로 제시하세요.
-8. 프론트매터(--- 영역)는 출력하지 말고 본문부터 출력하세요. 마크다운 H2/H3, 표, 체크리스트를 활용하세요.
-9. 문장은 존댓말(~합니다, ~하세요, ~됩니다)로 씁니다.`;
+8. [중요: 마크다운 서식 및 렌더링 규칙]
+   - 모든 표는 반드시 표준 마크다운 표(| 항목 | 내용 |)로만 작성하세요.
+   - 절대 백틱 코드블록(\`\`\`) 안에 ┌, ├, │, └ 같은 괘선 문자로 아스키(ASCII) 표를 그리지 마세요. 모바일 화면에서 표가 완전히 깨집니다.
+   - 본문에 프로그래밍 코드가 들어가는 글이 아니므로, 백틱 코드블록(\`\`\`)은 일절 사용하지 마세요.
+   - 단계별 절차나 점검 동선은 마크다운 번호 매기기(1단계, 2단계...) 또는 불릿 목록으로 작성하세요.
+   - 상태 판별 기준이나 중요 요약은 인용구(> ...) 또는 글머리 기호(- ...)를 활용하세요.
+9. 프론트매터(--- 영역)는 출력하지 말고 본문부터 출력하세요. 마크다운 H2/H3, 표, 체크리스트를 활용하세요.
+10. 문장은 존댓말(~합니다, ~하세요, ~됩니다)로 씁니다.`;
 
 /**
  * 과부하(503)·쿼터(429) 응답은 잠깐 뒤 풀리는 경우가 많다.
@@ -849,6 +855,66 @@ const BANNED_CLAIMS = [
 ];
 
 /**
+ * ┌───┬───┐ 형태의 아스키 괘선 표를 표준 마크다운 표(| ... |)로 변환한다.
+ * 모바일 웹에서 괘선 표가 가로로 깨지거나 pre-wrap 으로 줄바꿈되어 망가지는 것을 방지한다.
+ */
+export function convertAsciiBoxTables(text) {
+  return text.replace(/```[^\n]*\n([\s\S]*?)\n```/g, (match, content) => {
+    if (!/[┌├└]/.test(content) || !/│/.test(content)) return match;
+    const lines = content.split('\n');
+    const tableRows = [];
+    let title = null;
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      // 제목 줄 (예: [통상 조건 vs 도심 가혹 조건 주행 비교])
+      if (trimmed.startsWith('[') && trimmed.endsWith(']') && !trimmed.includes('│')) {
+        title = trimmed.slice(1, -1);
+        continue;
+      }
+      // 괘선 외곽선 줄 (┌, ├, └) 건너뜀
+      if (/^[┌├└]/.test(trimmed)) continue;
+      // 데이터 줄 (│ Col1 │ Col2 │)
+      if (trimmed.startsWith('│') && trimmed.endsWith('│')) {
+        const cells = trimmed
+          .slice(1, -1)
+          .split('│')
+          .map((c) => c.trim());
+        tableRows.push(cells);
+      }
+    }
+
+    if (tableRows.length < 2) return match;
+
+    const [header, ...rows] = tableRows;
+    const mdHeader = `| ${header.join(' | ')} |`;
+    const mdSep = `| ${header.map(() => ':---').join(' | ')} |`;
+    const mdRows = rows.map((r) => `| ${r.join(' | ')} |`).join('\n');
+    const mdTable = [mdHeader, mdSep, mdRows].join('\n');
+
+    return title ? `### ${title}\n\n${mdTable}` : mdTable;
+  });
+}
+
+/**
+ * 불릿 목록이나 단순 요약문이 불필요하게 백틱 코드블록에 들어간 경우 인용구(>)로 변환한다.
+ */
+export function unwrapNonCodeBlocks(text) {
+  return text.replace(/```[^\n]*\n([\s\S]*?)\n```/g, (match, content) => {
+    const lines = content.trim().split('\n');
+    const isListOrCallout = lines.every((line) => {
+      const t = line.trim();
+      return !t || /^(\*|-|\d+\.|\[.*?\])/.test(t);
+    });
+    if (isListOrCallout && lines.length > 0) {
+      return lines.map((l) => (l.trim() ? `> ${l}` : '>')).join('\n');
+    }
+    return match;
+  });
+}
+
+/**
  * 생성된 본문을 저장 형태로 다듬는다.
  *
  * H1 을 걷어내는 이유: 페이지의 H1 은 frontmatter 의 title 로 이미 렌더된다.
@@ -856,11 +922,15 @@ const BANNED_CLAIMS = [
  * 서로 달라 검색엔진에 보내는 신호가 갈린다.
  */
 export function normalizeBody(body) {
-  return body
-    .replace(/^\s*#\s+.*$/gm, '')
-    .replace(/^\n+/, '')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
+  return unwrapNonCodeBlocks(
+    convertAsciiBoxTables(
+      body
+        .replace(/^\s*#\s+.*$/gm, '')
+        .replace(/^\n+/, '')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim(),
+    ),
+  );
 }
 
 /**
@@ -921,6 +991,11 @@ export function validateBody(body) {
   // normalizeBody 를 거친 뒤에도 H1 이 남아 있으면 정규화가 놓친 형태다.
   const h1Count = (body.match(/^# /gm) ?? []).length;
   if (h1Count > 0) problems.push(`본문 H1 ${h1Count}개 — 페이지 H1(title)과 중복`);
+
+  // 아스키 괘선 표가 남아 있으면 모바일 렌더링이 깨진다
+  if (/[┌├└]/.test(body) && /│/.test(body)) {
+    problems.push('아스키 괘선 표(┌───)가 본문에 남아 있음 — 표준 마크다운 표(|---|) 사용 필수');
+  }
 
   return problems;
 }

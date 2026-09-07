@@ -49,11 +49,6 @@ ogImage: '/images/heroes/flooded-car-distinction-methods-card.png'
 
 제조사 정비 지침서의 차체 방청 및 전장 배선 레이아웃 기준에 근거하여, 물이 차올랐을 때 흔적이 남을 수밖에 없는 7가지 핵심 부위를 순서대로 검증합니다.
 
-```
-[실차 검수 동선]
- 
-```
-
 ![서류 조작을 잡아내는 7단계 실차 검수 프로토콜](/images/charts/flooded-car-distinction-methods-flow-1.svg)
 
 ---

@@ -51,7 +51,13 @@ export function parseTables(markdown) {
     .filter(Boolean);
 }
 
-const stripMd = (s) => s.replace(/\*\*/g, '').replace(/`/g, '').trim();
+const stripMd = (s) =>
+  s
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\*\*/g, '')
+    .replace(/`/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 
 /**
  * 표에서 차트로 만들 계열을 뽑는다.
@@ -128,8 +134,13 @@ export function renderCostChart({ data, caption, basis }) {
       const xMax = x(d.max);
       const solidW = Math.max(xMin - padL, 2);
       const rangeW = Math.max(xMax - xMin, 0);
-      // 괄호 보충 설명은 축 라벨에서 떼어낸다. 잘려서 "(재…" 로 끝나는 것보다 낫다.
-      const base = d.label.replace(/\s*[(（].*$/, '').trim() || d.label;
+      // 괄호 보충 설명과 HTML 태그는 축 라벨에서 떼어낸다. 잘려서 "(재…" 로 끝나는 것보다 낫다.
+      const base =
+        d.label
+          .replace(/<[^>]+>/g, ' ')
+          .replace(/\s*[(（].*$/, '')
+          .replace(/\s+/g, ' ')
+          .trim() || d.label;
       const label = base.length > 16 ? `${base.slice(0, 15)}…` : base;
       const value = d.min === d.max ? fmt(d.max) : `${fmt(d.min)}~${fmt(d.max)}`;
       const rangeRect =

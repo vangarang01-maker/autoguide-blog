@@ -75,12 +75,6 @@ DPF 재생 과정에서 실린더 내로 후분사된 경유 연료는 전부 �
 
 정비소 방문 전 또는 표준 진단 스캐너(OBD2)를 활용하여 DPF의 물리적·전자적 상태를 객관적 수치로 판별하는 기준 데이터는 다음과 같습니다.
 
-```
-[차압센서(Differential Pressure Sensor)]
-   ├─ P1 (DPF 전단 압력) ──┐
- 
-```
-
 ![OBD2 진단기 기준: DPF 포집량(Soot) 및 차압 센서 전압값 진단 표준](/images/charts/diesel-dpf-blockage-cleaning-guide-flow-2.svg)
 
 ### DPF 매연 포집량(Soot Mass) 진단 기준 (2.0L 디젤 엔진 기준 표준 규격)

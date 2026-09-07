@@ -21,23 +21,23 @@
   </style>
   <rect class="bg" width="720" height="290" rx="10"/>
   <text class="ttl" x="24" y="30">차급별·국산/수입별 초기 메인터넌스 견적 범위</text>
-  <text class="lbl" x="178" y="68" text-anchor="end">경차&lt;br&gt;</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차</text>
   <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="57" width="79.6" height="18" rx="4"/>
   <text class="val" x="590" y="68">97만원</text>
-  <text class="lbl" x="178" y="110" text-anchor="end">국산 준중형/중형&lt;br&gt;</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">국산 준중형/중형</text>
   <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="99" width="129.7" height="18" rx="4"/>
   <text class="val" x="590" y="110">158만원</text>
-  <text class="lbl" x="178" y="152" text-anchor="end">국산 대형/SUV&lt;br&gt;</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">국산 대형/SUV</text>
   <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="141" width="188.8" height="18" rx="4"/>
   <text class="val" x="590" y="152">230만원</text>
-  <text class="lbl" x="178" y="194" text-anchor="end">수입 준중형/중형&lt;br&gt;</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">수입 준중형/중형</text>
   <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="183" width="275.1" height="18" rx="4"/>
   <text class="val" x="590" y="194">335만원</text>
-  <text class="lbl" x="178" y="236" text-anchor="end">수입 대형/대형 SUV&lt;br&gt;</text>
+  <text class="lbl" x="178" y="236" text-anchor="end">수입 대형/대형 SUV</text>
   <rect class="track" x="190" y="225" width="390" height="18" rx="4"/>
   <rect class="bar" x="190" y="225" width="390.0" height="18" rx="4"/>
   <text class="val" x="590" y="236">475만원</text>

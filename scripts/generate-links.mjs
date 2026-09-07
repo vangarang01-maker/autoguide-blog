@@ -126,11 +126,17 @@ for (const p of posts) {
     );
 
     let replaced = false;
+    let inFence = false;
     body = body
       .split('\n')
       .map((line) => {
+        if (/^\s*```/.test(line)) {
+          inFence = !inFence;
+          return line;
+        }
+        if (inFence) return line;
         if (replaced) return line;
-        if (/^\s*(#|\||```|!\[|>)/.test(line)) return line;
+        if (/^\s*(#|\||!\[|>)/.test(line)) return line;
         if (line.includes('](/blog/')) return line;
         if (!re.test(line)) return line;
         replaced = true;

@@ -26,16 +26,6 @@ ogImage: '/images/heroes/car-power-steering-oil-and-mdps-clunk-card.png'
 
 핸들 소음의 원인을 정확히 파악하려면 내 차의 조향 보조 장치가 어떤 방식인지 먼저 알아야 합니다.
 
-```
-[조향 방식별 보조 메커니즘 구조]
-
-1. C-MDPS (컬럼 구동형 전동식 조향장치)
- 
-
-2. 유압식 파워 스티어링 (HPS)
- 
-```
-
 ![MDPS(전동식) vs 유압식 파워 스티어링: 조향 보조 메커니즘의 차이 — 엔진 벨트](/images/charts/car-power-steering-oil-and-mdps-clunk-flow-2.svg)
 
 ![MDPS(전동식) vs 유압식 파워 스티어링: 조향 보조 메커니즘의 차이 — 스티어링 휠](/images/charts/car-power-steering-oil-and-mdps-clunk-flow-1.svg)

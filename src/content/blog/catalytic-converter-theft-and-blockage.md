@@ -24,12 +24,8 @@ ogImage: '/images/heroes/catalytic-converter-theft-and-blockage-card.png'
 
 가솔린 차량의 배기 매니폴드 바로 뒤쪽에 위치한 삼원 촉매장치는 엔진에서 배출되는 유해 가스를 무해한 성분으로 전환하는 화학 반응 고온 리액터입니다.
 
-```
-[엔진 유해가스 유입]           [삼원 촉매 내부 화학 반응]            [무해 가스 배출]
- 
- 
-  - 질소산화물 (NOx)  ───▶  로듐(Rh)            : 환원 반응  ───▶  질소 (N₂)
-```
+> **삼원 촉매 질소산화물(NOx) 정화 메커니즘**
+> * **질소산화물 (NOx)** ───▶ 로듐(Rh) 환원 반응 ───▶ **질소 (N₂)**
 
 ![삼원 촉매장치(TWC)의 정화 메커니즘과 동작 조건 — 탄화수소 (HC)](/images/charts/catalytic-converter-theft-and-blockage-flow-2.svg)
 

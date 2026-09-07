@@ -10,7 +10,19 @@
 const ARROW = /\s*(?:[─-]{0,6}(?:\([^)]*\))?[─-]{0,6})?(?:➔|▶|—>|-->|─>|>)\s*/;
 const ARROW_TEST = /(?:➔|▶|──>|───▶|──▶|-->)/;
 
-/** 한 줄에서 노드 목록을 뽑는다. 노드가 3개 미만이면 도해 가치가 없다. */
+/** 좌향 화살표 토큰. 스네이크형 흐름도(우->좌) 파싱에 사용 */
+const LEFT_ARROW = /\s*(?:[─-]{0,6}(?:\([^)]*\))?[─-]{0,6})?(?:◀|◁|◀──|◀─|<--|<-)\s*/;
+const LEFT_ARROW_TEST = /(?:◀|◁|◀──|◀─|<--)/;
+
+function cleanNode(s) {
+  return s
+    .replace(/[[\]]/g, ' ')
+    .replace(/^[\s└├─│*+-]+/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** 한 줄에서 노드 목록을 뽑는다. */
 export function parseChain(line) {
   // 뒤에 붙은 부연(※ ...)은 도해에 넣지 않는다
   const body = line.replace(/\s*※.*$/, '').trim();
@@ -18,28 +30,33 @@ export function parseChain(line) {
 
   const nodes = body
     .split(ARROW)
-    .map((s) =>
-      s
-        // 대괄호는 원문에서 노드 구분자로만 쓰였다
-        .replace(/[[\]]/g, ' ')
-        // 트리 가지 기호와 목록 불릿은 노드 이름이 아니다
-        .replace(/^[\s└├─│*+-]+/, '')
-        .replace(/\s+/g, ' ')
-        .trim(),
-    )
+    .map(cleanNode)
     .filter((s) => s.length > 0 && s.length < 40);
 
-  if (nodes.length < 3) return null;
+  if (nodes.length < 2) return null;
   return nodes;
+}
+
+/** 좌향 화살표(A ◀── B ◀── C)를 올바른 순서(C -> B -> A)로 뒤집어 노드 목록을 뽑는다. */
+export function parseReverseChain(line) {
+  const body = line.replace(/\s*※.*$/, '').trim();
+  if (!LEFT_ARROW_TEST.test(body)) return null;
+
+  const nodes = body
+    .split(LEFT_ARROW)
+    .map(cleanNode)
+    .filter((s) => s.length > 0 && s.length < 40);
+
+  if (nodes.length < 2) return null;
+  return nodes.reverse();
 }
 
 /**
  * 코드블록 본문에서 흐름 체인을 찾는다.
- * 화살표로 시작하는 줄은 앞줄의 연속이므로 이어 붙인다.
+ * 단일 줄 체인, 줄바꿈 연속 체인, 그리고 2행 스네이크 체인(우향 -> 아래 -> 좌향)까지 결합하여 감지한다.
  */
 export function findChains(blockLines) {
-  // 이어 붙인 뒤에는 원본이 몇 번째 줄이었는지 알 수 없게 되므로
-  // 기여한 줄 번호를 함께 들고 다닌다. 승격 후 원본을 지울 때 쓴다.
+  // 1) 화살표로 시작하는 줄은 앞줄의 연속이므로 먼저 이어 붙인다
   const joined = [];
   blockLines.forEach((raw, i) => {
     const line = raw.trimEnd();
@@ -53,11 +70,36 @@ export function findChains(blockLines) {
   });
 
   const out = [];
-  for (const j of joined) {
-    const nodes = parseChain(j.text);
-    if (nodes) out.push({ nodes, source: j.text, lineIdxs: j.lineIdxs });
+  let i = 0;
+  while (i < joined.length) {
+    const jItem = joined[i];
+    const forwardNodes = parseChain(jItem.text);
+    if (forwardNodes) {
+      let combined = [...forwardNodes];
+      let lineIdxs = [...jItem.lineIdxs];
+
+      // 스네이크 체인 확인: 뒤따라오는 연결선(│ 등) 및 좌향 화살표(◀──) 줄 탐색
+      let k = i + 1;
+      const connectorIdxs = [];
+      while (k < joined.length && (joined[k].text.trim() === '' || /^[\s│|↓]+$/.test(joined[k].text))) {
+        if (/^[\s│|↓]+$/.test(joined[k].text)) connectorIdxs.push(...joined[k].lineIdxs);
+        k++;
+      }
+      if (k < joined.length) {
+        const revNodes = parseReverseChain(joined[k].text);
+        if (revNodes) {
+          combined.push(...revNodes);
+          lineIdxs.push(...connectorIdxs, ...joined[k].lineIdxs);
+          out.push({ nodes: combined, source: `${jItem.text} ${joined[k].text}`, lineIdxs });
+          i = k + 1;
+          continue;
+        }
+      }
+      out.push({ nodes: combined, source: jItem.text, lineIdxs });
+    }
+    i++;
   }
-  return out;
+  return out.filter((c) => c.nodes.length >= 3);
 }
 
 const esc = (s) =>

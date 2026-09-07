@@ -21,22 +21,22 @@
   </style>
   <rect class="bg" width="720" height="248" rx="10"/>
   <text class="ttl" x="24" y="30">차급별 브레이크 패드 및 디스크 로터 교체 예상 비용 범위 (전륜 1세트 기준)</text>
-  <text class="lbl" x="178" y="68" text-anchor="end">경차&lt;br&gt;</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차</text>
   <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
   <rect class="range" x="251.1" y="57" width="42.3" height="18" rx="4"/>
   <rect class="bar" x="190" y="57" width="61.1" height="18" rx="4"/>
   <text class="val" x="590" y="68">13만원~22만원</text>
-  <text class="lbl" x="178" y="110" text-anchor="end">준중형/중형&lt;br&gt;</text>
+  <text class="lbl" x="178" y="110" text-anchor="end">준중형/중형</text>
   <rect class="track" x="190" y="99" width="390" height="18" rx="4"/>
   <rect class="range" x="276.9" y="99" width="65.8" height="18" rx="4"/>
   <rect class="bar" x="190" y="99" width="86.9" height="18" rx="4"/>
   <text class="val" x="590" y="110">18.5만원~32.5만원</text>
-  <text class="lbl" x="178" y="152" text-anchor="end">대형/SUV&lt;br&gt;</text>
+  <text class="lbl" x="178" y="152" text-anchor="end">대형/SUV</text>
   <rect class="track" x="190" y="141" width="390" height="18" rx="4"/>
   <rect class="range" x="309.8" y="141" width="105.7" height="18" rx="4"/>
   <rect class="bar" x="190" y="141" width="119.8" height="18" rx="4"/>
   <text class="val" x="590" y="152">25.5만원~48만원</text>
-  <text class="lbl" x="178" y="194" text-anchor="end">수입 중형 세단&lt;br&gt;</text>
+  <text class="lbl" x="178" y="194" text-anchor="end">수입 중형 세단</text>
   <rect class="track" x="190" y="183" width="390" height="18" rx="4"/>
   <rect class="range" x="378.0" y="183" width="202.0" height="18" rx="4"/>
   <rect class="bar" x="190" y="183" width="188.0" height="18" rx="4"/>

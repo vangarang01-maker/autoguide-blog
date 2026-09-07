@@ -22,18 +22,33 @@
   </style>
   <rect class="bg" width="720" height="180" rx="10"/>
   <text class="ttl" x="24" y="30">[순서형 실행 체크리스트] 가혹 조건 저주행 차량 실전 판별 6단계</text>
-  <line class="arw" x1="352" y1="70.5" x2="368" y2="70.5" marker-end="url(#ah)"/>
-  <line class="arw" x1="534.5" y1="95" x2="534.5" y2="116" marker-end="url(#ah)"/>
-  <rect class="box" x="24" y="50" width="323" height="41" rx="8"/>
+  <line class="arw" x1="235" y1="70.5" x2="251" y2="70.5" marker-end="url(#ah)"/>
+  <line class="arw" x1="467" y1="70.5" x2="483" y2="70.5" marker-end="url(#ah)"/>
+  <line class="arw" x1="591" y1="95" x2="591" y2="116" marker-end="url(#ah)"/>
+  <line class="arw" x1="483" y1="141.5" x2="467" y2="141.5" marker-end="url(#ah)"/>
+  <line class="arw" x1="251" y1="141.5" x2="235" y2="141.5" marker-end="url(#ah)"/>
+  <rect class="box" x="24" y="50" width="206" height="41" rx="8"/>
   <text class="nd" text-anchor="middle">
-    <tspan x="185.5" y="75.5">1단계 공공 데이터 조회</tspan>
+    <tspan x="127" y="75.5">1단계 공공 데이터 조회</tspan>
   </text>
-  <rect class="box" x="373" y="50" width="323" height="41" rx="8"/>
+  <rect class="box" x="256" y="50" width="206" height="41" rx="8"/>
   <text class="nd" text-anchor="middle">
-    <tspan x="534.5" y="75.5">2단계 조작계 마모 대조</tspan>
+    <tspan x="359" y="75.5">2단계 조작계 마모 대조</tspan>
   </text>
-  <rect class="box" x="373" y="121" width="323" height="41" rx="8"/>
+  <rect class="box" x="488" y="50" width="206" height="41" rx="8"/>
   <text class="nd" text-anchor="middle">
-    <tspan x="534.5" y="146.5">3단계 엔진오일 캡·딥스틱 점검</tspan>
+    <tspan x="591" y="75.5">3단계 엔진오일 캡 점검</tspan>
+  </text>
+  <rect class="box" x="488" y="121" width="206" height="41" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="591" y="146.5">4단계 배터리·충전전압 점검</tspan>
+  </text>
+  <rect class="box" x="256" y="121" width="206" height="41" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="359" y="146.5">5단계 하부 부싱·타이어 점검</tspan>
+  </text>
+  <rect class="box" x="24" y="121" width="206" height="41" rx="8"/>
+  <text class="nd" text-anchor="middle">
+    <tspan x="127" y="146.5">6단계 OBD-II 가동시간 역추산</tspan>
   </text>
 </svg>

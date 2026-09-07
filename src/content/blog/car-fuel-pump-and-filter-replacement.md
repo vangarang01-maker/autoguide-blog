@@ -21,11 +21,6 @@ ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.png'
 
 자동차의 연료 공급 시스템은 연료탱크 내부의 연료를 엔진 연소실까지 안전하고 일정한 압력으로 이송하는 정밀한 프로세스를 수행합니다. 현대의 내연기관 차량, 특히 가솔린 직분사([GDI](/blog/engine-carbon-cleaning-guide/)) 엔진과 디젤 커먼레일(CRDi) 엔진은 고압의 연료 분사를 통해 연소 효율을 극대화합니다. 이 시스템은 크게 세 단계의 구조로 나뉩니다.
 
-```
- 
-  (3.0～6.0 bar 압송)       (이물질/수분 여과)     (50～2,500 bar 초고압 분사)
-```
-
 ![연료 공급 시스템의 3단계 구조와 펌프 파손의 공학적 메커니즘](/images/charts/car-fuel-pump-and-filter-replacement-flow-1.svg)
 
 1. **저압 송출 단계 (저압 연료 펌프)**: 연료탱크 내부에 잠겨 있는 전동식 저압 펌프가 작동하여 연료를 엔진룸 방향으로 밀어냅니다. 제조사 정비 지침서에 명시된 저압 라인의 정상 작동 압력은 차종에 따라 다르나, 대개 3.0 bar에서 6.0 bar(300～600 kPa) 사이를 유지해야 합니다.
@@ -49,12 +44,6 @@ ogImage: '/images/heroes/car-fuel-pump-and-filter-replacement-card.png'
 
 ### 멀티미터 및 진단기를 활용한 과학적 진단 절차
 제조사 정비 지침서상 정밀 진단을 위해서는 임의적인 부품 교체 대신 멀티미터와 전류 클램프를 활용한 전기적 측정이 선행되어야 합니다.
-
-```
- 
-                        (정상: 5.0A ± 1.0A)              (정상: 규칙적인 정현파)
-                        (이상: 8.5A 이상 초과)           (이상: 불규칙한 노이즈 파형)
-```
 
 ![멀티미터 및 진단기를 활용한 과학적 진단 절차](/images/charts/car-fuel-pump-and-filter-replacement-flow-2.svg)
 

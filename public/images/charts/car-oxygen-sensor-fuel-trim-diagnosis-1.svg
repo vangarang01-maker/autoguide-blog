@@ -21,7 +21,7 @@
   </style>
   <rect class="bg" width="720" height="248" rx="10"/>
   <text class="ttl" x="24" y="30">차급별 산소센서 교체 예상 비용 범위 (전단 센서 1개 기준)</text>
-  <text class="lbl" x="178" y="68" text-anchor="end">경차 &lt;br&gt;</text>
+  <text class="lbl" x="178" y="68" text-anchor="end">경차</text>
   <rect class="track" x="190" y="57" width="390" height="18" rx="4"/>
   <rect class="range" x="258.5" y="57" width="52.7" height="18" rx="4"/>
   <rect class="bar" x="190" y="57" width="68.5" height="18" rx="4"/>
