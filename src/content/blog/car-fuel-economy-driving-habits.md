@@ -42,7 +42,7 @@ ogImage: '/images/heroes/car-fuel-economy-driving-habits-card.png'
 
 ![기어 중립(N) 주행 vs D단 퓨얼컷 주행 비교](/images/charts/car-fuel-economy-driving-habits-flow-2.svg)
 
-또한, 고속 주행 중 N단으로 기어를 변속하는 행위는 변속기 내부의 유압 제어 밸브와 클러치 디스크에 비정상적인 마찰을 유발하여 변속기 수명을 단축시킬 수 있습니다. 안전 측면에서도 엔진 브레이크가 작동하지 않아 풋 브레이크 과열로 인한 베이퍼 록(Vapor Lock)이나 페이드(Fade) 현상을 초래할 위험이 큽니다.
+또한, 고속 주행 중 N단으로 기어를 변속하는 행위는 [변속기](/blog/dct-transmission-driving-tips/) 내부의 유압 제어 밸브와 클러치 디스크에 비정상적인 마찰을 유발하여 변속기 수명을 단축시킬 수 있습니다. 안전 측면에서도 엔진 브레이크가 작동하지 않아 풋 브레이크 과열로 인한 베이퍼 록(Vapor Lock)이나 페이드(Fade) 현상을 초래할 위험이 큽니다.
 
 ---
 
@@ -62,7 +62,7 @@ ogImage: '/images/heroes/car-fuel-economy-driving-habits-card.png'
 최근 차량에 기본 탑재되는 ISG 기능은 정차 시 엔진을 완전히 정지시켜 연료 소모를 0으로 만듭니다. 
 
 *   **[배터리](/blog/ev-vs-hybrid-maintenance-cost/) 및 스타터 모터 스펙:** ISG 장착 차량은 수만 번의 재시동을 견디도록 설계된 고내구성 AGM(Absorbent Glass Mat) 배터리와 강화 스타터 모터를 사용합니다.
-*   **일반 차량의 임의 시동 끄기 위험성:** ISG 기능이 없는 일반 차량에서 신호 대기 시마다 시동을 수동으로 끄는 행위는 일반 납산 배터리(Sli)와 스타터 모터에 과도한 부하를 주어 조기 파손을 유발하므로 지양해야 합니다.
+*   **일반 차량의 임의 시동 끄기 위험성:** ISG 기능이 없는 일반 차량에서 신호 대기 시마다 시동을 수동으로 끄는 행위는 일반 납산 [배터리](/blog/ev-vs-hybrid-maintenance-cost/)(Sli)와 스타터 모터에 과도한 부하를 주어 조기 파손을 유발하므로 지양해야 합니다.
 
 ---
 
@@ -181,7 +181,7 @@ ogImage: '/images/heroes/car-fuel-economy-driving-habits-card.png'
 
 ![차급별 주요 부품 정비 비용 범위 (공임 포함 기준)](/images/charts/car-fuel-economy-driving-habits-1.svg)
 
-*   *참고사항:* 수입차량의 경우 브랜드의 서비스 정책과 독자적인 변속기 규격(예: ZF, MB 9단 등)에 따라 전용 오일 단가 규격이 매우 높게 책정될 수 있어 비용 편차가 큽니다. 정확한 규격 매칭을 위해 차대번호 조회가 필수적입니다.
+*   *참고사항:* 수입차량의 경우 브랜드의 서비스 정책과 독자적인 변속기 규격(예: ZF, MB 9단 등)에 따라 전용 오일 단가 규격이 매우 높게 책정될 수 있어 비용 편차가 큽니다. 정확한 규격 매칭을 위해 [차대번호](/blog/used-car-inspection-checklist/) 조회가 필수적입니다.
 
 ---
 

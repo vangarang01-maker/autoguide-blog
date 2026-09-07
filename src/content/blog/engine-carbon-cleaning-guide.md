@@ -31,7 +31,7 @@ ogImage: '/images/heroes/engine-carbon-cleaning-guide-card.png'
 1. **블로바이 가스(Blow-by Gas)와 PCV 시스템:** 엔진 연소 행정 중 피스톤 링 사이로 누설된 미연소 가스와 오일 미스트(안개 분무 형태의 [엔진오일](/blog/gdi-engine-oil-consumption-fix/))는 환경 규제에 따라 대기로 방출되지 않고 PCV(Positive Crankcase Ventilation) 밸브를 통해 흡기 다기능관으로 다시 유입됩니다. 이 오일 성분이 뜨거운 흡기 밸브 뒷면에 닿아 흡착됩니다.
 2. **[배기가스](/blog/catalytic-converter-theft-and-blockage/) 재순환 장치(EGR):** 질소산화물(NOx)을 줄이기 위해 배기가스의 일부를 흡기 다기능관으로 재유입시키는 과정에서 미세한 그을음(Soot)과 탄화 수소가 흡착된 오일 미스트와 결합합니다.
 
-이 두 성분이 약 200℃ 내외로 달궈진 흡기 밸브 뒷면에서 구워지면서 점차 단단한 탄화물(Carbon Deposit)로 변하게 됩니다. 이는 제조사 정비 지침서상에서도 GDI 엔진의 물리적 특성으로 규정하고 있으며, 일정 주행거리 이후에는 물리적인 클리닝이 필요함을 명시하고 있습니다.
+이 두 성분이 약 200℃ 내외로 달궈진 흡기 밸브 뒷면에서 구워지면서 점차 단단한 탄화물(Carbon Deposit)로 변하게 됩니다. 이는 제조사 정비 지침서상에서도 [GDI](/blog/gdi-engine-oil-consumption-fix/) 엔진의 물리적 특성으로 규정하고 있으며, 일정 주행거리 이후에는 물리적인 클리닝이 필요함을 명시하고 있습니다.
 
 ---
 

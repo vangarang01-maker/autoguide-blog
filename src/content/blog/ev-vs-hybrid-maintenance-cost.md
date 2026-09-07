@@ -51,7 +51,7 @@ ogImage: '/images/heroes/ev-vs-hybrid-maintenance-cost-card.png'
 
 ```
 [5년 누적 에너지 비용 비교 (75,000km)]
-하이브리드 (휘발유): 6,875,000원
+[하이브리드](/blog/hybrid-battery-lifespan-replacement-cost/) (휘발유): 6,875,000원
 전기차 (전기):     4,903,800원
 ---------------------------------------
 차액: 전기차가 약 1,971,200원 절감
