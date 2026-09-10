@@ -85,7 +85,7 @@ ogImage: '/images/heroes/car-warranty-expiration-inspection-checklist-card.png'
 
 #### 진단 분기 및 배제 절차
 1. **증상 확인**: 1단에서 2단 또는 R단 변속 시 차체가 심하게 흔들리는 충격, 정차 직전 울컥거림, 가속 페달을 밟아도 엔진 회전수만 오르고 동력 전달 지연(슬립).
-2. **원인 배제 1단계**: 변속기 오일 레벨 및 열화도 검사.
+2. **원인 배제 1단계**: [변속기](/blog/dct-transmission-driving-tips/) 오일 레벨 및 열화도 검사.
 3. **원인 배제 2단계**: 솔레노이드 밸브 저항값 및 변속 라인 유압 측정 (진단기 변속 학습값 확인).
 4. **원인 배제 3단계**: 듀얼 클러치([DCT](/blog/dct-transmission-driving-tips/)) 적용 차량의 경우 클러치 마모도 및 결합 유격(Gap) 측정값 초과 여부 확인.
 * **보증 청구 대상**: 밸브바디 어셈블리, 솔레노이드 밸브 세트, [DCT](/blog/dct-transmission-driving-tips/) 듀얼 클러치 키트 및 액추에이터.
