@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-11",
   "note": "자동 수확한 주제 후보. 검토 후 scripts/auto-publish.mjs 의 TOPICS 로 옮기세요. 발행에 직접 쓰이지 않습니다.",
   "sources": [
     "모터그래프",
@@ -41,6 +41,54 @@
   ],
   "headlines": [
     {
+      "title": "한국타이어 라우펜, 세아트 레온에 신차용 타이어 공급",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44495",
+      "date": "2026-09-10",
+      "source": "모터그래프",
+      "matched": [
+        "타이어"
+      ]
+    },
+    {
+      "title": "한성자동차, 최대 95%까지 감가 보장 프리 드라이빙, 프리 리턴 프로그램 가동",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44487",
+      "date": "2026-09-09",
+      "source": "모터그래프",
+      "matched": [
+        "감가"
+      ]
+    },
+    {
+      "title": "현대자동차, 코이카와 손잡고 가나 자동차 정비 기술 인재 육성 나선다",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44477",
+      "date": "2026-09-08",
+      "source": "모터그래프",
+      "matched": [
+        "정비"
+      ]
+    },
+    {
+      "title": "최대 7년 14만km 무상 보증연장부터 가을 특별 정비까지, 르노코리아 A/S 고객 혜택 대폭 강화",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44475",
+      "date": "2026-09-08",
+      "source": "모터그래프",
+      "matched": [
+        "정비",
+        "무상",
+        "보증"
+      ]
+    },
+    {
+      "title": "현대차 기아 제네시스, 추석 특별 무상점검 서비스 실시",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44471",
+      "date": "2026-09-08",
+      "source": "모터그래프",
+      "matched": [
+        "점검",
+        "무상"
+      ]
+    },
+    {
       "title": "‘한국인 최초 F1 도전’ 이규호, 한 달 재정비 마치고 GB3 후반기 돌입",
       "link": "https://www.motorgraph.com/news/articleView.html?idxno=44455",
       "date": "2026-09-04",
@@ -50,124 +98,144 @@
       ]
     },
     {
-      "title": "미쉐린, 2032년까지 FIA WEC 하이퍼카 클래스 타이어 독점 공급",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44443",
-      "date": "2026-09-03",
-      "source": "모터그래프",
+      "title": "'다 쓴 배터리로 급속 충전 전력 공급'... 현대차·LG엔솔, UBESS 실증 맞손",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61584",
+      "date": "2026-09-10",
+      "source": "오토헤럴드",
       "matched": [
-        "타이어"
+        "충전",
+        "배터리"
       ]
     },
     {
-      "title": "르노코리아, 최대 7년/14만km 보증 연장 무상 제공",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44433",
-      "date": "2026-09-02",
-      "source": "모터그래프",
+      "title": "\"연구실 넘어 양산으로\" 프로로지움 전고체 배터리 381Wh/kg 달성",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61581",
+      "date": "2026-09-10",
+      "source": "오토헤럴드",
       "matched": [
-        "무상",
+        "배터리"
+      ]
+    },
+    {
+      "title": "벤츠 ‘AI·800V 무선충전'... 유망 스타트업과 100일간 기술 검증 돌입",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61580",
+      "date": "2026-09-10",
+      "source": "오토헤럴드",
+      "matched": [
+        "충전"
+      ]
+    },
+    {
+      "title": "[인포그래픽] 추석 연휴, 장거리 운전 전 '자동차 무상 점검' 꼭 챙기세요",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61554",
+      "date": "2026-09-08",
+      "source": "오토헤럴드",
+      "matched": [
+        "점검",
+        "무상"
+      ]
+    },
+    {
+      "title": "‘최대 7년 14만km’ 르노코리아... 업계 최장, 파격적 보증 연장 ‘AS 승부수’",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61550",
+      "date": "2026-09-08",
+      "source": "오토헤럴드",
+      "matched": [
         "보증"
       ]
     },
     {
-      "title": "한국자동차튜닝협회, 자동차 이륜차용 앞면 안개등 튜닝부품인증제도 시행",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44434",
-      "date": "2026-09-01",
-      "source": "모터그래프",
+      "title": "[EV 트렌드] 배터리 수명 늘리고 열까지 잡는 ‘전기차용 연료첨가제' 주목",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61542",
+      "date": "2026-09-07",
+      "source": "오토헤럴드",
       "matched": [
-        "부품"
+        "배터리"
       ]
     },
     {
-      "title": "콘티넨탈타이어, 추석 장거리 운행 앞두고 전기차 타이어 교체 지원",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44429",
-      "date": "2026-09-01",
-      "source": "모터그래프",
+      "title": "한국타이어, 글로벌 톱티어 굳힌다…FIA 최고 환경인증 2028년까지",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146624",
+      "date": "2026-09-11",
+      "source": "지피코리아",
       "matched": [
-        "교체",
         "타이어"
       ]
     },
     {
-      "title": "중고차 시장의 체크슈머 무엇?",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44401",
-      "date": "2026-08-28",
-      "source": "모터그래프",
+      "title": "“벤츠가 찜한 전고체 배터리”…대만 프롤로지움, 381Wh/kg 양산 돌입",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146591",
+      "date": "2026-09-11",
+      "source": "지피코리아",
       "matched": [
+        "배터리"
+      ]
+    },
+    {
+      "title": "헤이딜러 AI가 중고차 1만5236대 훑어보니…\"38%서 숨은 수리 흔적\"",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146587",
+      "date": "2026-09-10",
+      "source": "지피코리아",
+      "matched": [
+        "수리",
         "중고차"
       ]
     },
     {
-      "title": "[EV 트렌드] '땅 치고 후회한다'... 싸다고 덜컥 산 '소용량 배터리 전기차'",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61527",
-      "date": "2026-09-04",
-      "source": "오토헤럴드",
+      "title": "현대차, E-GMP 폐배터리 충전소 ESS로 재활용…\"LG엔솔과 맞손\"",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146586",
+      "date": "2026-09-10",
+      "source": "지피코리아",
+      "matched": [
+        "충전",
+        "배터리"
+      ]
+    },
+    {
+      "title": "렉서스코리아, 동탄에 3S 복합거점 개장…월 480대 정비",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146574",
+      "date": "2026-09-10",
+      "source": "지피코리아",
+      "matched": [
+        "정비"
+      ]
+    },
+    {
+      "title": "이차전지 산업의 현재와 미래를 미리 체험하는 장. K-배터리쇼 2026",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22093",
+      "date": "2026-09-10",
+      "source": "모터매거진",
       "matched": [
         "배터리"
       ]
     },
     {
-      "title": "中 정부, BYD·지리 품질 문제 적발 '완성차 제조사 100곳 전수 점검'",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61523",
-      "date": "2026-09-03",
-      "source": "오토헤럴드",
+      "title": "현대차·기아, 전기차 배터리 활용 UBESS 실증사업 본격화",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22092",
+      "date": "2026-09-10",
+      "source": "모터매거진",
       "matched": [
+        "배터리"
+      ]
+    },
+    {
+      "title": "현대차·기아·제네시스, 무상점검으로 추석 귀성길 안전 챙긴다",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22058",
+      "date": "2026-09-08",
+      "source": "모터매거진",
+      "matched": [
+        "점검",
+        "무상"
+      ]
+    },
+    {
+      "title": "GM 한국사업장, 전국 서비스 네트워크 점검…전기차 정비 역량 강화",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22052",
+      "date": "2026-09-07",
+      "source": "모터매거진",
+      "matched": [
+        "정비",
         "점검"
-      ]
-    },
-    {
-      "title": "\"내 차는 부산까지 못 가\" 전기차, 연식ㆍ모델 같아도 배터리 잔존수명 달라",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61508",
-      "date": "2026-09-03",
-      "source": "오토헤럴드",
-      "matched": [
-        "배터리"
-      ]
-    },
-    {
-      "title": "테슬라, 고속도로 한복판 '0km/h' 정차 후 사망 사고 \"주행보조 작동 확인\"",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61485",
-      "date": "2026-09-01",
-      "source": "오토헤럴드",
-      "matched": [
-        "사고"
-      ]
-    },
-    {
-      "title": "BYD, 수리비·부품 수급 논란에 \"하루 최대 약 600대 수용, 문제없다\"",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61484",
-      "date": "2026-09-01",
-      "source": "오토헤럴드",
-      "matched": [
-        "수리",
-        "수리비",
-        "부품"
-      ]
-    },
-    {
-      "title": "이규호, 재정비 마치고 GB3 후반기 돌입…도닝턴 파크 출격",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146399",
-      "date": "2026-09-04",
-      "source": "지피코리아",
-      "matched": [
-        "정비"
-      ]
-    },
-    {
-      "title": "'아프리카 협력' 시동…현대차, 가나서 정비 인재 육성",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146390",
-      "date": "2026-09-04",
-      "source": "지피코리아",
-      "matched": [
-        "정비"
-      ]
-    },
-    {
-      "title": "현대차그룹, 오만에 첫 수소 시내버스 띄운다…초고속 충전망도 구축",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146364",
-      "date": "2026-09-04",
-      "source": "지피코리아",
-      "matched": [
-        "충전"
       ]
     },
     {
@@ -186,25 +254,6 @@
       "source": "모터매거진",
       "matched": [
         "부품"
-      ]
-    },
-    {
-      "title": "르노코리아, 7년·14만km 무상 보증연장...9월 구매 혜택 강화도",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=21994",
-      "date": "2026-09-01",
-      "source": "모터매거진",
-      "matched": [
-        "무상",
-        "보증"
-      ]
-    },
-    {
-      "title": "테슬라 FSD 사고 책임은 누구에게 있나…《킬 스위치》 9월 4일 출간",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=21981",
-      "date": "2026-08-31",
-      "source": "모터매거진",
-      "matched": [
-        "사고"
       ]
     }
   ],
@@ -579,6 +628,198 @@
       ],
       "origin": "시즌 키워드 '히터·열선 점검' 및 겨울 대비 차량 전기 편의장치 정비 수요 연계",
       "harvestedAt": "2026-09-04"
+    },
+    {
+      "slug": "used-car-hidden-repair-marks-guide",
+      "title": "성능기록부엔 '무사고'인데 판금·도색? 프레임 용접부터 볼트 풀림까지 숨은 수리 흔적 찾는 법",
+      "category": "buying",
+      "heroEmoji": "🔍",
+      "tags": [
+        "중고차",
+        "무사고판정",
+        "도막측정기",
+        "사고차구별",
+        "중고차검수"
+      ],
+      "description": "중고차 성능점검기록부만 믿었다가 감가 손실을 보지 않도록, 현장에서 도색 차이, 프레임 볼트 풀림, 실리콘 재작업 흔적을 직접 찾아내는 5단계 판별법을 소개합니다.",
+      "hook": "AI가 중고차 만 오천 대를 훑었더니 38%에서 숨겨진 수리 흔적이 나왔습니다. 단순 교환 없는 무사고 차도 '판금 도색' 흔적이 있으면 감가 대상입니다.",
+      "outline": [
+        "성능점검기록부 '무사고'와 '무교환'의 결정적 차이",
+        "펜더·보닛 볼트 칠 까짐과 와셔 자국으로 보는 교체 여부",
+        "도관 파팅 라인과 오렌지 필(칠 뭉침) 현상 판별법",
+        "주요 프레임(하우스·사이드 맴버) 용접 자국과 실리콘 형태 비교",
+        "스마트폰 라이트와 도막 측정기로 숨은 도색 작업 잡는 팁"
+      ],
+      "origin": "헤이딜러 AI 분석 결과 중고차 38%에서 숨겨진 수리 흔적이 발견되었다는 뉴스에서 착안하여 소비자가 직접 실차 검수 시 숨은 수리 흔적을 찾는 가이드 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "ev-battery-thermal-management-and-coolant",
+      "title": "전기차 배터리 열화 막는 열관리 스킬 — 절연 절연유(쿨런트) 교체와 고속 충전 팩 관리법",
+      "category": "eco",
+      "heroEmoji": "🔋",
+      "tags": [
+        "전기차",
+        "배터리열화",
+        "전기차냉각수",
+        "배터리수명",
+        "급속충전"
+      ],
+      "description": "전기차 배터리 수명(SOH)을 결정지어 주는 핵심은 '열관리'입니다. 절연 냉각수 교체 주기와 여름·겨울철 급속 충전 시 팩 폭폭을 막는 실전 노하우를 정리합니다.",
+      "hook": "전기차 배터리 교체비 2천만 원 시대를 피하려면? 배터리 자체보다 '열관리 시스템'을 이해해야 배터리를 10년 넘게 새것처럼 씁니다.",
+      "outline": [
+        "전기차 배터리가 열에 취약한 이유와 SOH(수명) 관계",
+        "일반 부동액과 다른 전기차 전용 저전도성 쿨런트(냉각수) 역할과 교체 주기",
+        "초고속 충전 시 배터리 온도 상승을 줄이는 충전 습관",
+        "여름철 고온·겨울철 한파 속 배터리 컨디셔닝 기능 200% 활용법",
+        "계기판 경고등으로 보는 배터리 냉각 시스템 고장 전조 증상"
+      ],
+      "origin": "자동차 부품사의 전기차 애프터마켓 열관리 부품 확대 및 UBESS 실증 뉴스에서 착안하여 전기차 유저를 위한 배터리 열관리·냉각수 유지보수 가이드 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "used-car-depreciation-rate-and-resale-value",
+      "title": "중고차 감가 폭탄 피하는 조건 — 출고 후 3년·5년 차 감가율 공식과 잔존가치 방어법",
+      "category": "buying",
+      "heroEmoji": "📉",
+      "tags": [
+        "중고차시세",
+        "자동차감가율",
+        "잔존가치",
+        "내차팔기",
+        "중고차매매"
+      ],
+      "description": "차량 구매 후 감가가 가장 크게 일어나는 시점과 파워트레인·옵션·색상별 잔존가치 방어율을 분석해 차를 살 때와 팔 때 손해를 최소화하는 전략을 공개합니다.",
+      "hook": "신차 출고 후 3년이 지나면 차 가치의 30~40%가 날아갑니다. 감가 곡선을 알면 500만 원 더 받고 내 차를 팔 수 있습니다.",
+      "outline": [
+        "신차 출고 후 1년/3년/5년 주기별 자동차 감가율 곡선",
+        "잔존가치를 결정짓는 3대 요소: 파워트레인, 인기 옵션, 바디 색상",
+        "제조사 보증기간 만료 시점이 중고차 시세에 미치는 영향",
+        "감가 방어율이 높은 차종 vs 떨어지는 차종의 특징 분석",
+        "내 차 팔 때 감가 감점을 최소화하는 정비 이력서 관리법"
+      ],
+      "origin": "한성자동차 등 수입차 업계의 감가 보장 프로모션 뉴스에서 착안하여 일반 운전자가 숙지해야 할 중고차 감가율 체계와 잔존가치 방어 전략 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "car-extended-warranty-service-buying-guide",
+      "title": "자동차 제조사 연장 보증(EW) 가입해야 할까? 가성비 따지는 조건과 제외 항목 주의점",
+      "category": "maintenance",
+      "heroEmoji": "🛡️",
+      "tags": [
+        "보증연장",
+        "제조사보증",
+        "수리비절약",
+        "자동차AS",
+        "EW프로그램"
+      ],
+      "description": "최대 7년 14만km까지 확대되는 자동차 연장 보증 상품의 실익을 계산해 보고, 보증 범위에서 제외되는 소모품과 주의사항을 상세히 파헤칩니다.",
+      "hook": "100만 원 넘는 연장 보증 상품, 무턱대고 가입했다간 정작 고장 난 부품이 '보증 제외'라며 거절당할 수 있습니다.",
+      "outline": [
+        "기본 보증(3년/6만km) vs 연장 보증(EW)의 상품 구조 차이",
+        "연장 보증 가입이 유리한 운전자 유형(주행거리, 보유 기간 기준)",
+        "엔진·변속기 외에 전자제어 장치(ECU, 모듈) 보증 포함 여부 확인법",
+        "소모성 부품, 소음·진동(NVH) 관련 거절 사례와 계약서 체크리스트",
+        "사설 보증 연장 상품(EW)과 제조사 순정 EW 상품 비교"
+      ],
+      "origin": "르노코리아의 최장 7년 보증 연장 파격 혜택 뉴스에서 착안하여 소비자가 연장 보증 상품 구매 시 실익을 따져볼 수 있는 구매 가이드 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "all-season-vs-all-weather-vs-winter-tires",
+      "title": "올시즌 vs 올웨더 vs 스노우 타이어 차이점 — 내 운전 환경에 맞는 타이어 선택 가이드",
+      "category": "maintenance",
+      "heroEmoji": "🛞",
+      "tags": [
+        "타이어추천",
+        "올웨더타이어",
+        "스노우타이어",
+        "타이어교체",
+        "겨울철운전"
+      ],
+      "description": "올시즌(사계절), 올웨더(3PMSF 인증), 스노우(겨울용) 타이어의 컴파운드 및 트레드 패턴 차이를 비교하고 계절 전환기 최적의 타이어 선택법을 안내합니다.",
+      "hook": "사계절 타이어만 믿고 겨울을 나시나요? 섭씨 7도 이하로 내려가면 일반 타이어는 플라스틱처럼 딱딱해집니다.",
+      "outline": [
+        "올시즌, 올웨더, 스노우 타이어의 고무(컴파운드) 성질 차이",
+        "3PMSF(산봉우리 눈꽃 마크) 인증의 의미와 젖은 노면/눈길 제동력 비교",
+        "연간 주행거리와 거주 지역(수도권 vs 강원/산간)별 타이어 추천",
+        "스노우 타이어 보관 서비스 비용과 교체 적기(11월/3월)",
+        "타이어 트레드 마모 한계선 체크 및 사이드월 균열 진단법"
+      ],
+      "origin": "한국타이어 라우펜 신차 공급 및 가을·겨울철 타이어 준비 시즌 키워드를 결합하여 운전자가 복잡해하는 타이어 종류별 차이와 추천 가이드 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "car-heater-cold-air-troubleshooting",
+      "title": "히터 틀었는데 찬바람만 나올 때 — 서모스탯·히터코어·블로우 모터 고장 진단과 수리비",
+      "category": "maintenance",
+      "heroEmoji": "🥶",
+      "tags": [
+        "자동차히터",
+        "히터찬바람",
+        "히터코어",
+        "서모스탯",
+        "겨울철정비"
+      ],
+      "description": "추운 날씨에 히터를 켰으나 미지근하거나 찬바람만 나오는 원인 4가지를 단계별로 점검하고, 부품별 예상 수리 비용을 정리해 드립니다.",
+      "hook": "엔진 온도는 올라가는데 히터에서 얼음바람이 나온다면? 카센터 가기 전 이 3 가지만 확인해도 바가지 수리비를 막을 수 있습니다.",
+      "outline": [
+        "자동차 히터의 작동 원리와 냉각수 순환 구조",
+        "원인 1: 냉각수 부족 및 서모스탯(수온조절기) 열림 고착 진단",
+        "원인 2: 히터 코어 막힘 및 녹물 발생 시 플러싱 vs 교체 비용",
+        "원인 3: 온도 조절 액추에이터(문짝 모터) 고장 확인법",
+        "히터 작동 시 끼익 소리나 바람이 안 나올 때 블로우 모터 점검"
+      ],
+      "origin": "시즌 수요 키워드(히터·열선 점검) 및 자동차 열관리 부품 뉴스에 착안해 가을~겨울철 빈번히 발생하는 히터 찬바람 고장 문제 해결형 콘텐츠 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "long-distance-driving-self-inspection-guide",
+      "title": "장거리 운전 전 10분 자가 점검 체크리스트 — 오일류·타이어 공기압·와이퍼 셀프 점검",
+      "category": "driving",
+      "heroEmoji": "🚗",
+      "tags": [
+        "장거리운전",
+        "자가점검",
+        "추석귀성길",
+        "타이어공기압",
+        "자동차점검"
+      ],
+      "description": "명절 귀성길이나 장거리 여행 전 정비소에 들르지 않고도 운전자가 보닛을 열어 10분 만에 끝낼 수 있는 필수 점검 항목 6가지를 정리합니다.",
+      "hook": "고속도로 한복판에서 차가 멈추는 불상사를 막는 시간 단 10분! 보닛 속 딥스틱과 타이어만 봐도 90%는 예방합니다.",
+      "outline": [
+        "엔진오일·브레이크액 레벨 및 오염도 딥스틱 점검법",
+        "타이어 적정 공기압(PSI) 확인 및 외관 찢어짐·사이드월 점검",
+        "냉각수(부동액) 보조탱크 MIN/MAX 수위 체크와 보충 유의사항",
+        "가을철 갑작스러운 장대비 대비 와이퍼 고무 및 워셔액 점검",
+        "배터리 단자 하얀 가루(백화 현상) 제거 및 전압 상태 체크"
+      ],
+      "origin": "현대차·기아·제네시스 등 완성차 업계의 추석/명절 무상점검 서비스 기사 및 장거리 사전 점검 수요 키워드를 반영해 셀프 점검 가이드 기획",
+      "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "car-dark-current-battery-drain-cause",
+      "title": "주차만 하면 배터리 방전? 차 안의 '원인 미상 암전류' 측정법과 블랙박스 보조배터리 세팅",
+      "category": "maintenance",
+      "heroEmoji": "⚡",
+      "tags": [
+        "배터리방전",
+        "암전류",
+        "블랙박스보조배터리",
+        "방전원인",
+        "전장품점검"
+      ],
+      "description": "새 배터리로 바꿔도 며칠만 주차하면 방전되는 원인인 '암전류(도둑 전기)'를 클램프 메터로 측정하는 방법과 블랙박스 차단 전압 설정법을 안내합니다.",
+      "hook": "멀쩡한 배터리가 자고 나면 먹통이 된다고요? 차가 잠든 사이 전기를 갉아먹는 '도둑 전기(암전류)'를 잡아야 합니다.",
+      "outline": [
+        "암전류(Dark Current)란 무엇이며 정상 허용 범위(0.05A 이하) 기준",
+        "디지털 멀티미터/클램프 메터로 암전류 셀프 측정하는 방법",
+        "퓨즈 박스에서 슬립 모드 미진입 모듈 및 암전류 유발 부품 찾는 순서",
+        "주범 1위 블랙박스 저전압 차단 설정(12.2V/12.4V)과 상시 전원 케이블",
+        "블랙박스 보조배터리(인산철) 추가 시 주의사항과 배선 안전"
+      ],
+      "origin": "시즌 키워드(겨울 대비 배터리 진단) 및 GM 한국사업장 등의 전기장치/정비 역량 강화 뉴스에서 착안하여 차주들이 고통받는 반복 방전의 근본 원인 해결글 기획",
+      "harvestedAt": "2026-09-11"
     }
   ]
 }
