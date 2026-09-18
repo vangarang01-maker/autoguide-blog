@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-18",
   "note": "자동 수확한 주제 후보. 검토 후 scripts/auto-publish.mjs 의 TOPICS 로 옮기세요. 발행에 직접 쓰이지 않습니다.",
   "sources": [
     "모터그래프",
@@ -41,163 +41,149 @@
   ],
   "headlines": [
     {
-      "title": "한국타이어 라우펜, 세아트 레온에 신차용 타이어 공급",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44495",
-      "date": "2026-09-10",
+      "title": "한국타이어, 유럽 트레일러 제조사 슈미츠 카고불과 OE 파트너십 체결",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44554",
+      "date": "2026-09-18",
       "source": "모터그래프",
       "matched": [
         "타이어"
       ]
     },
     {
-      "title": "한성자동차, 최대 95%까지 감가 보장 프리 드라이빙, 프리 리턴 프로그램 가동",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44487",
-      "date": "2026-09-09",
+      "title": "KGM, 추석 맞이 특별 점검 서비스",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44549",
+      "date": "2026-09-18",
       "source": "모터그래프",
       "matched": [
-        "감가"
+        "점검"
       ]
     },
     {
-      "title": "현대자동차, 코이카와 손잡고 가나 자동차 정비 기술 인재 육성 나선다",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44477",
-      "date": "2026-09-08",
+      "title": "콘티넨탈타이어, 재활용 소재 43% 적용한 콘셉트 타이어 개발",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44543",
+      "date": "2026-09-17",
       "source": "모터그래프",
       "matched": [
-        "정비"
+        "타이어"
       ]
     },
     {
-      "title": "최대 7년 14만km 무상 보증연장부터 가을 특별 정비까지, 르노코리아 A/S 고객 혜택 대폭 강화",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44475",
-      "date": "2026-09-08",
-      "source": "모터그래프",
-      "matched": [
-        "정비",
-        "무상",
-        "보증"
-      ]
-    },
-    {
-      "title": "현대차 기아 제네시스, 추석 특별 무상점검 서비스 실시",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44471",
-      "date": "2026-09-08",
+      "title": "추석 귀성길, 자동 배터리 점검부터",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44536",
+      "date": "2026-09-17",
       "source": "모터그래프",
       "matched": [
         "점검",
-        "무상"
+        "배터리"
       ]
     },
     {
-      "title": "‘한국인 최초 F1 도전’ 이규호, 한 달 재정비 마치고 GB3 후반기 돌입",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44455",
-      "date": "2026-09-04",
+      "title": "현대차, 운수사, 충전 사업자, 유관 기관과 협력해 수소버스 보급 활성화 나선다",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44529",
+      "date": "2026-09-16",
       "source": "모터그래프",
-      "matched": [
-        "정비"
-      ]
-    },
-    {
-      "title": "'다 쓴 배터리로 급속 충전 전력 공급'... 현대차·LG엔솔, UBESS 실증 맞손",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61584",
-      "date": "2026-09-10",
-      "source": "오토헤럴드",
-      "matched": [
-        "충전",
-        "배터리"
-      ]
-    },
-    {
-      "title": "\"연구실 넘어 양산으로\" 프로로지움 전고체 배터리 381Wh/kg 달성",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61581",
-      "date": "2026-09-10",
-      "source": "오토헤럴드",
-      "matched": [
-        "배터리"
-      ]
-    },
-    {
-      "title": "벤츠 ‘AI·800V 무선충전'... 유망 스타트업과 100일간 기술 검증 돌입",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61580",
-      "date": "2026-09-10",
-      "source": "오토헤럴드",
       "matched": [
         "충전"
       ]
     },
     {
-      "title": "[인포그래픽] 추석 연휴, 장거리 운전 전 '자동차 무상 점검' 꼭 챙기세요",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61554",
-      "date": "2026-09-08",
-      "source": "오토헤럴드",
+      "title": "콘티넨탈 타이어 에코콘택트 7, 폭스바겐 ID. 폴로에 신차용 타이어로 채택",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44524",
+      "date": "2026-09-15",
+      "source": "모터그래프",
       "matched": [
-        "점검",
-        "무상"
+        "타이어"
       ]
     },
     {
-      "title": "‘최대 7년 14만km’ 르노코리아... 업계 최장, 파격적 보증 연장 ‘AS 승부수’",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61550",
-      "date": "2026-09-08",
-      "source": "오토헤럴드",
+      "title": "한국타이어, 현대 아반떼 신차용 타이어 공급",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44519",
+      "date": "2026-09-15",
+      "source": "모터그래프",
       "matched": [
-        "보증"
+        "타이어"
       ]
     },
     {
-      "title": "[EV 트렌드] 배터리 수명 늘리고 열까지 잡는 ‘전기차용 연료첨가제' 주목",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61542",
-      "date": "2026-09-07",
-      "source": "오토헤럴드",
+      "title": "메르세데스-벤츠 코리아, AET 20주년 아우스빌둥 정비 인재 양성 프로그램 통합 출범식 개최",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44517",
+      "date": "2026-09-14",
+      "source": "모터그래프",
       "matched": [
-        "배터리"
+        "정비"
       ]
     },
     {
-      "title": "한국타이어, 글로벌 톱티어 굳힌다…FIA 최고 환경인증 2028년까지",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146624",
-      "date": "2026-09-11",
+      "title": "\"엔진도 없는데 엔진 브레이크\" 현대차그룹, 전기차 가상 변속 특허 추가",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61635",
+      "date": "2026-09-16",
+      "source": "오토헤럴드",
+      "matched": [
+        "엔진",
+        "브레이크"
+      ]
+    },
+    {
+      "title": "\"엔진이냐, 전기차냐\"…레인지로버 두고 고민 깊어진 예비 구매자들",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146842",
+      "date": "2026-09-18",
+      "source": "지피코리아",
+      "matched": [
+        "엔진"
+      ]
+    },
+    {
+      "title": "한국타이어, 슈미츠 카고불과 계약 연장…2030년까지 유럽 공략",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146844",
+      "date": "2026-09-18",
       "source": "지피코리아",
       "matched": [
         "타이어"
       ]
     },
     {
-      "title": "“벤츠가 찜한 전고체 배터리”…대만 프롤로지움, 381Wh/kg 양산 돌입",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146591",
-      "date": "2026-09-11",
+      "title": "KGM은 추석 차량점검·BMW는 서비스센터 새단장…고객 서비스 강화",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146837",
+      "date": "2026-09-18",
+      "source": "지피코리아",
+      "matched": [
+        "점검"
+      ]
+    },
+    {
+      "title": "한국앤컴퍼니, 배터리 장거리 체크…전장품 늘며 방전 위험",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146809",
+      "date": "2026-09-17",
       "source": "지피코리아",
       "matched": [
         "배터리"
       ]
     },
     {
-      "title": "헤이딜러 AI가 중고차 1만5236대 훑어보니…\"38%서 숨은 수리 흔적\"",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146587",
-      "date": "2026-09-10",
+      "title": "한국타이어, 벨기에 랠리도 3개 시즌 '통으로 잡았다'",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146803",
+      "date": "2026-09-17",
       "source": "지피코리아",
       "matched": [
-        "수리",
+        "타이어"
+      ]
+    },
+    {
+      "title": "출범 3주년 맞은 현대인증중고차, 추석맞이 BIG 페스타 진행",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22117",
+      "date": "2026-09-14",
+      "source": "모터매거진",
+      "matched": [
         "중고차"
       ]
     },
     {
-      "title": "현대차, E-GMP 폐배터리 충전소 ESS로 재활용…\"LG엔솔과 맞손\"",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146586",
-      "date": "2026-09-10",
-      "source": "지피코리아",
+      "title": "마지막까지 V12를 포기하지 않는 방법 애스턴마틴 발렌, 850마력으로 완성한 프런트 엔진 슈퍼카의 극점",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22097",
+      "date": "2026-09-14",
+      "source": "모터매거진",
       "matched": [
-        "충전",
-        "배터리"
-      ]
-    },
-    {
-      "title": "렉서스코리아, 동탄에 3S 복합거점 개장…월 480대 정비",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146574",
-      "date": "2026-09-10",
-      "source": "지피코리아",
-      "matched": [
-        "정비"
+        "엔진"
       ]
     },
     {
@@ -216,44 +202,6 @@
       "source": "모터매거진",
       "matched": [
         "배터리"
-      ]
-    },
-    {
-      "title": "현대차·기아·제네시스, 무상점검으로 추석 귀성길 안전 챙긴다",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22058",
-      "date": "2026-09-08",
-      "source": "모터매거진",
-      "matched": [
-        "점검",
-        "무상"
-      ]
-    },
-    {
-      "title": "GM 한국사업장, 전국 서비스 네트워크 점검…전기차 정비 역량 강화",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22052",
-      "date": "2026-09-07",
-      "source": "모터매거진",
-      "matched": [
-        "정비",
-        "점검"
-      ]
-    },
-    {
-      "title": "현대차그룹, 오만과 친환경 모빌리티 협력...수소버스·초고속 충전 인프라 구축",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22041",
-      "date": "2026-09-04",
-      "source": "모터매거진",
-      "matched": [
-        "충전"
-      ]
-    },
-    {
-      "title": "한온시스템, 글로벌 자동차 애프터마켓 공략, 열관리 부품 사업 확대",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22034",
-      "date": "2026-09-04",
-      "source": "모터매거진",
-      "matched": [
-        "부품"
       ]
     }
   ],
@@ -820,6 +768,190 @@
       ],
       "origin": "시즌 키워드(겨울 대비 배터리 진단) 및 GM 한국사업장 등의 전기장치/정비 역량 강화 뉴스에서 착안하여 차주들이 고통받는 반복 방전의 근본 원인 해결글 기획",
       "harvestedAt": "2026-09-11"
+    },
+    {
+      "slug": "car-heater-cold-air-blend-door-actuator",
+      "title": "겨울철 히터 틀었는데 찬 바람만? 써모스탯 고장과 블렌드 도어 액추에이터 자가진단법",
+      "category": "maintenance",
+      "heroEmoji": "🥶",
+      "tags": [
+        "자동차히터",
+        "블렌드도어",
+        "써모스탯",
+        "찬바람원인"
+      ],
+      "description": "겨울철 히터를 작동시켰을 때 따뜻한 바람 대신 찬 바람이 나오는 원인을 짚어보고, 돈 들이지 않고 자가진단할 수 있는 블렌드 도어 액추에이터와 써모스탯 이상 징후를 알아봅니다.",
+      "hook": "영하의 날씨에 히터를 켰는데 송풍구에서 에어컨 못지않은 칼바람이 나온다면? 정비소 가기 전 '이 부품' 딱 두 가지만 먼저 확인해 보세요. 수리비 20만 원을 아낄 수 있습니다.",
+      "outline": [
+        "1. 히터 작동의 기본 원리: 에어컨과 달리 엔진 열을 쓰는 히터",
+        "2. 찬 바람만 나오는 주범 ①: 부동액 누수 및 써모스탯(수온조절기) 열림 고착",
+        "3. 찬 바람만 나오는 주범 ②: 온도 조절을 방해하는 '블렌드 도어 액추에이터' 고장 판단법",
+        "4. 조수석 발밑에서 물 흐르는 소리가 난다면? 히터코어 막힘 증상",
+        "5. 정비소 방문 전 자가 점검 체크리스트 및 부품별 예상 교체 비용"
+      ],
+      "origin": "이번 시즌 수요 키워드 '히터·열선 점검' 및 겨울 대비 선제적 공조 장치 정비 필요성",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "ev-virtual-shift-and-passenger-motion-sickness-prevention",
+      "title": "전기차만 타면 울렁울렁? 가상 변속 기능의 원리와 회생제동 멀미 줄이는 운전법",
+      "category": "driving",
+      "heroEmoji": "🤢",
+      "tags": [
+        "전기차멀미",
+        "가상변속",
+        "회생제동",
+        "전기차운전팁"
+      ],
+      "description": "최근 전기차에 탑재되기 시작한 가상 변속 기능의 기술적 배경을 살펴보고, 동승자가 느끼는 전기차 특유의 멀미와 울렁거림을 최소화할 수 있는 가속 및 제동 페달 컨트롤 비법을 소개합니다.",
+      "hook": "엔진도 없는 전기차에 굳이 가상 변속 특허를 넣는 진짜 이유, 그리고 회생제동 때문에 멀미하는 가족을 위해 오늘부터 바로 바꿀 수 있는 엑셀 오프 페달링 기술을 공개합니다.",
+      "outline": [
+        "1. 왜 현대차는 전기차에 '엔진 변속 느낌'을 주는 가상 변속(N e-Shift) 특허를 낼까?",
+        "2. 전기차 멀미의 과학적 원리: 즉각적인 토크 반응과 회생제동의 이질감",
+        "3. 가속 페달에서 발을 한 번에 떼면 안 되는 이유: '원페달 드라이빙'의 명과 암",
+        "4. 동승자의 목을 편안하게 만드는 전기차 코너링 및 정차 제동 컨트롤법",
+        "5. 차량 설정 변경으로 멀미 해결하기: 회생제동 단계 조절 및 크리프 모드 활용"
+      ],
+      "origin": "뉴스 9번 '현대차 가상 변속 특허 추가' 소식에서 소비자가 겪는 전기차 승차감 및 멀미 이슈로 확장",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "all-season-vs-all-weather-vs-winter-tire-choice",
+      "title": "올시즌, 올웨더, 윈터 타이어 차이점 — 눈길·빗길 제동력과 내 차에 맞는 가성비 선택법",
+      "category": "maintenance",
+      "heroEmoji": "❄️",
+      "tags": [
+        "윈터타이어",
+        "올웨더타이어",
+        "사계절타이어",
+        "겨울철제동력"
+      ],
+      "description": "국내 도로 환경에서 사계절(All-season) 타이어와 유럽형 올웨더(All-weather) 타이어, 겨울용(Winter) 타이어의 명확한 차이점을 비교하고 주행 환경에 맞는 가장 경제적인 선택 기준을 제공합니다.",
+      "hook": "겨울에 눈이 많이 안 오는데 굳이 번거롭게 겨울용 타이어로 바꿔야 할까요? 타이어 옆면에 새겨진 '3PMSF(눈길 인증)' 마크 하나가 겨울철 생사를 가릅니다.",
+      "outline": [
+        "1. 국내용 '사계절(All-Season)' 타이어는 사실 겨울철 빙판길에서 무용지물이다?",
+        "2. 요즘 대세 '올웨더(All-Weather)' 타이어란 무엇인가? 삼봉눈꽃(3PMSF) 마크의 의미",
+        "3. 윈터 타이어(알파인 vs 노르딕)가 필요한 운전자 유형과 적절한 교체 타이밍",
+        "4. 가을철 우천 시 수막현상과 겨울철 블랙아이스 노면에서 타이어 종류별 제동거리 차이",
+        "5. 연간 타이어 보관료와 교체 비용 분석을 통한 내 상황별 최적의 가성비 조합"
+      ],
+      "origin": "뉴스 3, 6, 7번의 타이어 기술 이슈와 시즌 키워드 '겨울용 타이어 준비', '가을 우천 제동'의 연계",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "certified-pre-owned-cpo-vs-general-used-car-comparison",
+      "title": "제조사 인증중고차(CPO)는 왜 더 비쌀까? 보증 범위와 실질 가치 꼼꼼 비교",
+      "category": "buying",
+      "heroEmoji": "🔍",
+      "tags": [
+        "인증중고차",
+        "중고차구매",
+        "CPO보증",
+        "현대인증중고차"
+      ],
+      "description": "대기업 및 제조사 직영 인증중고차(CPO)와 일반 상사 중고차의 가격 차이가 발생하는 원인을 분석하고, 제공되는 보증 연장 혜택과 정밀 진단 항목을 비교하여 돈값을 하는지 검증합니다.",
+      "hook": "일반 중고차 매물보다 평균 100~200만 원 더 비싼 대기업 인증중고차, 과연 그만큼 안전하고 메리트가 있을까요? 눈에 보이지 않는 진단 항목과 무상 보증의 실체를 파헤쳐 드립니다.",
+      "outline": [
+        "1. 제조사 인증중고차(CPO)와 일반 상사 중고차의 결정적 차이 3가지",
+        "2. 대기업이 자랑하는 '200여 개 항목 정밀 진단'의 실상과 소비자가 얻는 혜택",
+        "3. 신차 보증이 끝난 차량도 안심? 인증중고차만의 전용 연장 보증 프로그램 분석",
+        "4. 허위매물과 침수차 걱정 없는 안전비용으로서의 가치 판단 기준",
+        "5. 이런 사람에게는 일반 중고차가, 저런 사람에게는 인증중고차가 유리하다"
+      ],
+      "origin": "뉴스 15번 '현대인증중고차 출범 3주년' 소식에서 소비자가 체감하는 일반 중고차와의 실질적 차이 분석 수요 포착",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "ev-battery-warranty-conditions-and-soh-drop-claim",
+      "title": "전기차 배터리 수명 저하(SOH) 시 무상 교환 받는 법 — 제조사별 보증 기준 총정리",
+      "category": "maintenance",
+      "heroEmoji": "🔋",
+      "tags": [
+        "전기차배터리",
+        "배터리보증",
+        "SOH측정",
+        "무상교체"
+      ],
+      "description": "전기차 고전압 배터리의 성능 상태(SOH) 저하로 인한 무상 보증 교체 요건을 브랜드별로 정리하고, 소비자가 직접 배터리 건강 상태를 모니터링하고 보증 서비스를 신청하는 방법을 안내합니다.",
+      "hook": "전기차 배터리도 평생 보증이 되거나 10년 보증이 된다는데, 정말 효율이 떨어지면 공짜로 새 배터리를 끼워줄까요? 약관 속에 숨겨진 'SOH 잔존율 기준'과 보증 거부 조건을 공개합니다.",
+      "outline": [
+        "1. 전기차 수명과 직결되는 배터리 잔존 성능(SOH, State of Health)이란?",
+        "2. 주요 제조사(현대/기아, 테슬라, 수입차)의 고전압 배터리 무상 보증 기간 및 SOH 기준 수치",
+        "3. 정비소에 가기 전 OBD 단자와 스마트폰 앱으로 내 차 SOH 자가 측정하는 법",
+        "4. 배터리 무상 보증 청구 시 제조사가 거부할 수 있는 가혹 조건 및 사고 이력 규정",
+        "5. 중고 전기차 거래 시 반드시 배터리 건강 진단서를 요구해야 하는 이유"
+      ],
+      "origin": "뉴스 17, 18번 배터리 기술 및 재활용 실증사업 뉴스에서 전기차 소유자가 가장 우려하는 '배터리 열화 및 보증' 해결 가이드로 전환",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "hybrid-and-ev-12v-auxiliary-battery-discharge-prevention",
+      "title": "하이브리드·전기차도 12V 배터리가 방전된다? 시동 먹통 만드는 원인과 대처법",
+      "category": "maintenance",
+      "heroEmoji": "⚡",
+      "tags": [
+        "하이브리드방전",
+        "12V보조배터리",
+        "LDC고장",
+        "전기차방전"
+      ],
+      "description": "대용량 고전압 배터리를 탑재한 하이브리드 및 전기차에서 의외로 빈번하게 발생하는 12V 저전압 보조 배터리 방전의 매커니즘을 밝히고, 겨울철 방전 예방 및 점프 스타트 시 주의사항을 설명합니다.",
+      "hook": "거대한 고전압 배터리를 싣고 다니는 하이브리드와 전기차가 겨우 블랙박스 때문에 시동이 안 걸려 견인차를 부른다? 하이브리드 차주라면 꼭 알아야 할 12V 보조 배터리 방전의 비밀.",
+      "outline": [
+        "1. 고전압 배터리가 있는데 왜 12V 보조 배터리가 따로 필요하며 방전될까?",
+        "2. 하이브리드 차량의 통합 배터리(리튬이온) 방전 시 '12V 배터리 리셋' 버튼 올바른 사용법",
+        "3. 고전압에서 저전압으로 충전해 주는 LDC(컨버터) 작동 원리와 블랙박스 상시 녹화의 한계",
+        "4. 전기차/하이브리드 차량 방전 시 타 차량 점프 스타트(구원)를 해 주면 안 되는 이유",
+        "5. 가을/겨울철 전장 장치 사용 급증에 따른 보조 배터리 전압 관리 및 수명 예측법"
+      ],
+      "origin": "뉴스 13번 '배터리 장거리 체크, 전장품 늘며 방전 위험' 및 시즌 키워드 '겨울 대비 배터리 진단'의 하이브리드/전기차 맞춤형 확장",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "luxury-suv-air-suspension-failure-symptoms-and-maintenance",
+      "title": "프리미엄 SUV 승차감의 끝판왕 '에어서스펜션' — 주저앉음 고장 증상과 폭탄 수리비 피하기",
+      "category": "maintenance",
+      "heroEmoji": "💨",
+      "tags": [
+        "에어서스펜션",
+        "수입SUV",
+        "승차감개선",
+        "에어서스고장"
+      ],
+      "description": "레인지로버, 포르쉐 등 최고급 SUV에 주로 장착되는 에어서스펜션의 고장 전조 증상을 진단하고, 에어 스프링 누설과 컴프레서 손상으로 이어지는 과다 정비 비용을 줄일 수 있는 예방 정비 팁을 전합니다.",
+      "hook": "자고 일어났더니 내 SUV 한쪽 주저앉아 있나요? 계기판에 '서스펜션 경고등'이 들어왔을 때 즉시 대처하지 않으면 컴프레서까지 타버려 수백만 원짜리 영수증을 받게 됩니다.",
+      "outline": [
+        "1. 구름 위를 걷는 듯한 승차감, 에어서스펜션(Air Suspension)의 구조와 작동 원리",
+        "2. 차체가 한쪽으로 기우는 '주저앉음' 현상: 에어 벨로우즈(고무 주머니) 미세 누설 자가 점검법",
+        "3. 컴프레서가 쉬지 않고 도는 소음이 난다면? 과열로 인한 2차 고장 방지 대책",
+        "4. 수입 SUV 차주를 위한 정식 서비스센터 통교체 대비 사설 재생 부품 및 OEM 부품 활용 팁",
+        "5. 겨울철 기온 저하 시 에어 서스펜션 수분 고착 예방 및 수명 연장 관리법"
+      ],
+      "origin": "뉴스 10번 '레인지로버를 두고 고민하는 예비 구매자들'의 가장 큰 장벽인 '에어서스펜션 내구성과 유지비' 우려를 해소하는 문제 해결형 주제",
+      "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "long-distance-road-trip-self-inspection-checklist",
+      "title": "단풍철 장거리 주행 전 딱 10분! 보닛 열고 꼭 확인해야 할 액체류 3가지와 타이어 마모 확인법",
+      "category": "driving",
+      "heroEmoji": "🍁",
+      "tags": [
+        "장거리점검",
+        "부동액점검",
+        "브레이크액",
+        "타이어마모"
+      ],
+      "description": "단풍철 및 명절 장거리 운전을 앞두고 운전자가 스스로 보닛을 열어 브레이크액, 엔진오일, 부동액의 상태를 파악하고 타이어 마모 한계선과 공기압을 체크할 수 있는 초간단 셀프 점검 가이드를 제공합니다.",
+      "hook": "고속도로 정체 속에서 갑자기 엔진 룸에서 연기가 피어오르거나 브레이크 페달이 스펀지처럼 푹푹 꺼진다면? 출발 전 단 10분만 투자해 이 세 가지만 확인해도 끔찍한 사고를 막을 수 있습니다.",
+      "outline": [
+        "1. 장거리 주행 시 가혹 조건이 차량에 미치는 영향 (고열과 지속적인 브레이킹)",
+        "2. 보닛 열고 1분 컷 ①: 엔진오일 레벨 게이지 색상과 양 판독법",
+        "3. 보닛 열고 1분 컷 ②: 브레이크액 수분 함량 자가 판별 및 패드 잔량과의 관계",
+        "4. 보닛 열고 1분 컷 ③: 냉각수(부동액) 보조 탱크 잔량 확인과 비상시 수돗물 혼합 주의사항",
+        "5. 100원짜리 동전으로 끝내는 타이어 마모 한계선 확인 및 고속도로 주행 맞춤 공기압 세팅"
+      ],
+      "origin": "시즌 수요 키워드 '추석 장거리 사전 점검', '단풍철 장거리'와 뉴스 2, 12번의 차량 무상 점검 서비스를 연계해 운전자가 직접 할 수 있는 상시 예방책 가이드 제시",
+      "harvestedAt": "2026-09-18"
     }
   ]
 }
