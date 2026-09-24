@@ -95,7 +95,7 @@ ogImage: '/images/heroes/car-fuel-economy-driving-habits-card.png'
 차량 자체의 물리적 저항을 줄이는 것은 운전 습관만큼이나 연비 향상에 직접적인 영향을 미칩니다. [타이어](/blog/tire-wear-pattern-wheel-alignment/) 구름 저항과 차량 중량이 연비에 미치는 공학적 인과관계를 분석합니다.
 
 ### 타이어 공기압과 구름 저항(RRC)
-타이어 공기압이 낮아지면 노면과 닿는 접지면적이 넓어지며 구름 저항(Rolling Resistance Coefficient)이 급격히 상승합니다. 타이어 내부 공기압이 제작사 권장치보다 10% 낮아질 때마다 연비는 약 1～1.5% 감소하는 것으로 보고되어 있습니다.
+[타이어](/blog/tire-wear-pattern-wheel-alignment/) 공기압이 낮아지면 노면과 닿는 접지면적이 넓어지며 구름 저항(Rolling Resistance Coefficient)이 급격히 상승합니다. 타이어 내부 공기압이 제작사 권장치보다 10% 낮아질 때마다 연비는 약 1～1.5% 감소하는 것으로 보고되어 있습니다.
 
 *   **추천 세팅 (+10%):** 차량 운전석 도어 필러에 부착된 '제조사 권장 냉간 공기압' 대비 약 10% 내외를 추가로 주입하는 것이 좋습니다. 예를 들어 권장 공기압이 33 psi라면 36 psi로 세팅합니다.
 *   **기대 효과:** 구름 저항이 감소하여 타이어 회전이 원활해지며, 고속 주행 시 관성 주행 거리가 늘어나 퓨얼컷 활용 구간이 확장됩니다.
@@ -124,7 +124,7 @@ ogImage: '/images/heroes/car-fuel-economy-driving-habits-card.png'
 ![락업 클러치(Lock-up Clutch)의 작동 원리](/images/charts/car-fuel-economy-driving-habits-flow-1.svg)
 
 ### 락업 클러치 조기 체결 유도 페달링 (Tip-out 테크닉)
-변속기 제어 장치(TCU)는 운전자의 가속 페달 조작에 따라 락업 체결 시점을 결정합니다. 이를 인위적으로 앞당기는 방법은 다음과 같습니다.
+[변속기](/blog/dct-transmission-driving-tips/) 제어 장치(TCU)는 운전자의 가속 페달 조작에 따라 락업 체결 시점을 결정합니다. 이를 인위적으로 앞당기는 방법은 다음과 같습니다.
 
 1.  출발 시 가속 페달을 부드럽게 밟아 차량 속도를 신속하게 목표 크루징 속도(예: 50～60km/h)까지 올립니다.
 2.  목표 속도에 도달했을 때, 가속 페달에서 발을 미세하게 약 10～20% 정도 살짝 뗍니다. (Tip-out)

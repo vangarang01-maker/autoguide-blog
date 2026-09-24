@@ -23,7 +23,7 @@ ogImage: '/images/heroes/car-alternator-generator-failure-symptoms-card.png'
 
 ## 1. 알터네이터의 핵심 역할: 전력 생성과 전압 조절 프로세스
 
-많은 운전자가 차량의 모든 전기가 배터리에서 나온다고 오해하지만, 시동이 걸린 직후부터 차량에 필요한 모든 전력(점화플러그, 에어컨, 오디오, ECU 등)은 알터네이터가 전담하며 배터리는 정체된 전력을 보충받는 역할만 수행합니다.
+많은 운전자가 차량의 모든 전기가 배터리에서 나온다고 오해하지만, 시동이 걸린 직후부터 차량에 필요한 모든 전력([점화플러그](/blog/spark-plug-ignition-coil-symptoms/), 에어컨, 오디오, ECU 등)은 알터네이터가 전담하며 배터리는 정체된 전력을 보충받는 역할만 수행합니다.
 
 ![알터네이터의 핵심 역할: 전력 생성과 전압 조절 프로세스](/images/charts/car-alternator-generator-failure-symptoms-flow-1.svg)
 
