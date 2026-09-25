@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-25",
   "note": "자동 수확한 주제 후보. 검토 후 scripts/auto-publish.mjs 의 TOPICS 로 옮기세요. 발행에 직접 쓰이지 않습니다.",
   "sources": [
     "모터그래프",
@@ -41,6 +41,52 @@
   ],
   "headlines": [
     {
+      "title": "썬팅 교체 이유 1위 '열 차단 저하'",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44578",
+      "date": "2026-09-23",
+      "source": "모터그래프",
+      "matched": [
+        "교체"
+      ]
+    },
+    {
+      "title": "추석 장거리 이동 대비 자동차 점검, 무엇을 언제 확인해야 할까?",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44572",
+      "date": "2026-09-23",
+      "source": "모터그래프",
+      "matched": [
+        "점검"
+      ]
+    },
+    {
+      "title": "2026년 9월 중고차 시세,  하락 폭 줄고 테슬라 2개월 연속 상승",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44576",
+      "date": "2026-09-22",
+      "source": "모터그래프",
+      "matched": [
+        "시세",
+        "중고차"
+      ]
+    },
+    {
+      "title": "이정우, 슈퍼GT 6R 엔진 트러블에도 완주",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44566",
+      "date": "2026-09-21",
+      "source": "모터그래프",
+      "matched": [
+        "엔진"
+      ]
+    },
+    {
+      "title": "현대인증중고차, 추석 맞이 BIG 페스타",
+      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44559",
+      "date": "2026-09-21",
+      "source": "모터그래프",
+      "matched": [
+        "중고차"
+      ]
+    },
+    {
       "title": "한국타이어, 유럽 트레일러 제조사 슈미츠 카고불과 OE 파트너십 체결",
       "link": "https://www.motorgraph.com/news/articleView.html?idxno=44554",
       "date": "2026-09-18",
@@ -68,104 +114,94 @@
       ]
     },
     {
-      "title": "추석 귀성길, 자동 배터리 점검부터",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44536",
-      "date": "2026-09-17",
-      "source": "모터그래프",
+      "title": "\"아이 눌릴 만큼 강하게 접혀\" 현대차 아이오닉 9, 2열 시트 결함 리콜",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61695",
+      "date": "2026-09-23",
+      "source": "오토헤럴드",
       "matched": [
-        "점검",
-        "배터리"
+        "결함",
+        "리콜"
       ]
     },
     {
-      "title": "현대차, 운수사, 충전 사업자, 유관 기관과 협력해 수소버스 보급 활성화 나선다",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44529",
-      "date": "2026-09-16",
-      "source": "모터그래프",
+      "title": "[김흥식 칼럼] 신호위반 한 자율주행차, 과태료 고지서는 누구한테 떼야 하나",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61692",
+      "date": "2026-09-23",
+      "source": "오토헤럴드",
+      "matched": [
+        "과태료"
+      ]
+    },
+    {
+      "title": "\"5분 충전에 750km\" BMW, 수소전기차 'iX5 하이드로젠' 양산 막바지",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61675",
+      "date": "2026-09-22",
+      "source": "오토헤럴드",
       "matched": [
         "충전"
       ]
     },
     {
-      "title": "콘티넨탈 타이어 에코콘택트 7, 폭스바겐 ID. 폴로에 신차용 타이어로 채택",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44524",
-      "date": "2026-09-15",
-      "source": "모터그래프",
-      "matched": [
-        "타이어"
-      ]
-    },
-    {
-      "title": "한국타이어, 현대 아반떼 신차용 타이어 공급",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44519",
-      "date": "2026-09-15",
-      "source": "모터그래프",
-      "matched": [
-        "타이어"
-      ]
-    },
-    {
-      "title": "메르세데스-벤츠 코리아, AET 20주년 아우스빌둥 정비 인재 양성 프로그램 통합 출범식 개최",
-      "link": "https://www.motorgraph.com/news/articleView.html?idxno=44517",
-      "date": "2026-09-14",
-      "source": "모터그래프",
-      "matched": [
-        "정비"
-      ]
-    },
-    {
-      "title": "\"엔진도 없는데 엔진 브레이크\" 현대차그룹, 전기차 가상 변속 특허 추가",
-      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61635",
-      "date": "2026-09-16",
+      "title": "“배터리 빼고 차만 살 수 있다면?”... 차체·배터리 소유권 분리 입법 촉구",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61676",
+      "date": "2026-09-22",
       "source": "오토헤럴드",
-      "matched": [
-        "엔진",
-        "브레이크"
-      ]
-    },
-    {
-      "title": "\"엔진이냐, 전기차냐\"…레인지로버 두고 고민 깊어진 예비 구매자들",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146842",
-      "date": "2026-09-18",
-      "source": "지피코리아",
-      "matched": [
-        "엔진"
-      ]
-    },
-    {
-      "title": "한국타이어, 슈미츠 카고불과 계약 연장…2030년까지 유럽 공략",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146844",
-      "date": "2026-09-18",
-      "source": "지피코리아",
-      "matched": [
-        "타이어"
-      ]
-    },
-    {
-      "title": "KGM은 추석 차량점검·BMW는 서비스센터 새단장…고객 서비스 강화",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146837",
-      "date": "2026-09-18",
-      "source": "지피코리아",
-      "matched": [
-        "점검"
-      ]
-    },
-    {
-      "title": "한국앤컴퍼니, 배터리 장거리 체크…전장품 늘며 방전 위험",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146809",
-      "date": "2026-09-17",
-      "source": "지피코리아",
       "matched": [
         "배터리"
       ]
     },
     {
-      "title": "한국타이어, 벨기에 랠리도 3개 시즌 '통으로 잡았다'",
-      "link": "https://www.gpkorea.com/news/articleView.html?idxno=146803",
-      "date": "2026-09-17",
+      "title": "민족 대이동 추석 교통사고, 연휴 전날 오후 2~8시 가장 위험... 43% 집중",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61672",
+      "date": "2026-09-21",
+      "source": "오토헤럴드",
+      "matched": [
+        "사고"
+      ]
+    },
+    {
+      "title": "[EV 트렌드] 포르쉐, 폐배터리로 새 배터리 셀 생산 '양극재 100% 재활용'",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61665",
+      "date": "2026-09-21",
+      "source": "오토헤럴드",
+      "matched": [
+        "배터리"
+      ]
+    },
+    {
+      "title": "[칼럼] \"지상에서 충전, 지하로 이동하면 안전?\" 전기차, 충전량 제어가 핵심",
+      "link": "http://www.autoherald.co.kr/news/articleView.html?idxno=61662",
+      "date": "2026-09-20",
+      "source": "오토헤럴드",
+      "matched": [
+        "충전"
+      ]
+    },
+    {
+      "title": "고속도로 무료통행? \"1분이라도 추석연휴 걸치면 OK\"...전기차는 충전 반값",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=147004",
+      "date": "2026-09-23",
       "source": "지피코리아",
       "matched": [
-        "타이어"
+        "충전"
+      ]
+    },
+    {
+      "title": "만트럭버스코리아 연비 올인…장거리 운송종사자 93% 긍정 평가",
+      "link": "https://www.gpkorea.com/news/articleView.html?idxno=147003",
+      "date": "2026-09-23",
+      "source": "지피코리아",
+      "matched": [
+        "연비"
+      ]
+    },
+    {
+      "title": "현대차, 해외 8개국 우수 서비스 인재 28명 초청…글로벌 정비 역량 강화",
+      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22142",
+      "date": "2026-09-21",
+      "source": "모터매거진",
+      "matched": [
+        "정비"
       ]
     },
     {
@@ -175,33 +211,6 @@
       "source": "모터매거진",
       "matched": [
         "중고차"
-      ]
-    },
-    {
-      "title": "마지막까지 V12를 포기하지 않는 방법 애스턴마틴 발렌, 850마력으로 완성한 프런트 엔진 슈퍼카의 극점",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22097",
-      "date": "2026-09-14",
-      "source": "모터매거진",
-      "matched": [
-        "엔진"
-      ]
-    },
-    {
-      "title": "이차전지 산업의 현재와 미래를 미리 체험하는 장. K-배터리쇼 2026",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22093",
-      "date": "2026-09-10",
-      "source": "모터매거진",
-      "matched": [
-        "배터리"
-      ]
-    },
-    {
-      "title": "현대차·기아, 전기차 배터리 활용 UBESS 실증사업 본격화",
-      "link": "https://www.motormag.co.kr/news/articleView.html?idxno=22092",
-      "date": "2026-09-10",
-      "source": "모터매거진",
-      "matched": [
-        "배터리"
       ]
     }
   ],
@@ -952,6 +961,190 @@
       ],
       "origin": "시즌 수요 키워드 '추석 장거리 사전 점검', '단풍철 장거리'와 뉴스 2, 12번의 차량 무상 점검 서비스를 연계해 운전자가 직접 할 수 있는 상시 예방책 가이드 제시",
       "harvestedAt": "2026-09-18"
+    },
+    {
+      "slug": "window-tinting-film-lifespan-replacement",
+      "title": "썬팅 필름 보증기간과 열 차단 수명 — 변색·뜨거움 느낄 때 재시공 주기 및 선택 가이드",
+      "category": "maintenance",
+      "heroEmoji": "☀️",
+      "tags": [
+        "자동차썬팅",
+        "열차단필름",
+        "썬팅재시공",
+        "차량유지관리"
+      ],
+      "description": "오래된 썬팅 필름의 열 차단성 저하 원인과 교체 주기를 진단하고, 반사 vs 비반사 필름 선택 및 재시공 비용 절약법을 소개합니다.",
+      "hook": "에어컨을 세게 틀어도 보조석 승객이 뜨겁다고 불평하나요? 쿠폰 썬팅의 수명은 이미 끝났을 수 있습니다.",
+      "outline": [
+        "1. 썬팅 필름의 변색과 열 차단 성능 저하 원인",
+        "2. 쿠폰 썬팅 vs 프리미엄 필름 수명 차이와 교체 주기",
+        "3. 자가 진단법: 보라색 변색, 기포 발생, 열감 측정을 통한 재시공 타이밍",
+        "4. 금속(반사) vs 비금속(비반사) 필름 장단점 및 전파 방해 체크",
+        "5. 기존 필름 제거비 아끼고 깔끔하게 재시공받는 실전 팁"
+      ],
+      "origin": "뉴스 1번 '썬팅 교체 이유 1위 열 차단 저하'에서 착안해 장기적인 썬팅 필름 관리 및 재시공 가이드로 확장",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "winter-tire-replacement-timing-storage",
+      "title": "윈터 타이어 교체 시기와 사계절 타이어 한계 — 슬립 사고 막는 올바른 보관·장착법",
+      "category": "maintenance",
+      "heroEmoji": "❄️",
+      "tags": [
+        "윈터타이어",
+        "스노우타이어",
+        "타이어보관",
+        "겨울철안전운전"
+      ],
+      "description": "영하 7도 이하에서 딱딱해지는 사계절 타이어의 한계를 짚어보고, 윈터 타이어 장착 타이밍과 탈착 후 타이어 보관 요령을 정리합니다.",
+      "hook": "눈이 오지 않아도 기온이 7도 이하로 떨어지면 사계절 타이어는 제동력을 잃기 시작합니다.",
+      "outline": [
+        "1. 영상 7도 법칙: 윈터 타이어로 교체해야 하는 기온 기준",
+        "2. 사계절 타이어 vs 올웨더 타이어 vs 윈터 타이어 제동거리 비교",
+        "3. 후륜구동·전기차 운전자가 윈터 타이어를 필수 장착해야 하는 이유",
+        "4. 탈거한 타이어 성능 저하 없이 보관하는 타이어 호텔 활용법",
+        "5. 윈터 타이어 중고 거래 시 제조일자와 마모 한계선 검수 기준"
+      ],
+      "origin": "시즌 키워드 '겨울용 타이어 준비' 및 콘티넨탈 타이어 기사에서 착안해 겨울철 타이어 안전 교체 가이드 작성",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "car-heater-not-working-bad-smell",
+      "title": "겨울철 차 히터 찬 바람·지린내 원인과 점검법 — 히터코어 막힘부터 PTC 히터 진단까지",
+      "category": "maintenance",
+      "heroEmoji": "🔥",
+      "tags": [
+        "자동차히터",
+        "히터찬바람",
+        "서모스탯",
+        "히터냄새제거"
+      ],
+      "description": "히터 작동 시 찬 바람이 나오거나 이상 악취가 발생하는 원인을 부품별로 점검하고, 겨울철 따뜻하고 쾌적한 실내 공기를 유지하는 정비법을 다룹니다.",
+      "hook": "수온계는 올라갔는데 히터에서 찬 바람만 나온다면? 서모스탯이나 히터코어 이상일 수 있습니다.",
+      "outline": [
+        "1. 히터 바람이 안 따뜻할 때: 냉각수 부족 vs 서모스탯 고착 진단",
+        "2. 좌우 바람 온도가 다를 때: 온도 조절 도어 액추에이터 고장 확인",
+        "3. 전기차·하이브리드 PTC 히터의 원리와 고장 시 수리 비용",
+        "4. 히터 작동 시 발생하는 식초/오줌/한약 냄새 원인과 캐빈 필터 교체",
+        "5. 히터 코어 클리닝 vs 교체 작업의 견적 차이와 예방법"
+      ],
+      "origin": "시즌 키워드 '히터·열선 점검'에서 착안하여 내연기관 및 친환경차 히터 고장 문제 해결형 가이드 구성",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "certified-pre-owned-cpo-vs-used-car",
+      "title": "제조사 인증중고차(CPO) vs 일반 중고차 완전 비교 — 가격 차이만큼 품질·보증 가치 있을까?",
+      "category": "buying",
+      "heroEmoji": "🚗",
+      "tags": [
+        "인증중고차",
+        "현대인증중고차",
+        "중고차구매",
+        "CPO보증"
+      ],
+      "description": "완성차 업체들의 인증중고차 서비스와 일반 매매단지 중고차의 가격, 정비 품질, 보증 연장 혜택을 정밀 비교합니다.",
+      "hook": "100만~200만 원 더 비싼 인증중고차, 정말 신차급 품질과 확실한 보증을 제공할까요?",
+      "outline": [
+        "1. 인증중고차(CPO)의 개념과 일반 중고차 매물과의 핵심 차이점",
+        "2. 200여 가지 자체 상품화 점검 항목의 실질적인 검수 수준 분석",
+        "3. 제조사 차체·파워트레인 추가 보증 연장 혜택의 가치 계산",
+        "4. 인증중고차 트레이드인(노후차 매각 후 재구매) 할인 혜택 활용법",
+        "5. 예산과 차종에 따른 인증중고차 vs 일반 딜러 매물 추천 가이드"
+      ],
+      "origin": "뉴스 5번, 19번 '현대인증중고차 BIG 페스타'에서 단순 행사가 아닌 CPO 선택에 도움을 주는 구매 비교 가이드로 확장",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "ev-battery-charging-limit-safety-guide",
+      "title": "전기차 충전 제한(80~90%) 설정의 실질적 이점 — 열화 방지와 화재 예방 및 충전 매너",
+      "category": "eco",
+      "heroEmoji": "⚡",
+      "tags": [
+        "전기차충전",
+        "배터리수명",
+        "충전제한",
+        "전기차화재예방"
+      ],
+      "description": "전기차 배터리의 충전 상한선을 80~90%로 제한할 때 얻을 수 있는 수명 연장 효과와 지자체 충전 안전 정책에 대응하는 실전 가이드입니다.",
+      "hook": "배터리를 매번 100% 만충하는 습관이 배터리 건강도(SOH)를 빠르게 갉아먹는다는 사실, 알고 계셨나요?",
+      "outline": [
+        "1. NCM 배터리 vs LFP 배터리의 권장 충전 제한량 차이",
+        "2. 충전량 80~90% 제한이 배터리 셀 열화와 화재 위험을 줄이는 원리",
+        "3. 차량 인포테인먼트 및 앱을 활용한 목표 충전량 설정 방법",
+        "4. 완속 충전기 100% 충전 후 방치 시 불이익과 매너 시간",
+        "5. 장거리 운행 전 100% 완충이 필요할 때 배터리에 부담을 주지 않는 팁"
+      ],
+      "origin": "뉴스 15번 '전기차 충전량 제어가 핵심' 및 뉴스 16번 충전 혜택 기사에서 운전자가 적용할 수 있는 실전 충전 습관 가이드로 변환",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "car-recall-and-free-repair-check-guide",
+      "title": "내 차 무상 리콜·무상 수리 대상 조회부터 서비스센터 청구 실전 가이드",
+      "category": "maintenance",
+      "heroEmoji": "📋",
+      "tags": [
+        "자동차리콜",
+        "무상수리",
+        "자동차리콜센터",
+        "차량점검"
+      ],
+      "description": "제조사 결함으로 인한 리콜과 무상 수리의 차이점을 명확히 이해하고, 자동차리콜센터를 통해 내 차의 대상 여부를 조회하고 수리받는 법을 다룹니다.",
+      "hook": "우편 통지서를 못 받아서 지나친 결함 수리, 내 돈 주고 고치기 전에 지금 조회해 보세요.",
+      "outline": [
+        "1. 안전 직결 '리콜' vs 품질 개선 '무상 수리'의 차이점과 기한",
+        "2. 자동차리콜센터(KOTS) 차대번호 입력으로 1분 만에 대상 조회하기",
+        "3. 중고차 구매 후 이전 차주가 받지 않은 리콜 항목 처리 방법",
+        "4. 리콜 통지 전 사비로 이미 수리한 경우 비용 환급 신청 절차",
+        "5. 공식 서비스센터 예약 팁과 부품 수급 대기 시 대차 서비스 활용"
+      ],
+      "origin": "뉴스 9번 '현대차 아이오닉 9 리콜' 기사를 계기로 운전자 전반이 활용할 수 있는 리콜 조회 및 무상 수리 청구 방법 안내",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "mountain-downhill-engine-brake-fading",
+      "title": "단풍철 산길 내리막길 브레이크 베이퍼록·페이드 현상 방지 — 엔진브레이크 활용법",
+      "category": "driving",
+      "heroEmoji": "⛰️",
+      "tags": [
+        "엔진브레이크",
+        "베이퍼록",
+        "페이드현상",
+        "산길운전팁"
+      ],
+      "description": "단풍철 와인딩 및 긴 내리막길 주행 시 풋브레이크 과다 사용으로 인한 제동 불능 사고를 막는 엔진브레이크 및 회생제동 활용법을 설명합니다.",
+      "hook": "긴 내리막길에서 브레이크 페달이 스펀지처럼 푹 꺼진다면? 대형 사고로 이어지는 베이퍼록 현상입니다.",
+      "outline": [
+        "1. 브레이크 오일 끓는 베이퍼록(Vapor Lock)과 패드 탄화 페이드(Fade)의 원리",
+        "2. 자동변속기 수동 모드(패들시프트/B모드)를 활용한 엔진브레이크 작동법",
+        "3. 전기차·하이브리드 차의 회생제동 단수 조절을 통한 내리막길 제동",
+        "4. 브레이크 액 수분도 점검 및 교환 주기(수분 측정기 측정법)",
+        "5. 가을 단풍철 장거리 주행 전 하체 브레이크 시스템 사전 점검 항목"
+      ],
+      "origin": "시즌 키워드 '단풍철 장거리', '가을 우천 제동' 및 뉴스 13번 추석/연휴 장거리 이동 안전에서 산길 위험 대처법 추출",
+      "harvestedAt": "2026-09-25"
+    },
+    {
+      "slug": "adas-autonomous-driving-accident-penalty",
+      "title": "주행 보조(ADAS) 작동 중 범칙금·사고 발생 시 운전자 과실 비율과 법적 책임",
+      "category": "driving",
+      "heroEmoji": "🤖",
+      "tags": [
+        "주행보조",
+        "ADAS",
+        "자율주행과태료",
+        "운전자과실"
+      ],
+      "description": "어댑티브 크루즈 컨트롤, 차로 유지 보조 등 레벨 2 ADAS 주행 중 신호위반이나 사고가 발생했을 때 책임 소재와 블랙박스 증거 활용법을 다룹니다.",
+      "hook": "스마트 크루즈 컨트롤을 켜고 가다 과속·신호위반 카메라에 찍혔다면, 과태료는 누구에게 나올까요?",
+      "outline": [
+        "1. 레벨 2 주행 보조 시스템의 법적 정의와 운전자 전방 주시 의무",
+        "2. ADAS 오류로 인한 신호위반·속도위반 적발 시 과태료 납부 주체",
+        "3. 주행 보조 작동 중 앞차 추돌 사고 시 과실 비율 산정 기준",
+        "4. 급발진 및 ADAS 오작동 주장 시 급발진 입증 책임과 블랙박스/EDR 역할",
+        "5. 안전한 ADAS 활용을 위한 핸들 잡기(Hands-on) 및 비상 상황 개입 팁"
+      ],
+      "origin": "뉴스 10번 '[김흥식 칼럼] 신호위반 한 자율주행차, 과태료 고지서는 누구한테 떼야 하나'에서 착안해 실제 ADAS 운전자의 법적/실무적 궁금증 해소형 주제로 재구성",
+      "harvestedAt": "2026-09-25"
     }
   ]
 }
